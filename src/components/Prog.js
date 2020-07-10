@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import 'tachyons';
-import './Prog.css';
 import chm from '../programIcons/chm-bau.gif';
 import gasnet from '../programIcons/gasnet.gif';
 import hocsere from '../programIcons/hocsere.gif';
 import hurkolt from '../programIcons/hurkolt.gif';
 import isobau from '../programIcons/isobau.gif';
 import waternet from '../programIcons/waternet.gif';
-import legforg from '../programIcons/legforgalom.jpg';
+import legforg from '../programIcons/legforgalom.gif';
 import sunarch from '../programIcons/sunarch.jpg';
 
 class Prog extends Component {

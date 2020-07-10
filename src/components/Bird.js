@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import 'tachyons';
-import './Bird.css';
-import cinege from '../winwattmadarak/cinege.jpg';
-import pinty from '../winwattmadarak/pinty.jpg';
-import fecske from '../winwattmadarak/fecske.jpg';
-import rigo from '../winwattmadarak/rigo.jpg';
-import siraly from '../winwattmadarak/siraly.jpg';
-import hollo from '../winwattmadarak/hollo.jpg';
-import kocsag from '../winwattmadarak/kocsag.jpg';
-import golya from '../winwattmadarak/golya.jpg';
+import cinege from '../winwattmadarak/cinege.gif';
+import pinty from '../winwattmadarak/pinty.gif';
+import fecske from '../winwattmadarak/fecske.gif';
+import rigo from '../winwattmadarak/rigo.gif';
+import siraly from '../winwattmadarak/siraly.gif';
+import hollo from '../winwattmadarak/hollo.gif';
+import kocsag from '../winwattmadarak/kocsag.gif';
+import golya from '../winwattmadarak/golya.gif';
 
 class Bird extends Component {
     render() {
@@ -25,8 +24,8 @@ class Bird extends Component {
                                         : (name === 'golya') ? golya
                                             : null;
         return (
-            <Grid item >
-                <img className="grow br4 w-90"
+            <Grid item className="pb3">
+                <img className="grow-large br4 pb4 w-90"
                     src={pic}
                     alt={name} />
             </Grid>
