@@ -17,7 +17,7 @@ class HomePage extends Component {
         <p className="pr4">Cégünk épületgépészeti tervező programokat készít és terjeszt, valamint nyújt ezzel kapcsolatos szolgáltatásokat. Amennyiben több információra van szüksége, kattintson a bal oldali menü megfelelő pontjára.</p>
         <Grid container spacing={2} className="pa2 tc">
           <Grid container item sm={12} md={6} spacing={1} className="Winwatt_family">
-            <BirdList className="Programs"/>
+            <BirdList className="Programs" language='hun'/>
             <Grid item xs={12} >
               <h2 className="">További programjaink:</h2>
             </Grid>

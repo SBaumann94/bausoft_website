@@ -82,22 +82,24 @@ class BirdList extends Component {
                     <Grid container item xs={12} style={{ cursor: 'pointer' }}>
                         <Grid item xs={4} className="">
                             <Grid item xs={12} >
-                                <ul className="tl components pl3">
-                                    <li className={`${(this.state.activeComponents[0]) ? "active" : ""}`}>
-                                        {`${(this.props.language === 'eng') ? listEng[0] : listHun[0]}`}</li>
-                                    <li className={`${(this.state.activeComponents[1]) ? "active" : ""}`}>
-                                        {`${(this.props.language === 'eng') ? listEng[1] : listHun[1]}`}</li>
-                                    <li className={`${(this.state.activeComponents[2]) ? "active" : ""}`}>
-                                        {`${(this.props.language === 'eng') ? listEng[2] : listHun[2]}`}</li>
-                                    <li className={`${(this.state.activeComponents[3]) ? "active" : ""}`}>
-                                        {`${(this.props.language === 'eng') ? listEng[3] : listHun[3]}`}</li>
-                                    <li className={`${(this.state.activeComponents[4]) ? "active" : ""}`}>
-                                        {`${(this.props.language === 'eng') ? listEng[4] : listHun[4]}`}</li>
-                                    <li className={`${(this.state.activeComponents[5]) ? "active" : ""}`}>
-                                        {`${(this.props.language === 'eng') ? listEng[5] : listHun[5]}`}</li>
-                                    <li className={`${(this.state.activeComponents[6]) ? "active" : ""}`}>
-                                        {`${(this.props.language === 'eng') ? listEng[6] : listHun[6]}`}</li>
-                                </ul>
+                                {(this.props.language === 'eng') && <ul className="tl components pl3">
+                                    <li className={`${(this.state.activeComponents[0]) ? "active" : ""}`}>{listEng[0]}</li>
+                                    <li className={`${(this.state.activeComponents[1]) ? "active" : ""}`}>{listEng[1]}</li>
+                                    <li className={`${(this.state.activeComponents[2]) ? "active" : ""}`}>{listEng[2]}</li>
+                                    <li className={`${(this.state.activeComponents[3]) ? "active" : ""}`}>{listEng[3]}</li>
+                                    <li className={`${(this.state.activeComponents[4]) ? "active" : ""}`}>{listEng[4]}</li>
+                                    <li className={`${(this.state.activeComponents[5]) ? "active" : ""}`}>{listEng[5]}</li>
+                                    <li className={`${(this.state.activeComponents[6]) ? "active" : ""}`}>{listEng[6]}</li>
+                                </ul>}
+                                {(this.props.language === 'hun') && <ul className="tl components pl3">
+                                    <li className={`${(this.state.activeComponents[0]) ? "active" : ""}`}>{listHun[0]}</li>
+                                    <li className={`${(this.state.activeComponents[1]) ? "active" : ""}`}>{listHun[1]}</li>
+                                    <li className={`${(this.state.activeComponents[2]) ? "active" : ""}`}>{listHun[2]}</li>
+                                    <li className={`${(this.state.activeComponents[3]) ? "active" : ""}`}>{listHun[3]}</li>
+                                    <li className={`${(this.state.activeComponents[4]) ? "active" : ""}`}>{listHun[4]}</li>
+                                    <li className={`${(this.state.activeComponents[5]) ? "active" : ""}`}>{listHun[5]}</li>
+                                    <li className={`${(this.state.activeComponents[6]) ? "active" : ""}`}>{listHun[6]}</li>                                    
+                                </ul>}
                             </Grid>
                         </Grid>
                         <Grid container item xs={8} className="pl3" alignItems="flex-start" justify="flex-end" direction="row">

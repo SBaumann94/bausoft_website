@@ -21,7 +21,7 @@ class ChmBau32 extends Component {
                 és MSZ EN 13384-2 szabványok figyelembevételével készült.<br />
                 A program egyaránt használható a szilárdtüzelésű, atmoszférikus égőjű (deflektoros),
                 túlnyomásos égőjű (blokkégős) és égéstermék szállító ventilátorral rendelkező (turbó) készülékek méretezésére.</p>
-                <img className="w-60"
+                <img className="mw-60"
                     src={ChmBau321}
                     alt={"Alapelrendezés"} />
                 <p align="left">Több berendezés közös égéstermék elvezetése esetén azok közösítése történhet közös füstcsőben,
@@ -29,14 +29,14 @@ class ChmBau32 extends Component {
                 A teljesítményt tekintve nem tartalmaz a program korlátozásokat,
                 így a legkisebb készülékek egyedi kéménye és az ipari berendezések központi
                 kéménye egyaránt méretezhető.</p>
-                <img className="w-60"
+                <img className="mw-60"
                     src={ChmBau322}
                     alt={"Tüzelőberendezés"} />
                 <p align="left">A készülékek a program adatbázisából választhatóak, de a felhasználó egyedileg
                 is megadhatja egy, az adatbázisban nem szereplő berendezés adatait.<br />
                 Szilárd, folyékony ill. gáz halmazállapotú tüzelőanyaggal üzemelő
                 készülék egyaránt méretezhető.</p>
-                <img className="w-40"
+                <img className="mw-40"
                     src={ChmBau323}
                     alt={"Égéstermék"} />
                 <p align="left">Az égéstermék meghatározása alapesetben az MSZ EN 13384-1 alapján történik.
@@ -47,7 +47,7 @@ class ChmBau32 extends Component {
                 nyílászárók ellenállását, és választhatóak különböző gyártók által kínált légbevezető elemek is.
                 Nagyobb teljesítményű készülékeknél a levegő bevezetésére szolgáló légcsatorna rendszer
                 elemekből állítható össze és így méretezhető.</p>
-                <img className="w-50"
+                <img className="mw-50"
                     src={ChmBau324}
                     alt={"Szakasz"} />
                 <p align="left">A készülék és a kémény közti összekötő elem, vagy a kémény függőleges
@@ -66,7 +66,7 @@ class ChmBau32 extends Component {
                 ha több készülék kapcsolódik a kéményre. Ilyenkor akár egyes készülékek kikapcsolt állapota
                 mellett is elvégezhető más készülékek üzemének ellenőrzése. Ez elsősorban a hőmérséklet feltétel
                 vizsgálatakor érdekes, ha csak egy készülék üzemel részterheléssel.</p>
-                <img className="w-40"
+                <img className="mw-40"
                     src={ChmBau325}
                     alt={"Számítási"} />
                 <p align="left">A programban valamennyi variáció hőmérsékletei és egyéb paraméterei előre
@@ -76,7 +76,7 @@ class ChmBau32 extends Component {
                 <p align="left">A számítási eredmények a képernyőn táblázatokban jelennek meg.
                 A táblázat elemeinek sorrendjét és külalakját a felhasználó állíthatja be. A táblázatban
 		        szereplő számítási részeredmények az ellenőrizhetőséget segítik.</p>
-                <img className="w-60"
+                <img className="mw-60"
                     src={ChmBau326}
                     alt={"Eredmények"} />
                 <p>Az eredmények közvetlenül nyomtathatóak, de lehetőség van arra, hogy az eredményeket
