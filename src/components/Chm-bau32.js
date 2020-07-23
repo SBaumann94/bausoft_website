@@ -13,7 +13,7 @@ class ChmBau32 extends Component {
     render() {
         return (
             <div className="ChmBau32 pl3 overflow-x-hidden">
-                <h1>CHM-BAU32 Kéményméretező program</h1>
+                <h2>CHM-BAU32 Kéményméretező program</h2>
                 <p className="tl">A program egy vagy több tüzelőberendezés, egyedi vagy gyűjtőkéményes égéstermékelvezető
                 rendszerének méretezésére szolgál, a korábbi változatával szerzett tapasztalatok
                 felhasználásával készült, annak továbbfejlesztett változata. Műszaki tartalma az égéstermék

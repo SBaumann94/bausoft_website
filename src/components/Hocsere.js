@@ -16,7 +16,7 @@ class Hocsere extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Hocsere pl3 overflow-x-hidden ">
-                    <h1>Hőcserélő méretező program</h1>
+                    <h2>Hőcserélő méretező program</h2>
                     <p align="left">A program segítségével a FÉG-SPIREC, az SKR-X és az Építőelemes hőcserélők méretezhetők.
                     A számításokat nem csak egy adott hőcserélőre végezhetjük el, hanem megadott körben, egyszerre több típusra,
                     különböző párhuzamos ágakkal és sorbakötésekkel több számítást készíthetünk.</p>
@@ -47,7 +47,7 @@ class Hocsere extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Hocsere pl3 overflow-x-hidden ">
-                    <h1>Heat exchanger calculator program</h1>
+                    <h2>Heat exchanger calculator program</h2>
                     <p align="left">The program allows scaling of
                     the FÉG-SPIREC, SKR-X and Building Block Heat Exchangers. The
                     calculations can be done not only for a particular heat exchanger, but

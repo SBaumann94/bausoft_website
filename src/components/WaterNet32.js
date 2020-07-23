@@ -15,7 +15,7 @@ class WaterNet32 extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="WaterNet32 pl3 overflow-x-hidden ">
-                    <h1>WaterNet32 Vízhálózat méretező program</h1>
+                    <h2>WaterNet32 Vízhálózat méretező program</h2>
                     <p align="left">A program belső vízellátó
                     hálózat hidraulikai méretezésére
                     használható. Egy rendszeren belül, együtt
@@ -103,7 +103,7 @@ class WaterNet32 extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="WaterNet32 pl3 overflow-x-hidden ">
-                    <h1>WaterNet32 Water network scaling program</h1>
+                    <h2>WaterNet32 Water network scaling program</h2>
                     <p align="left">The program can be used for hydraulic sizing of an
                     internal water supply network. Within a system, cold water, domestic
                     hot water and a circulation network can be processed together. It

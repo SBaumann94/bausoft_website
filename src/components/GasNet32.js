@@ -15,7 +15,7 @@ class Gasnet32 extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="GasNet32 pl3 overflow-x-hidden ">
-                    <h1>GasNet32 Gázhálózat méretező program</h1>
+                    <h2>GasNet32 Gázhálózat méretező program</h2>
                     <p align="left">A program gázellátó hálózatok hidraulikai méretezésére szolgál. 
                     Elsősorban épületen belüli rendszerek méretezésére készült, de alkalmas telephelyen 
                     belüli csatlakozó és elosztó vezetékek számítására is. 
@@ -78,7 +78,7 @@ class Gasnet32 extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="GasNet32 pl3 overflow-x-hidden ">
-                    <h1>GasNet32 Gas network scaling program</h1>
+                    <h2>GasNet32 Gas network scaling program</h2>
                     <p align="left">The program is designed for
                     hydraulic sizing of gas supply networks. It is primarily designed for
                     in-house system sizing, but is also suitable for on-site connection and

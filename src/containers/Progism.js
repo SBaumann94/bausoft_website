@@ -15,25 +15,25 @@ class Progism extends Component {
                     <h2>Programismertetők</h2>
                     <p>32 bites Windows programok (95/98/ME/NT/2000/XP/Win7/Win8/Win10 32 és 64 bit):</p>
                     <ul>
-                        <li><a href="ww32.htm">WinWatt 32
-                            fűtéstechnikai programcsomag</a>:<ul>
-                                <li><a href="ww_epfiz.htm">Épületfizikai számítások</a> </li>
-                                <li><a href="ww_teli.htm">Fűtési hőszükséglet</a> </li>
-                                <li><a href="ww_nyari.htm">Nyári hőterhelés</a> </li>
-                                <li><a href="ww_rad.htm">Radiátor kiválasztás</a> </li>
-                                <li><a href="ww_egycs.htm">Egycsöves fűtések </a></li>
-                                <li><a href="ww_padlo.htm">Padlófűtések méretezése </a></li>
-                                <li><a href="ww_hocs.htm">Hőcserélő méretezés </a></li>
-                                <li><a href="ww_hidra.htm">Hálózat hidraulika </a></li>
-                                <li><a href="ww_epbd.htm">Épületenergetika</a></li>
-                                <li><a href="ww_optimum.htm">Optimum modul</a></li>
-                                <li><a href="ww_english.htm">Angol nyelvi modul</a></li>
-                                <li><a href="ww_gbxml.htm">gbXML beolvasó modul</a></li>
-                                <li><a href="ww_hidroplan.htm">HidroPlan hidraulikai optimalizálás modul</a></li>
-                                <li><a href="ww_sun.htm">Sun modul</a></li>
+                        <li><Link to="/public/Ww32.html">WinWatt 32
+                            fűtéstechnikai programcsomag</Link>:<ul>
+                                <li><Link to="/public/ww_epfiz.html">Épületfizikai számítások</Link> </li>
+                                <li><Link to="/public/ww_teli.html">Fűtési hőszükséglet</Link> </li>
+                                <li><Link to="/public/ww_nyari.html">Nyári hőterhelés</Link> </li>
+                                <li><Link to="/public/ww_rad.html">Radiátor kiválasztás</Link> </li>
+                                <li><Link to="/public/ww_egycs.html">Egycsöves fűtések </Link></li>
+                                <li><Link to="/public/ww_padlo.html">Padlófűtések méretezése </Link></li>
+                                <li><Link to="/public/ww_hocs.html">Hőcserélő méretezés </Link></li>
+                                <li><Link to="/public/ww_hidra.html">Hálózat hidraulika </Link></li>
+                                <li><Link to="/public/ww_epbd.html">Épületenergetika</Link></li>
+                                <li><Link to="/public/ww_optimum.html">Optimum modul</Link></li>
+                                <li><Link to="/public/ww_english.html">Angol nyelvi modul</Link></li>
+                                <li><Link to="/public/ww_gbxml.html">gbXML beolvasó modul</Link></li>
+                                <li><Link to="/public/ww_hidroplan.html">HidroPlan hidraulikai optimalizálás modul</Link></li>
+                                <li><Link to="/public/ww_sun.html">Sun modul</Link></li>
                             </ul>
                         </li>
-                        <li><Link to="/public/chmbau32.html">CHM-BAU32 Kéményméretező program</Link></li>
+                        <li><Link to="/public/Chmbau32.html">CHM-BAU32 Kéményméretező program</Link></li>
                         <li><Link to="/public/SunArch.html">SunArch Nappálya szerkesztő program</Link></li>
                         <li><Link to="/public/Hocsere.html">Hőcserélő méretező program</Link></li>
                         <li><Link to="/public/Hurkolt.html">Hurkolt hálózat méretező program</Link></li>
@@ -52,22 +52,22 @@ class Progism extends Component {
                     <p>32 bit Windows programs
                     (95/98/ME/NT/2000/XP/Win7/Win8/Win10 32 and 64 bit):</p>
                     <ul>
-                        <li><a href="ww32_en.htm">WinWatt 32 heating technology package</a>:
+                        <li><Link to="/public/Ww32.html">WinWatt 32 heating technology package</Link>:
                         <ul>
-                            <li><a href="ww_epfiz_en.htm">Building physics calculation</a> </li>
-                            <li><a href="ww_teli_en.htm">Winter heat demand calculator</a> </li>
-                            <li><a href="ww_nyari_en.htm">Summer heat load</a> </li>
-                            <li><a href="ww_rad_en.htm">Radiator selection</a> </li>
-                            <li><a href="ww_egycs_en.htm">Single pipe heating </a></li>
-                            <li><a href="ww_padlo_en.htm">Floor heating calculator </a></li>
-                            <li><a href="ww_hocs_en.htm">Heat exchanger calculator </a></li>
-                            <li><a href="ww_hidra_en.htm">Network hydraulics </a></li>
-                            <li><a href="ww_epbd_en.htm">Energy performance of building</a></li>
-                            <li><a href="ww_optimum_en.htm">Optimum module</a></li>
-                            <li><a href="ww_english_en.htm">English language module</a></li>
-                            <li><a href="ww_gbxml_en.htm">gbXML reader module</a></li>
-                            <li><a href="ww_hidroplan_en.htm">HidroPlan hydraulic optimalization module</a></li>
-                            <li><a href="ww_sun_en.htm">Sun module</a></li>
+                            <li><Link to="/public/ww_epfiz.html">Building physics calculation</Link> </li>
+                            <li><Link to="/public/ww_teli.html">Winter heat demand calculator</Link> </li>
+                            <li><Link to="/public/ww_nyari.html">Summer heat load</Link> </li>
+                            <li><Link to="/public/ww_rad.html">Radiator selection</Link> </li>
+                            <li><Link to="/public/ww_egycs.html">Single pipe heating </Link></li>
+                            <li><Link to="/public/ww_padlo.html">Floor heating calculator </Link></li>
+                            <li><Link to="/public/ww_hocs.html">Heat exchanger calculator </Link></li>
+                            <li><Link to="/public/ww_hidra.html">Network hydraulics </Link></li>
+                            <li><Link to="/public/ww_epbd.html">Energy performance of building</Link></li>
+                            <li><Link to="/public/ww_optimum.html">Optimum module</Link></li>
+                            <li><Link to="/public/ww_english.html">English language module</Link></li>
+                            <li><Link to="/public/ww_gbxml.html">gbXML reader module</Link></li>
+                            <li><Link to="/public/ww_hidroplan.html">HidroPlan hydraulic optimalization module</Link></li>
+                            <li><Link to="/public/ww_sun.html">Sun module</Link></li>
                             </ul>
                         </li>
                         <li><Link to="/public/chmbau32.html">CHM-BAU32 Chimney Calculator</Link></li>

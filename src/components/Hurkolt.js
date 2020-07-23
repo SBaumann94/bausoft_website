@@ -13,7 +13,7 @@ class Hurkolt extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Hurkolt pl3 overflow-x-hidden ">
-                    <h1>Hurkolt hálózat méretező program</h1>
+                    <h2>Hurkolt hálózat méretező program</h2>
                     <p align="left">A program segítségével különböző hurkolt hálózatokra vonatkozó számításokat végezhetünk.</p> 
                     <ul>
                         <li>Távhő hálózatok</li>
@@ -41,7 +41,7 @@ class Hurkolt extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Hurkolt pl3 overflow-x-hidden ">
-                    <h1>Loop network calculator program</h1>
+                    <h2>Loop network calculator program</h2>
                     <p align="left">The program can be used to make calculations for different looped networks.</p> 
                     <ul>
                         <li>District heating networks</li>

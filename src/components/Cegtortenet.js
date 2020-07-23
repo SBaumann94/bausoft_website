@@ -8,7 +8,7 @@ class Tortenet extends Component {
     render() {
         return(
         <div className="Tortenet pl3 overflow-x-hidden">
-            <h1>Bausoft cégtörténet</h1>
+            <h2>Bausoft cégtörténet</h2>
             <h3>2018</h3>
             <p>Elkészült a <a href="ww32.htm">WinWatt</a> program két új kiegészítése, a <a href="ww_hidroplan.htm">HidroPlan</a> és a <a href="ww_sun.htm">Sun</a> modul.</p>
 

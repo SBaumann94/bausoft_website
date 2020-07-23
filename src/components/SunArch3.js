@@ -16,7 +16,7 @@ class SunArch extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="SunArch3 pl3 overflow-x-hidden ">
-                    <h1>Épületek túlmelegedés elleni védelme</h1>
+                    <h2>Épületek túlmelegedés elleni védelme</h2>
                     <p align="left">Az épületek az üvegezésen áthatoló napfénytől meleg 
                     időszakban túlmelegednek, s ekkor árnyékolással meg kell védeni a 
                     napsugárzás hatásától. A temperált klímán az egyetemlegesen elfogadott 
@@ -63,7 +63,7 @@ class SunArch extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="SunArch3 pl3 overflow-x-hidden ">
-                    <h1>Protection of buildings against overheating</h1>
+                    <h2>Protection of buildings against overheating</h2>
                     <p align="left">In warm seasons buildings are generally overheated due 
                     to sunshine penetrating through the glazed surfaces. In such periods 
                     glazed surfaces must be protected against solar rays. In temperate 

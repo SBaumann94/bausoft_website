@@ -9,10 +9,13 @@ import siraly from '../winwattmadarak/siraly.gif';
 import hollo from '../winwattmadarak/hollo.gif';
 import kocsag from '../winwattmadarak/kocsag.gif';
 import golya from '../winwattmadarak/golya.gif';
+import './Bird.css';
 
 class Bird extends Component {
     render() {
         const name = this.props.name;
+        const grow = this.props.grow | false;
+        const notRelWidth = this.props.notRelative | false;
         const pic =
             (name === 'cinege') ? cinege
                 : (name === 'pinty') ? pinty
@@ -24,8 +27,8 @@ class Bird extends Component {
                                         : (name === 'golya') ? golya
                                             : null;
         return (
-            <Grid item className="pb3">
-                <img className="grow-large br4 pb4 w-90"
+            <Grid item className={`${(grow) ? "pb3 grow-large" : ""}`}>
+                <img className={`${(notRelWidth) ? "w6" : "br4 pb4 w-90"}`}
                     src={pic}
                     alt={name} />
             </Grid>

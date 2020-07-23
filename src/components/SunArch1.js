@@ -16,7 +16,7 @@ class SunArch extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="SunArch1 pl3 overflow-x-hidden ">
-                    <h1>Égtáj szerinti napenergia hozamok</h1>
+                    <h2>Égtáj szerinti napenergia hozamok</h2>
                     <p align="left">A napenergia égtájak és klímarégiók szerint eltérő intenzitással
                     érkezik a Föld felszínére. Meteorológiai mérések tanúsága szerint az intenzitás
                     különbségek számottevőek, mint ez a mellékelt ábrákon látható. Ennek alapján,
@@ -58,7 +58,7 @@ class SunArch extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="SunArch1 pl3 overflow-x-hidden ">
-                    <h1>Solar energy impact by orientation</h1>
+                    <h2>Solar energy impact by orientation</h2>
                     <p align="left">The impact of solar energy varies according to orientation 
                     and climatic regions. The deviation of intensity is most remarkable reflected 
                     by meteorological data shown on the picture below. On the basis of this, 

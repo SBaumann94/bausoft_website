@@ -14,7 +14,7 @@ class SunArch extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="SunArch2 pl3 overflow-x-hidden ">
-                    <h1>Kollektorok maximális napenergia hozama tájolással</h1>
+                    <h2>Kollektorok maximális napenergia hozama tájolással</h2>
                     <p align="left">A közhiedelemmel ellentétben nem a déli irányba tájolt 
                     kollektoroknak van a legnagyobb hozama, mert a Nap  nem délben süt a 
                     legerősebben. Csillagászatilag nem az óránk szerint délidőben áll a 
@@ -57,7 +57,7 @@ class SunArch extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="SunArch2 pl3 overflow-x-hidden ">
-                    <h1>Maximum solar energy produced by the proper orientation of collectors</h1>
+                    <h2>Maximum solar energy produced by the proper orientation of collectors</h2>
                     <p align="left">In spite of common belief, it is not a collector oriented 
                     South that produces the most solar energy, since the Sun does not radiate 
                     as one would think with maximum intensity at noon. From the point of view 

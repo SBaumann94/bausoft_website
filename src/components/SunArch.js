@@ -22,7 +22,7 @@ class SunArch extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="SunArch pl3 overflow-x-hidden ">
-                    <h1>SunArch Nappálya szerkesztő program</h1>
+                    <h2>SunArch Nappálya szerkesztő program</h2>
                     <p align="left"><strong>A program szerzői: Dr Kuba Gellért okleveles építészmérnök és a Bausoft Pécsvárad Kft.</strong></p>
                     <p align="left">A program a Nap látszólagos égi pályáit jeleníti meg a Föld bármely
                     pontján térben, vetületben és fényképpel egyesíthetően, tervezési műveletek
@@ -106,7 +106,7 @@ class SunArch extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="SunArch pl3 overflow-x-hidden ">
-                    <h1>SunArch Sunpath Editor Program</h1>
+                    <h2>SunArch Sunpath Editor Program</h2>
                     <p align="left"><strong>Authors: Professor Gellert Kuba PhD, dipl. eng. architect and BAUSOFT PECSVARAD Ltd.</strong></p>
                     <p align="left">This program is capable of visualising space the virtual path of the sun at any given point on the earth surface. It may be implemented with photos and thus be used in the course of architectural design for defining the insolation of buildings, the extent of their shading in order to protect them from overheating and also for the optimal positioning of sun collectors.</p>
                     <img className="mw-40 center"

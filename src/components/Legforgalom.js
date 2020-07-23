@@ -13,7 +13,7 @@ class Legforgalom extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Legforgalom pl3 overflow-x-hidden ">
-                    <h1>Légforgalom számító</h1>
+                    <h2>Légforgalom számító</h2>
                     <p align="left">A program segítségével az épületekben kialakuló légforgalom
                     számítható. A koncentrált paramétereket alkalmazó modell az egyes
                     helyiségeken belüli légmozgással nem foglalkozik, csak a helyiségek
@@ -46,7 +46,7 @@ class Legforgalom extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Legforgalom pl3 overflow-x-hidden ">
-                    <h1>Air traffic calculator</h1>
+                    <h2>Air traffic calculator</h2>
                     <p align="left">The program helps to calculate the air flow in
                     buildings. The model with concentrated parameters does not deal with
                     air movement within a room, only flows between rooms and between

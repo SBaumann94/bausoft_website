@@ -15,7 +15,7 @@ class IsoBau extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="IsoBau pl3 overflow-x-hidden ">
-                    <h1>ISO-bau szigetelés kiválasztó</h1>
+                    <h2>ISO-bau szigetelés kiválasztó</h2>
                     <p align="left">A program csövek, légcsatornák, tartályok hőszigetelésével kapcsolatos számításokra szolgál.</p>
                     <img className="mw-20"
                         src={isobau1}
@@ -43,7 +43,7 @@ class IsoBau extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="IsoBau pl3 overflow-x-hidden ">
-                    <h1>ISO-bau insulation selector</h1>
+                    <h2>ISO-bau insulation selector</h2>
                     <p align="left">The program is used for calculations of thermal insulation of pipes, ducts and tanks.</p>
                     <img className="mw-20"
                         src={isobau1}
