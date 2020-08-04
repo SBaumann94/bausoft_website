@@ -6,6 +6,7 @@ import hocsere2 from '../screenshots/hocsere_2.gif'
 import hocsere3 from '../screenshots/hocsere_3.gif'
 import hocsere4 from '../screenshots/hocsere_4.gif'
 import hocsere5 from '../screenshots/hocsere_5.gif'
+import { Helmet } from 'react-helmet'
 
 class Hocsere extends Component {
     constructor(props) {
@@ -16,6 +17,7 @@ class Hocsere extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Hocsere pl3 overflow-x-hidden ">
+                    <Helmet><title>Hőcserélő méretező</title></Helmet>
                     <h2>Hőcserélő méretező program</h2>
                     <p align="left">A program segítségével a FÉG-SPIREC, az SKR-X és az Építőelemes hőcserélők méretezhetők.
                     A számításokat nem csak egy adott hőcserélőre végezhetjük el, hanem megadott körben, egyszerre több típusra,
@@ -47,6 +49,7 @@ class Hocsere extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Hocsere pl3 overflow-x-hidden ">
+                    <Helmet><title>Heat exchanger calculator</title></Helmet>
                     <h2>Heat exchanger calculator program</h2>
                     <p align="left">The program allows scaling of
                     the FÉG-SPIREC, SKR-X and Building Block Heat Exchangers. The

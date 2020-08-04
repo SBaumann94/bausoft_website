@@ -3,6 +3,7 @@ import '../index.css';
 import 'tachyons';
 import sun1 from '../screenshots/ww_sun1.png';
 import sun2 from '../screenshots/ww_sun2.png';
+import {Helmet} from 'react-helmet'
 
 class Sun extends Component {
     constructor(props) {
@@ -13,6 +14,7 @@ class Sun extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Sun pl3 overflow-x-hidden ">
+                    <Helmet><title>Sun modul</title></Helmet>
                     <h2>WinWatt Sun modul</h2>
                     <p>Mindkét számítás a PVGIS (European Commission PVGIS projekt) webszervíz szolgáltatást <a href="http://re.jrc.ec.europa.eu/pvgis.html">(http://re.jrc.ec.europa.eu/pvgis.html)</a> használja, ezért internetkapcsolat szükséges a számításokhoz.</p>
                     <h3>Napelem hozamszámítás</h3>
@@ -31,6 +33,7 @@ class Sun extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Sun pl3 overflow-x-hidden ">
+                    <Helmet><title>Sun module</title></Helmet>
                     <h2>WinWatt Sun module</h2>
                     <p>Both calculations use the PVGIS (European Commission PVGIS project) web service (<a href="http://re.jrc.ec.europa.eu/pvgis.html">http://re.jrc.ec.europa.eu/pvgis.html</a>), so an internet connection is required for the calculations.</p>
                     <h3>Solar panel yield calculation</h3>

@@ -3,11 +3,13 @@
 import React, { Component } from 'react';
 import '../index.css';
 import 'tachyons';
+import { Helmet } from 'react-helmet';
 
 class Tortenet extends Component {
     render() {
         return(
         <div className="Tortenet pl3 overflow-x-hidden">
+            <Helmet><title>Bausoft cégtörténet</title></Helmet>
             <h2>Bausoft cégtörténet</h2>
             <h3>2018</h3>
             <p>Elkészült a <a href="ww32.htm">WinWatt</a> program két új kiegészítése, a <a href="ww_hidroplan.htm">HidroPlan</a> és a <a href="ww_sun.htm">Sun</a> modul.</p>

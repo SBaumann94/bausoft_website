@@ -22,6 +22,7 @@ import WaterNet32 from './components/WaterNet32';
 import Legforgalom from './components/Legforgalom';
 import WW32 from './components/Ww32';
 import WW32_sub from './containers/Ww32_sub';
+import Arak from './components/Arak'
 
 
 let lang = document.documentElement.lang
@@ -32,9 +33,10 @@ class App extends Component {
             <Router>
                 <Sidebar >
                     <Route exact={true} path="/" component={this.Home} />
-                    <Route path='/public/cegtortenet.html' component={() => (<Cegtortenet />)} />
+                    <Route path='/public/cegtortenet.html' component={() => (<Cegtortenet lang={lang}/>)} />
                     <Route exact ={true} path='/public/Ww32.html' component={() => (<WW32 lang={lang} />)} />
-                    
+                    <Route path='/public/arak.html' component={() => (<Arak lang={lang}/>)} />
+
                     <Route path='/public/ww_epfiz.html' component={() => (<WW32_sub sub="epfiz" lang={lang} />)} />
                     <Route path='/public/ww_teli.html' component={() => (<WW32_sub sub="teli" lang={lang} />)} />
                     <Route path='/public/ww_nyari.html' component={() => (<WW32_sub sub="nyari" lang={lang} />)} />
@@ -51,7 +53,7 @@ class App extends Component {
                     <Route path='/public/ww_sun.html' component={() => (<WW32_sub sub="sun" lang={lang} />)} />
                     
                     <Route path='/public/progism.html' component={() => (<Progism lang={lang} />)} />
-                    <Route path='/public/Chmbau32.html' component={() => (<ChmBau32 />)} />
+                    <Route path='/public/Chmbau32.html' component={() => (<ChmBau32 lang={lang}/>)} />
                     <Route path='/public/SunArch.html' component={() => (<SunArch lang={lang} />)} />
                     <Route path='/public/SunArch1.html' component={() => (<SunArch1 lang={lang} />)} />
                     <Route path='/public/SunArch2.html' component={() => (<SunArch2 lang={lang} />)} />

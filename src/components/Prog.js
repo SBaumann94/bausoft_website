@@ -13,6 +13,7 @@ import sunarch from '../programIcons/sunarch.jpg';
 class Prog extends Component {
     render() {
         const name = this.props.name;
+        const grow = this.props.grow | false;
         const pic =
             (name === 'chm') ? chm
                 : (name === 'gasnet') ? gasnet
@@ -25,7 +26,7 @@ class Prog extends Component {
                                             : null;
         return (
             <Grid item >
-                <img className="grow br4 w-80"
+                <img className={`${(grow) ? "grow br4 w-80" : "w4"}`}
                     src={pic}
                     alt={name} />
             </Grid>

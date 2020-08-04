@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../index.css';
 import 'tachyons';
+import { Helmet } from 'react-helmet'
 
 class Hidroplan extends Component {
     constructor(props) {
@@ -11,6 +12,7 @@ class Hidroplan extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Hidroplan pl3 overflow-x-hidden ">
+                    <Helmet><title>HidroPlan modul</title></Helmet>
                     <h2>WinWatt HidroPlan modul</h2>
                     <h3>Radiátorok illesztése</h3>
 
@@ -38,6 +40,7 @@ class Hidroplan extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Hidroplan pl3 overflow-x-hidden ">
+                    <Helmet><title>HidroPlan module</title></Helmet>
                     <h2>WinWatt HidroPlan module</h2>
                     <h3>Fitting radiators</h3>
                     <p>The optimum flow temperature of the radiators of

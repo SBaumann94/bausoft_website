@@ -6,7 +6,7 @@ import epbd1 from '../screenshots/ww_epbd1.gif';
 import epbd2 from '../screenshots/ww_epbd2.gif';
 import epbd3 from '../screenshots/ww_epbd3.gif';
 import epbd4 from '../screenshots/ww_epbd4.gif';
-
+import { Helmet } from 'react-helmet'
 
 class Epbd extends Component {
     constructor(props) {
@@ -17,6 +17,7 @@ class Epbd extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Epbd pl3 overflow-x-hidden ">
+                    <Helmet><title>EPBD modul</title></Helmet>
                     <h2>WinWatt épületenergetika</h2>
                     <p>A helyiségek geometriai méreteinek,
                     hőveszteségének felhasználásával a program
@@ -69,6 +70,7 @@ class Epbd extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Epbd pl3 overflow-x-hidden ">
+                    <Helmet><title>EPBD module</title></Helmet>
                     <h2>WinWatt energy performance of buildings</h2>
                     <p>Using the geometric dimensions and heat loss of
                     the rooms, the program calculates the specific heat loss coefficient of

@@ -17,7 +17,7 @@ class SideComponents extends Component {
                     <ul className="tl sidecomponents pl1">
                         <li className="grow"><Link to={"/public/cegtortenet.html"}>History(Hun)</Link></li>
                         <li className="grow"><Link to={"/public/progism.html"}>Program reviews</Link></li>
-                        <li className="grow"><Link to={""}>Prices(Hun)</Link></li>
+                        <li className="grow"><Link to={"/public/arak.html"}>Prices(Hun)</Link></li>
                         <li className="grow"><Link to={""}>Installers(Hun)</Link></li>
                         <li className="grow"><Link to={""}>Updates(Hun)</Link></li>
                         <li className="grow"><Link to={""}>Databases(Hun)</Link></li>
@@ -43,7 +43,7 @@ class SideComponents extends Component {
                     <ul className="tl sidecomponents pl1">
                         <li className="grow"><Link to={"/public/cegtortenet.html"}>Cégtörténet</Link></li>
                         <li className="grow"><Link to={"/public/progism.html"}>Ismertetők</Link></li>
-                        <li className="grow"><Link to={""}>Árak</Link></li>
+                        <li className="grow"><Link to={"/public/arak.html"}>Árak</Link></li>
                         <li className="grow"><Link to={""}>Telepítők</Link></li>
                         <li className="grow"><Link to={""}>Frissítések</Link></li>
                         <li className="grow"><Link to={""}>Adatbázisok</Link></li>

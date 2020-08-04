@@ -3,6 +3,7 @@ import '../index.css';
 import './SunArch.css';
 import 'tachyons';
 import legf1 from '../screenshots/legf_1.gif'
+import { Helmet } from 'react-helmet'
 
 class Legforgalom extends Component {
     constructor(props) {
@@ -13,6 +14,7 @@ class Legforgalom extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Legforgalom pl3 overflow-x-hidden ">
+                    <Helmet><title>Légforgalom számító</title></Helmet>
                     <h2>Légforgalom számító</h2>
                     <p align="left">A program segítségével az épületekben kialakuló légforgalom
                     számítható. A koncentrált paramétereket alkalmazó modell az egyes
@@ -46,6 +48,7 @@ class Legforgalom extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Legforgalom pl3 overflow-x-hidden ">
+                    <Helmet><title>Air traffic calculator</title></Helmet>
                     <h2>Air traffic calculator</h2>
                     <p align="left">The program helps to calculate the air flow in
                     buildings. The model with concentrated parameters does not deal with

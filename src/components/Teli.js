@@ -4,6 +4,7 @@ import 'tachyons';
 import { Link } from 'react-router-dom';
 import teli1 from '../screenshots/ww_teli1.gif';
 import teli2 from '../screenshots/ww_teli2.gif';
+import {Helmet} from 'react-helmet';
 
 class Teli extends Component {
     constructor(props) {
@@ -14,6 +15,7 @@ class Teli extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Teli pl3 overflow-x-hidden ">
+                    <Helmet><title>Téli hőszükséglet-számítás</title></Helmet>
                     <h2>WinWatt téli hőszükséglet-számítás</h2>
                     <p>A téli hőszükséglet-számítás az
                 MSZ-04.140-3/87 szabvány alapján történik,
@@ -43,6 +45,7 @@ class Teli extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Teli pl3 overflow-x-hidden ">
+                    <Helmet><title>Winter heat demand calculator</title></Helmet>
                     <h2>WinWatt winter heat demand calculator</h2>
                     <p>The winter heat demand calculation is based on MSZ-04.140-3 / 87 standard, possibly in parallel with the 
                     <Link to="/public/ww_nyari.html">summer heat load calculation</Link>, if it is included in the program version.</p>

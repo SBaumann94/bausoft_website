@@ -3,6 +3,7 @@ import '../index.css';
 import 'tachyons';
 import pad1 from '../screenshots/ww_pad1.gif';
 import pad2 from '../screenshots/ww_pad2.gif';
+import {Helmet} from 'react-helmet'
 
 class Padlo extends Component {
     constructor(props) {
@@ -13,6 +14,7 @@ class Padlo extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Padlo pl3 overflow-x-hidden ">
+                    <Helmet><title>Padlófűtések méretezése</title></Helmet>
                     <h2>WinWatt padlófűtések méretezése</h2>
                     <p>A padlófűtés méretezés két önálló
                     munkarészben történik. A hőtechnikai méretezés
@@ -54,6 +56,7 @@ class Padlo extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Padlo pl3 overflow-x-hidden ">
+                    <Helmet><title>Floor heating calculator</title></Helmet>
                     <h2>WinWatt floor heating calculator</h2>
                     <p>Floor heating is dimensioned in two separate work
                     sections. During the thermal engineering design, the heating fields

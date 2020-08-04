@@ -6,6 +6,7 @@ import SunArch11 from '../screenshots/sunarch_11.gif'
 import SunArch12 from '../screenshots/sunarch_12.gif'
 import SunArch13 from '../screenshots/sunarch_13.gif'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 class SunArch extends Component {
     constructor(props) {
@@ -16,6 +17,7 @@ class SunArch extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="SunArch1 pl3 overflow-x-hidden ">
+                    <Helmet><title>SunArch1</title></Helmet>
                     <h2>Égtáj szerinti napenergia hozamok</h2>
                     <p align="left">A napenergia égtájak és klímarégiók szerint eltérő intenzitással
                     érkezik a Föld felszínére. Meteorológiai mérések tanúsága szerint az intenzitás
@@ -58,39 +60,40 @@ class SunArch extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="SunArch1 pl3 overflow-x-hidden ">
+                    <Helmet><title>SunArch1</title></Helmet>
                     <h2>Solar energy impact by orientation</h2>
-                    <p align="left">The impact of solar energy varies according to orientation 
-                    and climatic regions. The deviation of intensity is most remarkable reflected 
-                    by meteorological data shown on the picture below. On the basis of this, 
-                    if the pattern of energy distribution is known, the collector can be oriented 
+                    <p align="left">The impact of solar energy varies according to orientation
+                    and climatic regions. The deviation of intensity is most remarkable reflected
+                    by meteorological data shown on the picture below. On the basis of this,
+                    if the pattern of energy distribution is known, the collector can be oriented
                     towards the optimum direction thus providing the maximum energy impact on a given surface.</p>
                     <img className="mw-30 center"
                         src={SunArch11}
                         alt={"Eredmények"} />
                     <p class="tc">DISTRIBUTION OF SOLAR ENERGY IN THE SZEGED CLIMATIC REGION IN MAY WITH SURFACES BEING POSITIONED VERTICALLY</p>
-                    <p align="left">By means of the SunArch program one can state numerically the 
-                    amount of solar energy radiation on a certain surface, positioned at any angle 
-                    or facing any direction in a given climatic region. The program enables the 
+                    <p align="left">By means of the SunArch program one can state numerically the
+                    amount of solar energy radiation on a certain surface, positioned at any angle
+                    or facing any direction in a given climatic region. The program enables the
                     user to determine the angle of the surface in order to obtain maximum or minimum radiation.</p>
                     <img className="mw-30 center"
                         src={SunArch12}
                         alt={"Eredmények"} />
                     <p class="tc">DISTRIBUTION OF SOLAR ENERGY DURING A PERIOD OF ONE YEAR IN THE SZEGED CLIMATIC REGION, SURFACE BEING POSITIONED VERTICALLY</p>
-                    <p align="left">Red colour marks direct solar radiation, blue diffused and yellow 
-                    the distribution of complete radiation. The distribution of radiation differs 
-                    noticeably from the previous distribution of solar radiation in May. The impact 
-                    of solar radiation also depends on in which part of the year it is being recorded. 
-                    This is why collectors can only be positioned effectively on the basis of recorded 
+                    <p align="left">Red colour marks direct solar radiation, blue diffused and yellow
+                    the distribution of complete radiation. The distribution of radiation differs
+                    noticeably from the previous distribution of solar radiation in May. The impact
+                    of solar radiation also depends on in which part of the year it is being recorded.
+                    This is why collectors can only be positioned effectively on the basis of recorded
                     radiation data, this when they will yield maximum energy.</p>
                     <img className="mw-30 center"
                         src={SunArch13}
                         alt={"Eredmények"} />
                     <p class="tc">SOLAR ENERGY DISTRIBUTION OF FULL YEAR, BY CHANGING THE ANGLE OF COLLECTORS TO 45°</p>
-                    <p align="left">By changing the angle of collectors, the orientation of maximum 
-                    solar impact will also change. With the use of the Sunarch program which has 
-                    been worked out on the basis of several years of meteorological data, 
+                    <p align="left">By changing the angle of collectors, the orientation of maximum
+                    solar impact will also change. With the use of the Sunarch program which has
+                    been worked out on the basis of several years of meteorological data,
                     collectors can be positioned in the most efficient way.</p>
-                    <p align="left">Other abstracts:</p>    
+                    <p align="left">Other abstracts:</p>
                     <ul>
                         <li><Link to="/public/SunArch2.html">Maximum solar energy produced by the proper orientation of collectors</Link></li>
                         <li><Link to="/public/SunArch3.html">Protection of buildings against overheating</Link></li>

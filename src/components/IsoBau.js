@@ -5,6 +5,7 @@ import isobau1 from '../screenshots/isobau_1.gif'
 import isobau2 from '../screenshots/isobau_2.gif'
 import isobau3 from '../screenshots/isobau_3.gif'
 import isobau4 from '../screenshots/isobau_4.gif'
+import {Helmet} from 'react-helmet'
 
 class IsoBau extends Component {
     constructor(props) {
@@ -15,6 +16,7 @@ class IsoBau extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="IsoBau pl3 overflow-x-hidden ">
+                    <Helmet><title>ISO-bau szigetelés kiválasztó</title></Helmet>
                     <h2>ISO-bau szigetelés kiválasztó</h2>
                     <p align="left">A program csövek, légcsatornák, tartályok hőszigetelésével kapcsolatos számításokra szolgál.</p>
                     <img className="mw-20"
@@ -43,6 +45,7 @@ class IsoBau extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="IsoBau pl3 overflow-x-hidden ">
+                    <Helmet><title>ISO-bau insulation selector</title></Helmet>
                     <h2>ISO-bau insulation selector</h2>
                     <p align="left">The program is used for calculations of thermal insulation of pipes, ducts and tanks.</p>
                     <img className="mw-20"

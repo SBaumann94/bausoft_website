@@ -1,7 +1,17 @@
+.min250{
+    min-width: 250px;
+}
+.min400{
+    min-width: 400px;
+}
 .min900 {
     min-width: 900px;
 }
 
-.min400{
-    min-width: 400px;
+.max400{
+    max-width: 400px;
 }
+.max600{
+    max-width: 600px;
+}
+

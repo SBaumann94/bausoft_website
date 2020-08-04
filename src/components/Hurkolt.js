@@ -3,6 +3,7 @@ import '../index.css';
 import 'tachyons';
 import hurkolt1 from '../screenshots/hurkolt_1.gif'
 import hurkolt2 from '../screenshots/hurkolt_2.gif'
+import {Helmet} from 'react-helmet'
 
 class Hurkolt extends Component {
     constructor(props) {
@@ -13,6 +14,7 @@ class Hurkolt extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Hurkolt pl3 overflow-x-hidden ">
+                    <Helmet><title>Hurkolt hálózat méretező</title></Helmet>
                     <h2>Hurkolt hálózat méretező program</h2>
                     <p align="left">A program segítségével különböző hurkolt hálózatokra vonatkozó számításokat végezhetünk.</p> 
                     <ul>
@@ -41,6 +43,7 @@ class Hurkolt extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Hurkolt pl3 overflow-x-hidden ">
+                    <Helmet><title>Loop network calculator</title></Helmet>
                     <h2>Loop network calculator program</h2>
                     <p align="left">The program can be used to make calculations for different looped networks.</p> 
                     <ul>

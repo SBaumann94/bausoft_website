@@ -10,17 +10,20 @@ const listHun = ['Épületfizika', 'Téli hőszükséglet', 'Nyári hőterhelés
     'Egycsöves körök', 'Felület fűtés és hűtés', 'Hálózat hidraulika'];
 const listEng = ['Building physics', 'Winter heat demand', 'Summer heat load', 'Radiator selection',
     'Single pipe loops', 'Surface heating and cooling', 'Network hydraulics'];
+
+let useText = [];
 class BirdList extends Component {
 
     constructor(props) {
         super(props);
+        this.lang = props.lang
         this.state = {
-            language: props.language | 'hun',
             width: 0,
             height: 0,
             activeBird: '',
             activeComponents: [false, false, false, false, false, false, false],
         };
+        useText =  (this.lang === 'hun') ? listHun : listEng;
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
@@ -82,23 +85,14 @@ class BirdList extends Component {
                     <Grid container item xs={12} style={{ cursor: 'pointer' }}>
                         <Grid item xs={4} className="">
                             <Grid item xs={12} >
-                                {(this.props.language === 'eng') && <ul className="tl components pl3">
-                                    <li className={`${(this.state.activeComponents[0]) ? "active" : ""}`}>{listEng[0]}</li>
-                                    <li className={`${(this.state.activeComponents[1]) ? "active" : ""}`}>{listEng[1]}</li>
-                                    <li className={`${(this.state.activeComponents[2]) ? "active" : ""}`}>{listEng[2]}</li>
-                                    <li className={`${(this.state.activeComponents[3]) ? "active" : ""}`}>{listEng[3]}</li>
-                                    <li className={`${(this.state.activeComponents[4]) ? "active" : ""}`}>{listEng[4]}</li>
-                                    <li className={`${(this.state.activeComponents[5]) ? "active" : ""}`}>{listEng[5]}</li>
-                                    <li className={`${(this.state.activeComponents[6]) ? "active" : ""}`}>{listEng[6]}</li>
-                                </ul>}
-                                {(this.props.language === 'hun') && <ul className="tl components pl3">
-                                    <li className={`${(this.state.activeComponents[0]) ? "active" : ""}`}>{listHun[0]}</li>
-                                    <li className={`${(this.state.activeComponents[1]) ? "active" : ""}`}>{listHun[1]}</li>
-                                    <li className={`${(this.state.activeComponents[2]) ? "active" : ""}`}>{listHun[2]}</li>
-                                    <li className={`${(this.state.activeComponents[3]) ? "active" : ""}`}>{listHun[3]}</li>
-                                    <li className={`${(this.state.activeComponents[4]) ? "active" : ""}`}>{listHun[4]}</li>
-                                    <li className={`${(this.state.activeComponents[5]) ? "active" : ""}`}>{listHun[5]}</li>
-                                    <li className={`${(this.state.activeComponents[6]) ? "active" : ""}`}>{listHun[6]}</li>
+                                {<ul className="tl components pl3">
+                                    <li className={`${(this.state.activeComponents[0]) ? "active" : ""}`}>{useText[0]}</li>
+                                    <li className={`${(this.state.activeComponents[1]) ? "active" : ""}`}>{useText[1]}</li>
+                                    <li className={`${(this.state.activeComponents[2]) ? "active" : ""}`}>{useText[2]}</li>
+                                    <li className={`${(this.state.activeComponents[3]) ? "active" : ""}`}>{useText[3]}</li>
+                                    <li className={`${(this.state.activeComponents[4]) ? "active" : ""}`}>{useText[4]}</li>
+                                    <li className={`${(this.state.activeComponents[5]) ? "active" : ""}`}>{useText[5]}</li>
+                                    <li className={`${(this.state.activeComponents[6]) ? "active" : ""}`}>{useText[6]}</li>
                                 </ul>}
                             </Grid>
                         </Grid>

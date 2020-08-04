@@ -6,6 +6,7 @@ import optimum1 from '../screenshots/ww_optimum1.gif';
 import optimum2 from '../screenshots/ww_optimum2.gif';
 import optimum3 from '../screenshots/ww_optimum3.gif';
 import optimum4 from '../screenshots/ww_optimum4.gif';
+import {Helmet} from 'react-helmet'
 
 
 class Optimum extends Component {
@@ -17,6 +18,7 @@ class Optimum extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Optimum pl3 overflow-x-hidden ">
+                    <Helmet><title>Optimum modul</title></Helmet>
                     <h2>WinWatt optimum modul</h2>
                     <p>Az épületünkre elkészített energetikai számításból kiindulva, lehetőségünk van az optimum modul segítségével,
                     különböző módosításoknak az épület energia felhasználására gyakorolt hatását elemezni.
@@ -83,6 +85,7 @@ class Optimum extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Optimum pl3 overflow-x-hidden ">
+                    <Helmet><title>Optimum module</title></Helmet>
                     <h2>WinWatt optimum module</h2>
                     <p>Starting from the <Link to="/public/ww_epbd.html">energy performance calculation</Link> made
                     for our building, we can analyze the effect of different modifications on the

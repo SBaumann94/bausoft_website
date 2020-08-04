@@ -4,6 +4,7 @@ import 'tachyons';
 import { Link } from 'react-router-dom';
 import epf1 from '../screenshots/ww_epf1.gif';
 import epf2 from '../screenshots/ww_epf2.gif';
+import { Helmet } from 'react-helmet'
 
 class Epfiz extends Component {
     constructor(props) {
@@ -14,6 +15,7 @@ class Epfiz extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Epfiz pl3 overflow-x-hidden ">
+                    <Helmet><title>Épületfizika</title></Helmet>
                     <h2>WinWatt Épületfizika</h2>
                     <h3>Anyag adatbázis</h3>
                     <p>A szerkezetek rétegfelépítéséhez egy
@@ -102,6 +104,7 @@ class Epfiz extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Epfiz pl3 overflow-x-hidden ">
+                    <Helmet><title>Building physics</title></Helmet>
                     <h2>WinWatt Building physics</h2>
                     <h3>Material database</h3>
                     <p>A structured, fundamentally uploaded but user-expandable material database helps structure layers. A dialog for entering or modifying the substance data is available. The materials are stored in a database, independent of the projects. The material supplied with the program was uploaded using the following resources:</p>

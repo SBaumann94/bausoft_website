@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import nyar1 from '../screenshots/ww_nyar1.gif';
 import nyar2 from '../screenshots/ww_nyar2.gif';
 import nyar3 from '../screenshots/ww_nyar3.gif';
+import {Helmet} from 'react-helmet'
 
 
 class Nyari extends Component {
@@ -16,6 +17,7 @@ class Nyari extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Nyari pl3 overflow-x-hidden ">
+                    <Helmet><title>Nyári hőterhelés-számítás</title></Helmet>
                     <h2>WinWatt nyári hőterhelés-számítás</h2>
                     <p>A nyári hőterhelés-számítás az
                     MSZ-04.140-4/78 szabvány alapján történik,
@@ -58,6 +60,7 @@ class Nyari extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Nyari pl3 overflow-x-hidden ">
+                    <Helmet><title>Summer heat load calculation</title></Helmet>
                     <h2>WinWatt summer heat load calculation</h2>
                     <p>Summer heat load calculation is based on MSZ-04.140-4 / 78, in parallel with <Link to="/public/ww_teli.html">winter heat demand calculation</Link>.</p>
                     <p>Specifying boundary structures is facilitated by the construction of

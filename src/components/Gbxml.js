@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../index.css';
 import 'tachyons';
+import { Helmet } from 'react-helmet'
 
 class Gbxml extends Component {
     constructor(props) {
@@ -11,6 +12,7 @@ class Gbxml extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Gbxml pl3 overflow-x-hidden ">
+                    <Helmet><title>gbXML modul</title></Helmet>
                     <h2>WinWatt gbXML modul</h2>
                     <p>A
                     gbXML modul segítségével építész programokban elkészült modelleket
@@ -230,6 +232,7 @@ pontatlanságokat.</p>
         else if (this.lang === 'eng') {
             return (
                 <div className="Gbxml pl3 overflow-x-hidden overflow-y-hidden ">
+                    <Helmet><title>gbXML module</title></Helmet>
                     <h2>WinWatt gbXML module</h2>
                     <p>With the help of the gbXML module, we can transfer models
                     created in architectural programs to WinWatt, accelerating the

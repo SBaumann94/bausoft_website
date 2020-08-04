@@ -12,6 +12,7 @@ import SunArch5 from '../screenshots/sunarch_5.gif'
 import SunArch6 from '../screenshots/sunarch_6.png'
 import SunArch7 from '../screenshots/sunarch_7.gif'
 import { Link } from 'react-router-dom'
+import {Helmet} from 'react-helmet'
 
 class SunArch extends Component {
     constructor(props) {
@@ -22,6 +23,7 @@ class SunArch extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="SunArch pl3 overflow-x-hidden ">
+                    <Helmet><title>SunArch</title></Helmet>
                     <h2>SunArch Nappálya szerkesztő program</h2>
                     <p align="left"><strong>A program szerzői: Dr Kuba Gellért okleveles építészmérnök és a Bausoft Pécsvárad Kft.</strong></p>
                     <p align="left">A program a Nap látszólagos égi pályáit jeleníti meg a Föld bármely
@@ -106,6 +108,7 @@ class SunArch extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="SunArch pl3 overflow-x-hidden ">
+                    <Helmet><title>SunArch</title></Helmet>
                     <h2>SunArch Sunpath Editor Program</h2>
                     <p align="left"><strong>Authors: Professor Gellert Kuba PhD, dipl. eng. architect and BAUSOFT PECSVARAD Ltd.</strong></p>
                     <p align="left">This program is capable of visualising space the virtual path of the sun at any given point on the earth surface. It may be implemented with photos and thus be used in the course of architectural design for defining the insolation of buildings, the extent of their shading in order to protect them from overheating and also for the optimal positioning of sun collectors.</p>

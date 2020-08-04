@@ -3,6 +3,7 @@ import '../index.css';
 import 'tachyons';
 import egycs1 from '../screenshots/ww_ecs1.gif';
 import egycs2 from '../screenshots/ww_ecs2.gif';
+import { Helmet } from 'react-helmet'
 
 class Egycs extends Component {
     constructor(props) {
@@ -13,6 +14,7 @@ class Egycs extends Component {
         if (this.lang === 'hun') {
             return (
                 <div className="Egycs pl3 overflow-x-hidden ">
+                    <Helmet><title>Egycsöves fűtés</title></Helmet>
                     <h2>WinWatt egycsöves fűtés</h2>
                     <p>A modulban az átfolyós, átkötőszakaszos
                     függőleges egycsöves fűtések és a
@@ -41,6 +43,7 @@ class Egycs extends Component {
         else if (this.lang === 'eng') {
             return (
                 <div className="Egycs pl3 overflow-x-hidden ">
+                    <Helmet><title>Single pipe heating</title></Helmet>
                     <h2>WinWatt single pipe heating</h2>
                     <p>In the module, both vertical single-pipe heaters with flow-through
                     bridging and horizontal single-pipe heaters can be scaled. After
