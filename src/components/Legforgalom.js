@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
-import './SunArch.css';
 import 'tachyons';
 import legf1 from '../screenshots/legf_1.gif'
 import { Helmet } from 'react-helmet'

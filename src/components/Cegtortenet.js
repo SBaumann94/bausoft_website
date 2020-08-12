@@ -1,7 +1,6 @@
 
 /* eslint-disable react/jsx-no-target-blank */
 import React, { Component } from 'react';
-import '../index.css';
 import 'tachyons';
 import { Helmet } from 'react-helmet';
 

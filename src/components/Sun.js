@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
 import 'tachyons';
 import sun1 from '../screenshots/ww_sun1.png';
 import sun2 from '../screenshots/ww_sun2.png';

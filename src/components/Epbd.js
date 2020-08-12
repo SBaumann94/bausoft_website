@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
 import 'tachyons';
 import { Link } from 'react-router-dom';
 import epbd1 from '../screenshots/ww_epbd1.gif';

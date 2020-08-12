@@ -9,7 +9,6 @@ import siraly from '../winwattmadarak/siraly.gif';
 import hollo from '../winwattmadarak/hollo.gif';
 import kocsag from '../winwattmadarak/kocsag.gif';
 import golya from '../winwattmadarak/golya.gif';
-import './Bird.css';
 
 class Bird extends Component {
     render() {

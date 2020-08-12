@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
 import 'tachyons';
 import ChmBau321 from '../screenshots/chm-bau32_1.gif'
 import ChmBau322 from '../screenshots/chm-bau32_2.gif'

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
 import 'tachyons';
 import hocs1 from '../screenshots/ww_hocs1.gif';
 import hocs2 from '../screenshots/ww_hocs2.gif';

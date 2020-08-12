@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
 import 'tachyons';
 import hidra1 from '../screenshots/ww_hidr1.gif';
 import hidra2 from '../screenshots/ww_hidr2.gif';

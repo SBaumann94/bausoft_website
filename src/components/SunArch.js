@@ -1,7 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { Component } from 'react';
-import '../index.css';
-import './SunArch.css';
 import 'tachyons';
 import leiras from '../leirasok/SunArch_Leiras.pdf'
 import SunArch1 from '../screenshots/sunarch_1.gif'

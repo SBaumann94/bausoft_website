@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import 'tachyons';
-import './Ww32.css'
 import Bird from '../components/Bird';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';

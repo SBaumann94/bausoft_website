@@ -3,7 +3,6 @@
 import React, { Component } from 'react';
 import 'tachyons';
 import {Link} from 'react-router-dom';
-import './SideComponents.css';
 
 class SideComponents extends Component {
     constructor(props){
@@ -18,11 +17,12 @@ class SideComponents extends Component {
                         <li className="grow"><Link to={"/public/cegtortenet.html"}>History(Hun)</Link></li>
                         <li className="grow"><Link to={"/public/progism.html"}>Program reviews</Link></li>
                         <li className="grow"><Link to={"/public/arak.html"}>Prices(Hun)</Link></li>
-                        <li className="grow"><Link to={""}>Installers(Hun)</Link></li>
+                        <li className="grow"><Link to={"/public/telepitok.html"}>Installers(Hun)</Link><Link className="ro2" to={"/public/telepRO.html"}>RO</Link></li>
+                        <li className="grow"><Link to={""}>Updates(Hun)</Link><Link className="ro3" to={""}>RO</Link></li>
                         <li className="grow"><Link to={""}>Updates(Hun)</Link></li>
                         <li className="grow"><Link to={""}>Databases(Hun)</Link></li>
-                        <li className="grow"><Link to={""}>User manuals(Hun)</Link></li>
-                        <li className="grow"><Link to={""}>Demos(Hun)</Link></li>
+                        <li className="grow"><Link to={"/public/leirasok.html"}>User manuals(Hun)</Link></li>
+                        <li className="grow"><Link to={"/public/demok.html"}>Demos(Hun)</Link></li>
                         <li className="grow"><Link to={""}>Others</Link></li>
                             <ul className="pl1 pr1 list ma0 f6 tr">
                             <li className="grow"><a href="http:\\bausoft.hu">Education(Hun)</a></li>
@@ -44,11 +44,11 @@ class SideComponents extends Component {
                         <li className="grow"><Link to={"/public/cegtortenet.html"}>Cégtörténet</Link></li>
                         <li className="grow"><Link to={"/public/progism.html"}>Ismertetők</Link></li>
                         <li className="grow"><Link to={"/public/arak.html"}>Árak</Link></li>
-                        <li className="grow"><Link to={""}>Telepítők</Link></li>
-                        <li className="grow"><Link to={""}>Frissítések</Link></li>
+                        <li className="grow"><Link to={"/public/telepitok.html"}>Telepítők</Link><Link className="ro1" to={"/public/telepRO.html"}>RO</Link></li>
+                        <li className="grow"><Link to={""}>Frissítések</Link><Link className="ro2" to={""}>RO</Link></li>
                         <li className="grow"><Link to={""}>Adatbázisok</Link></li>
-                        <li className="grow"><Link to={""}>Leírások</Link></li>
-                        <li className="grow"><Link to={""}>Demok</Link></li>
+                        <li className="grow"><Link to={"/public/leirasok.html"}>Leírások</Link></li>
+                        <li className="grow"><Link to={"/public/demok.html"}>Demok</Link></li>
                         <li className="grow"><Link to={""}>Egyéb</Link></li>
                         <ul className="pl1 pr1 list ma0 f6 tr">
                             <li className="grow"><a href="http:\\bausoft.hu">Oktatás</a></li>

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import '../index.css';
 import 'tachyons';
-import './Ww32_sub.css';
 
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';

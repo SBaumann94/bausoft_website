@@ -3,7 +3,6 @@ import Grid from '@material-ui/core/Grid';
 import 'tachyons';
 import Bird from './Bird';
 import WWlogo from '../logos/winwatt.gif'
-import './BirdList.css';
 import { Link } from 'react-router-dom'
 
 const listHun = ['Épületfizika', 'Téli hőszükséglet', 'Nyári hőterhelés', 'Radiátor kiválasztás',

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
 import 'tachyons';
 import isobau1 from '../screenshots/isobau_1.gif'
 import isobau2 from '../screenshots/isobau_2.gif'

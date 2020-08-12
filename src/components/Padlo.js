@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
 import 'tachyons';
 import pad1 from '../screenshots/ww_pad1.gif';
 import pad2 from '../screenshots/ww_pad2.gif';

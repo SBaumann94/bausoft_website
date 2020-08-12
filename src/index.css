@@ -12,3 +12,73 @@ code {
     monospace;
 }
 
+.min50{
+  min-width: 50px;
+}
+.min150{
+  min-width: 150px;
+}
+.min250{
+  min-width: 250px;
+}
+.min400{
+  min-width: 400px;
+}
+.min600{
+  min-width: 600px;
+}
+.min900 {
+  min-width: 900px;
+}
+
+.max400{
+  max-width: 400px;
+}
+.max600{
+  max-width: 600px;
+}
+.max900{
+  max-width: 900px;
+}
+
+.w6 {
+  width: 30rem;
+}
+.w6, w-90 {
+  max-height: 8vw;
+  max-width: 8vw;
+  min-width: 75px;
+  min-height: 75px;
+}
+
+.Recommend Grid{
+  scroll-padding-left: 5%;
+}
+
+.sidecomponents .grow{
+  padding-bottom: 2px;
+}
+.sidecomponents{
+  list-style-type: none;
+}
+.ro1{
+  padding-left: 40px;
+}
+.ro2{
+  padding-left: 32px;
+}
+.ro3{
+  padding-left: 36px;
+}
+
+.active{
+  color: red;
+}
+.components li{
+  padding-bottom: 3vh;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

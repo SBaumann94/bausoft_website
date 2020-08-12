@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
 import 'tachyons';
 import { Link } from 'react-router-dom';
 import rad1 from '../screenshots/ww_rad1.gif';

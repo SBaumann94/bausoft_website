@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
-import './SunArch.css';
 import 'tachyons';
 import SunArch31 from '../screenshots/sunarch_31.gif'
 import SunArch32 from '../screenshots/sunarch_32.gif'

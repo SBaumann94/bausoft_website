@@ -23,6 +23,10 @@ import Legforgalom from './components/Legforgalom';
 import WW32 from './components/Ww32';
 import WW32_sub from './containers/Ww32_sub';
 import Arak from './components/Arak'
+import Leirasok from './components/Leirasok';
+import Demok from './components/Demok';
+import Telepitok from './components/Telepitok';
+import TelepRO from './components/TelepRo';
 
 
 let lang = document.documentElement.lang
@@ -36,6 +40,10 @@ class App extends Component {
                     <Route path='/public/cegtortenet.html' component={() => (<Cegtortenet lang={lang}/>)} />
                     <Route exact ={true} path='/public/Ww32.html' component={() => (<WW32 lang={lang} />)} />
                     <Route path='/public/arak.html' component={() => (<Arak lang={lang}/>)} />
+                    <Route path='/public/telepitok.html' component={() => (<Telepitok lang={lang}/>)} />
+                    <Route path='/public/telepRo.html' component={() => (<TelepRO lang={lang}/>)} />
+                    <Route path='/public/leirasok.html' component={() => (<Leirasok lang={lang}/>)} />
+                    <Route path='/public/demok.html' component={() => (<Demok lang={lang}/>)} />
 
                     <Route path='/public/ww_epfiz.html' component={() => (<WW32_sub sub="epfiz" lang={lang} />)} />
                     <Route path='/public/ww_teli.html' component={() => (<WW32_sub sub="teli" lang={lang} />)} />

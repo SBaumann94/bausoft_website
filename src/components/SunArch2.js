@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
-import './SunArch.css';
 import 'tachyons';
 import SunArch21 from '../screenshots/sunarch_21.gif'
 import { Link } from 'react-router-dom';

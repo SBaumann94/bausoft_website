@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import 'tachyons';
-import './Ww32.css'
 import Bird from '../components/Bird';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
@@ -106,7 +105,7 @@ class Arak extends Component {
 
     render() {
         return (
-            <div className="WinWatt32 pl3">
+            <div className="Arak pl3">
                 <Helmet><title>Szoftverárak</title></Helmet>
                 <h2>{textHun[0]}</h2>
                 <p className="pr4">{textHun[1]}</p>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
 import 'tachyons';
 import { Link } from 'react-router-dom';
 import nyar1 from '../screenshots/ww_nyar1.gif';

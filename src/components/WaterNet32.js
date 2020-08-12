@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
 import 'tachyons';
 import waterNet32_1 from '../screenshots/watern32_1.png'
 import waterNet32_2 from '../screenshots/watern32_2.png'
