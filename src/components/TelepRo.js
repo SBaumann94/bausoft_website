@@ -64,7 +64,7 @@ class TelepRO extends Component {
 
     render() {
         return (
-            <div className="Telepitok pl3">
+            <div className="TelepRo pl3">
                 <Helmet><title>Román nyelvű telepítő készletek</title></Helmet>
                 <h2>Román nyelvű telepítő készletek</h2>
                 <p>Programjaink román nyelvű változatának telepítőkészlete található meg itt. Ezeknél a műkődéshez az adott hardverkulcshoz illeszkedő jelszóra van szükség. Vásárláskor Ön innen tudja telepíteni a programot, és a kapott jelszót alkalmazva már használni is tudja azt.</p>
@@ -92,7 +92,7 @@ class TelepRO extends Component {
                     </TableContainer>
                 </div>
                 <h4>2. Hardverkulcs kezelő meghajtóprogram telepítése</h4>
-                <p className="pl4 pr3">A hardverkulcs kezeléséhez a számítógépen telepíteni kell a <Link to="/public/Driver.html">kulcs gyártója által készített meghajtóprogramot</Link>, ha azt korábban még nem telepítette, vagy ha régebbi verzió.</p>
+                <p className="pl4 pr3">A hardverkulcs kezeléséhez a számítógépen telepíteni kell a <Link to="/public/driver.html">kulcs gyártója által készített meghajtóprogramot</Link>, ha azt korábban még nem telepítette, vagy ha régebbi verzió.</p>
                 <h4>3. Működéshez szükséges jelszó megadása</h4>
                 <div className="pl4 pr3">
                     <p>A programok az első indításkor, ha az adott hardverkulcshoz nem találtak jelszót, akkor lehetőséget adnak annak megadására, egy külön párbeszédablakban. Itt ellenőrző értékek is segítenek az adatok helyességének ellenőrzésében.</p>

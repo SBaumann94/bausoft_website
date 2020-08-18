@@ -111,14 +111,15 @@ class ChmBau32 extends Component {
                     <img className="mw-40"
                         src={ChmBau323}
                         alt={"Égéstermék"} />
-                    <p align="left" className="red">Az égéstermék meghatározása alapesetben az MSZ EN 13384-1 alapján történik.
-                    A felhasználónak azonban arra is van lehetősége, hogy a
-                    tüzelőanyag összetételét egyedileg állítsa össze és ez alapján történjék a
-                    sztöchometriai számítás, a tüzelőanyag és az égéstermék paramétereinek meghatározása.<br />
-                    Az égési levegő belépési veszteségének számításakor a program számolja a réstényezőkkel megadott
-                    nyílászárók ellenállását, és választhatóak különböző gyártók által kínált légbevezető elemek is.
-                    Nagyobb teljesítményű készülékeknél a levegő bevezetésére szolgáló légcsatorna rendszer
-                    elemekből állítható össze és így méretezhető.</p>
+                    <p align="left">The combustion product is normally determined according to MSZ EN 13384-1.
+                    However, the user also has the option to
+                    compile the fuel composition individually and use it as a basis
+                    stoichiometric calculation,
+                    determination of fuel and combustion product parameters.<br/>
+                    When calculating the combustion air inlet loss, the program calculates the gap factors given
+                    resistance of doors and windows, and air intake elements offered by different manufacturers are also available.
+                    Air duct system for air intake in higher performance units
+                    can be assembled from elements and thus scaled.</p>
                     <img className="mw-50"
                         src={ChmBau324}
                         alt={"Szakasz"} />

@@ -27,6 +27,16 @@ import Leirasok from './components/Leirasok';
 import Demok from './components/Demok';
 import Telepitok from './components/Telepitok';
 import TelepRO from './components/TelepRo';
+import Frissitok from './components/Frissitok';
+import FrissitRO from './components/FrissitRO';
+import AdatBank from './components/AdatBank';
+import Egyeb from './components/Egyeb';
+import Magazin from './components/Magazin';
+import Driver from './components/Driver';
+import MiniAlk from './components/MiniAlk';
+import DT from './components/DT';
+import GYIK from './components/GYIK';
+import Oktatas from './components/Oktatas';
 
 
 let lang = document.documentElement.lang
@@ -42,8 +52,19 @@ class App extends Component {
                     <Route path='/public/arak.html' component={() => (<Arak lang={lang}/>)} />
                     <Route path='/public/telepitok.html' component={() => (<Telepitok lang={lang}/>)} />
                     <Route path='/public/telepRo.html' component={() => (<TelepRO lang={lang}/>)} />
+                    <Route path='/public/frissitok.html' component={() => (<Frissitok lang={lang}/>)} />
+                    <Route path='/public/frissitRO.html' component={() => (<FrissitRO lang={lang}/>)} />
+                    <Route path='/public/adatbank.html' component={() => (<AdatBank lang={lang}/>)} />
                     <Route path='/public/leirasok.html' component={() => (<Leirasok lang={lang}/>)} />
                     <Route path='/public/demok.html' component={() => (<Demok lang={lang}/>)} />
+                    <Route path='/public/egyeb.html' component={() => (<Egyeb lang={lang}/>)} />
+
+                    <Route path='/public/oktatas.html' component={() => (<Oktatas lang={lang}/>)} />
+                    <Route path='/public/magazin.html' component={() => (<Magazin lang={lang}/>)} />
+                    <Route path='/public/GYIK.html' component={() => (<GYIK lang={lang}/>)} />
+                    <Route path='/public/minialk.html' component={() => (<MiniAlk lang={lang}/>)} />
+                    <Route path='/public/driver.html' component={() => (<Driver lang={lang}/>)} />
+                    <Route path='/public/dtutil.html' component={() => (<DT lang={lang}/>)} />
 
                     <Route path='/public/ww_epfiz.html' component={() => (<WW32_sub sub="epfiz" lang={lang} />)} />
                     <Route path='/public/ww_teli.html' component={() => (<WW32_sub sub="teli" lang={lang} />)} />

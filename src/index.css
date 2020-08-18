@@ -31,6 +31,9 @@ code {
   min-width: 900px;
 }
 
+.max200{
+  max-width: 200px;
+}
 .max400{
   max-width: 400px;
 }

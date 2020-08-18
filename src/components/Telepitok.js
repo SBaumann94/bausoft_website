@@ -353,7 +353,7 @@ class Telepitok extends Component {
                 </div>
                 <h4>3. Hardverkulcs kezelő meghajtóprogram telepítése</h4>
                 <div className="pl4 pr3">
-                    <p>A hardverkulcs kezeléséhez a számítógépen telepíteni kell a <Link to="/public/Driver.html">kulcs gyártója által készített meghajtóprogramot</Link>, ha azt korábban még nem telepítette, vagy ha régebbi verzió.</p>
+                    <p>A hardverkulcs kezeléséhez a számítógépen telepíteni kell a <Link to="/public/driver.html">kulcs gyártója által készített meghajtóprogramot</Link>, ha azt korábban még nem telepítette, vagy ha régebbi verzió.</p>
                 </div>
                 <h4>4. Működéshez szükséges jelszó megadása</h4>
                 <div className="pl4 pr3">
