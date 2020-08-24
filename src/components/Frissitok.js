@@ -11,39 +11,39 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-import Chm_BAU from '../update/CHM-BAU32_frissito.exe'
-import Chm_BAU_Mini from '../update/CHM-BAU32_frissito.exe'
-import GasNet from '../update/GasNet32_frissito.exe'
-import Hocs from '../update/Hocserelo_frissito.exe'
-import Hurkolt from '../update/Hurkolt_halozat_frissito.exe'
-import IsoBau from '../update/ISO-bau_frissito.exe'
-import Legforg from '../update/Legforgalom_frissito.exe'
-import SunArch from '../update/SunArch_frissito.exe'
-import WaterNet from '../update/WaterNet32_frissito.exe'
+import Chm_BAU from '../frissit/CHM-BAU32_frissito.exe'
+import Chm_BAU_Mini from '../frissit/CHM-BAU32_frissito.exe'
+import GasNet from '../frissit/GasNet32_frissito.exe'
+import Hocs from '../frissit/Hocserelo_frissito.exe'
+import Hurkolt from '../frissit/Hurkolt_halozat_frissito.exe'
+import IsoBau from '../frissit/ISO-bau_frissito.exe'
+import Legforg from '../frissit/Legforgalom_frissito.exe'
+import SunArch from '../frissit/SunArch_frissito.exe'
+import WaterNet from '../frissit/WaterNet32_frissito.exe'
 
-import Cinege from '../update/WinWatt_cinege_frissito.exe'
-import Pinty from '../update/WinWatt_pinty_frissito.exe'
-import Fecske from '../update/WinWatt_fecske_frissito.exe'
-import Rigo from '../update/WinWatt_rigo_frissito.exe'
-import Siraly from '../update/WinWatt_siraly_frissito.exe'
-import Hollo from '../update/WinWatt_hollo_frissito.exe'
-import Kocsag from '../update/WinWatt_kocsag_frissito.exe'
-import Golya from '../update/WinWatt_golya_frissito.exe'
-import ArchLine from '../update/WinWatt_ARCHLine_XP_frissito.exe'
+import Cinege from '../frissit/WinWatt_cinege_frissito.exe'
+import Pinty from '../frissit/WinWatt_pinty_frissito.exe'
+import Fecske from '../frissit/WinWatt_fecske_frissito.exe'
+import Rigo from '../frissit/WinWatt_rigo_frissito.exe'
+import Siraly from '../frissit/WinWatt_siraly_frissito.exe'
+import Hollo from '../frissit/WinWatt_hollo_frissito.exe'
+import Kocsag from '../frissit/WinWatt_kocsag_frissito.exe'
+import Golya from '../frissit/WinWatt_golya_frissito.exe'
+import ArchLine from '../frissit/WinWatt_ARCHLine.XP_frissito.exe'
 
-import Beka from '../update/BeKa_WinWatt_frissito.exe'
-import BekaPlus from '../update/BeKa_WinWattPlus_frissito.exe'
-import Buderus from '../update/Buderus_WinWatt_frissito.exe'
-import DanWatt from '../update/DanWatt_frissito.exe'
-import DanWattPlus from '../update/DanWattPlus_frissito.exe'
-import Meditherm from '../update/Meditherm_WinWatt_frissito.exe'
-import Purmo from '../update/PURMO_radiator_kivalaszto_frissito.exe'
-import RezpiacKocsag from '../update/Rezpiaci_WinWatt_kocsag_frissito.exe'
-import RezpiacGolya from '../update/Rezpiaci_WinWatt_golya_frissito.exe'
-import UponorKocsag from '../update/Uponor_WinWatt_kocsag_frissito.exe'
-import UponorGolya from '../update/Uponor_WinWatt_golya_frissito.exe'
-import Vogel from '../update/VogelNoot_WinWatt_frissito.exe'
-import Epfiz from '../update/WinWatt_Epuletfizika_frissito.exe'
+import Beka from '../frissit/BeKa_WinWatt_frissito.exe'
+import BekaPlus from '../frissit/BeKa_WinWattPlus_frissito.exe'
+import Buderus from '../frissit/Buderus_WinWatt_frissito.exe'
+import DanWatt from '../frissit/DanWatt_frissito.exe'
+import DanWattPlus from '../frissit/DanWattPlus_frissito.exe'
+import Meditherm from '../frissit/Meditherm_WinWatt_frissito.exe'
+import Purmo from '../frissit/PURMO_radiator_kivalaszto_frissito.exe'
+import RezpiacKocsag from '../frissit/Rezpiaci_WinWatt_kocsag_frissito.exe'
+import RezpiacGolya from '../frissit/Rezpiaci_WinWatt_golya_frissito.exe'
+import UponorKocsag from '../frissit/Uponor_WinWatt_kocsag_frissito.exe'
+import UponorGolya from '../frissit/Uponor_WinWatt_golya_frissito.exe'
+import Vogel from '../frissit/VogelNoot_WinWatt_frissito.exe'
+import Epfiz from '../frissit/WinWatt_Epuletfizika_frissito.exe'
 
 
 class Frissitok extends Component {
@@ -239,7 +239,7 @@ class Frissitok extends Component {
                         </TableBody>
                     </Table>
                 </TableContainer>
-                <p>A hardverkulcsos céges programok <Link to="/public/addFunc.html">további funkciókkal</Link> egészíthetők ki.</p>
+                <p>A hardverkulcsos céges programok <Link to="/public/AddFunc.html">további funkciókkal</Link> egészíthetők ki.</p>
             </div >
         );
     }

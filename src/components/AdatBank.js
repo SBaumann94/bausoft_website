@@ -25,8 +25,8 @@ import Water32 from '../database/WaterNet32.zip'
 import Water from '../database/WaterNet.zip'
 import Baukap from '../database/baukap.zip'
 
-import Chm_leir from '../leirasok/CHM-BAU_XML_adatfajlok.pdf'
-import Hurkolt_leir from '../leirasok/Hurkolt_XML_adatfajlok.pdf'
+import Chm_leir from '../leiras/CHM-BAU_XML_adatfajlok.pdf'
+import Hurkolt_leir from '../leiras/Hurkolt_XML_adatfajlok.pdf'
 
 
 class AdatBank extends Component {

@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { Component } from 'react';
 import 'tachyons';
-import leiras from '../leirasok/SunArch_Leiras.pdf'
+import leiras from '../leiras/SunArch_Leiras.pdf'
 import SunArch1 from '../screenshots/sunarch_1.gif'
 import SunArch2 from '../screenshots/sunarch_2.gif'
 import SunArch3 from '../screenshots/sunarch_3.gif'
@@ -96,7 +96,7 @@ class SunArch extends Component {
                     </ul>
                     <p align="left">Hosszabb, részletes leírások:</p>
                     <ul>
-                        <li>A program <a  href = {leiras} target = "_blank">kezelési leírása</a></li>
+                        <li>A program <a href = {leiras} target = "_blank">kezelési leírása</a></li>
                         <li><a href="leiras/SUNARCH_elmelet_es_alkalmazas.pdf">Alkalmazási példatár</a></li>
                         <li><a href="leiras/SUNARCH_elmelet_es_alkalmazas_2.pdf">Alkalmazási példatár 2. rész</a></li>
                     </ul>

@@ -14,7 +14,7 @@ class DT extends Component {
         return (
             <div className="DT pl3 pr4">
                 <Helmet><title>Adatbázis javító segédprogram</title></Helmet>
-                <h2 className="pb4">Adatbázis javító segédprogram</h2>
+                <h2>Adatbázis javító segédprogram</h2>
                 <p >Programjaink Borland Paradox adatbázisokat használnak a projektek tárolására. Hibás programleállás előidézheti az éppen nyitott adatbázis sérülését, ezt követően részben, vagy teljesen használhatatlanná válhat a projekt. A sérült projekt kijavításához alkalmazható a Borland által készített segédprogram, amit a mellékelt <a className="b" href={dt} >dtutil32.zip</a> fájl tartalmaz. Sérült adatbázis javításához a következő lépéseket kell elvégeznünk.</p>
                 <ol>
                     <li>Csomagoljuk ki a segédprogramot.</li>

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import 'tachyons';
 import flagHun from '../logos/flagHun.png'
 import flagUK from '../logos/flagUK.png'
-
 import Sidebar from "react-sidebar";
 import { Link } from 'react-router-dom';
 import SideComponents from '../components/SideComponents';
@@ -13,7 +12,7 @@ const mql = window.matchMedia(`(min-width: 800px)`);
     constructor(props) {
       super(props);
       this.state = {
-        lang: document.documentElement.lang,
+        lang: 'hun',
         mql: mql,
         docked: props.docked,
         sidebarOpen: false,
@@ -53,7 +52,7 @@ const mql = window.matchMedia(`(min-width: 800px)`);
         <Sidebar
           sidebar={
             <div className="ma3">
-              <div><Link to={"/"} className="link underline-hover black">
+              <div><Link to='/' className="link underline-hover black">
                 <h2 className="ttu tc pa1 ma2 mb1">Bausoft</h2>
                 <h3 className="pa1 ma0 mb1"> Pécsvárad Kft.</h3>
               </Link></div>
@@ -76,12 +75,12 @@ const mql = window.matchMedia(`(min-width: 800px)`);
               {(this.state.lang === 'eng') && (<SideComponents language='eng'/>)}
               {(this.state.lang === 'hun') && (<SideComponents language='hun'/>)}                
               <ul className="pl1 pr1 list ma0 f7 tl">
-                <li className="pt2">7720 Pécsvárad </li>
+                <li className="pt1">7720 Pécsvárad </li>
                 <li className="">Pécsi út 49. </li>
-                <li className="pt2">Baumann József</li>
+                <li className="pt1">Baumann József</li>
                 <li className="">bausoft@bausoft.hu</li>
                 <li className="">(30) 6813-365</li>
-                <li className="pt2">Baumann Mihály</li>
+                <li className="pt1">Baumann Mihály</li>
                 <li className="">bm@bausoft.hu</li>
                 <li className="">(30) 9569-835</li>
               </ul>
@@ -90,7 +89,7 @@ const mql = window.matchMedia(`(min-width: 800px)`);
           open={this.state.sidebarOpen}
           docked={this.state.sidebarDocked}
           onSetOpen={this.onSetSidebarOpen}
-          styles={{ sidebar: { background: "#ACfcfF" }, content: { backgroundImage: 'linear-gradient(to right, #ACfcfF, #FFFFFF)' } }}
+          styles={{ sidebar: { background: "#EEEEEE" }, content: { backgroundImage:  'linear-gradient(to right, #EEEEEE, #DCFEFF)'  } }}
         >
           <button className="ma3 mb0" onClick={() => this.onSetSidebarOpen(true)} hidden={this.state.sidebarDocked}>☰ Menü</button>
           <div className="overflow-hidden-ns">

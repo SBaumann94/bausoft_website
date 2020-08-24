@@ -29,7 +29,7 @@ import Siraly from '../install/WinWatt_siraly_telepito.exe'
 import Hollo from '../install/WinWatt_hollo_telepito.exe'
 import Kocsag from '../install/WinWatt_kocsag_telepito.exe'
 import Golya from '../install/WinWatt_golya_telepito.exe'
-import ArchLine from '../install/WinWatt_ARCHLine_XP_telepito.exe'
+import ArchLine from '../install/WinWatt_ARCHLine.XP_telepito.exe'
 
 import Beka from '../install/BeKa_WinWatt_telepito.exe'
 import BekaPlus from '../install/BeKa_WinWattPlus_telepito.exe'
@@ -54,10 +54,11 @@ import ChmOld from '../install/CHM-BAU_telepito.exe'
 import GasOld from '../install/GasNet_telepito.exe'
 import WaterOld from '../install/WaterNet_telepito.exe'
 
-import idapi from '../install/idapi.zip'
+import idapi from '../install/idapi.zip';
 import idapi32 from '../install/idapi32.zip'
 import idapi_tel from '../install/IDAPI16_telepito.exe'
 import idapi32_tel from '../install/IDAPI32_telepito.exe'
+
 
 
 class Telepitok extends Component {

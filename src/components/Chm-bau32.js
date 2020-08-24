@@ -7,6 +7,7 @@ import ChmBau324 from '../screenshots/chm-bau32_4.gif'
 import ChmBau325 from '../screenshots/chm-bau32_5.gif'
 import ChmBau326 from '../screenshots/chm-bau32_6.gif'
 import { Helmet } from 'react-helmet'
+import {Link} from 'react-router-dom'
 
 class ChmBau32 extends Component {
     constructor(props) {
@@ -86,7 +87,7 @@ class ChmBau32 extends Component {
                         alt={"Eredmények"} />
                     <p>Az eredmények közvetlenül nyomtathatóak, de lehetőség van arra, hogy az eredményeket
                 szövegszerkesztőbe exportálva egyedi megjelenítést alakítsunk ki.<br />
-                A program adatbázisa folyamatosan bővül, az új elemek az <a href="adatbank.htm"> adatbankból</a> ingyenesen letölthetők.</p>
+                A program adatbázisa folyamatosan bővül, az új elemek az <Link to="/public/adatbank.html"> adatbankból</Link> ingyenesen letölthetők.</p>
                 </div>
             );
         } else if (this.lang === 'eng') {
@@ -138,7 +139,7 @@ class ChmBau32 extends Component {
                         src={ChmBau326}
                         alt={"Eredmények"} />
                     <p>The results can be printed directly, but you can export the results to a word processor to create a unique display.
-                    The database of the program is constantly expanding and new items can be downloaded from the <a href="adatbank.htm">database</a> for free.</p>
+                    The database of the program is constantly expanding and new items can be downloaded from the <Link to="/public/adatbank.html">database</Link> for free.</p>
                 </div>
             );
         }

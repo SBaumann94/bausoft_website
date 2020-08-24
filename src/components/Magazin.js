@@ -17,7 +17,7 @@ class Magazin extends Component {
         return (
             <div className="Magazin pl3 pr4">
                 <Helmet><title>Bausoft magazin</title></Helmet>
-                <h2 className="pb4">Bausoft magazin</h2>
+                <h2>Bausoft magazin</h2>
                 <p><a href={Szam4} >Bausoft magazin 4. szám</a> (2017. március)</p>
                 <p>Tartalom:</p>
                 <ul >

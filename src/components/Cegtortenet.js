@@ -3,73 +3,73 @@
 import React, { Component } from 'react';
 import 'tachyons';
 import { Helmet } from 'react-helmet';
+import {Link} from 'react-router-dom';
 
 class Tortenet extends Component {
     render() {
         return(
-        <div className="Tortenet pl3 overflow-x-hidden">
+        <div className="Tortenet pt2 pl3 overflow-x-hidden">
             <Helmet><title>Bausoft cégtörténet</title></Helmet>
             <h2>Bausoft cégtörténet</h2>
             <h3>2018</h3>
-            <p>Elkészült a <a href="ww32.htm">WinWatt</a> program két új kiegészítése, a <a href="ww_hidroplan.htm">HidroPlan</a> és a <a href="ww_sun.htm">Sun</a> modul.</p>
+            <p>Elkészült a <Link to="/public/ww32.html">WinWatt</Link> program két új kiegészítése, a <Link to="/public/ww_hidroplan.html">HidroPlan</Link> és a <Link to="/public/ww_sun.html">Sun</Link> modul.</p>
 
             <h3>2017</h3>
-            <p>Megújításra került a <a href="waternet32.htm">WaterNet Vízhálózat méretező program</a>.</p>
+            <p>Megújításra került a <Link to="/public/WaterNet32.html">WaterNet Vízhálózat méretező program</Link>.</p>
             <p>A kéményméretező program speciális változatának elkészítése a <a target="_blank" href="https://kemenyraktar.hu/">H-Flue System Kft.</a> részére, internetes alkalmazás.</p>
             
             <h3>2016</h3>
             <p>Danfoss Energy program elkészítése a Danfoss Kft. részére, kiterjedt fűtési és hűtési rendszerek gazdaságossági számításokhoz (belső használatra).</p>
             
             <h3>2015</h3>
-            <p>Elkészült a <a href="ww32.htm">WinWatt</a> program új kiegészítése, a <a href="ww_gbxml.htm">gbXML modul</a>.</p>
+            <p>Elkészült a <Link to="/public/ww32.html">WinWatt</Link> program új kiegészítése, a <Link to="/public/ww_gbxml.html">gbXML modul</Link>.</p>
             
             <h3>2012-2013</h3>
             <p>Klímagép méretező és kiválasztó program készítése az AEROPRODUKT Kft. megbízásából.</p>
             
             <h3>2011</h3>
-            <p>Megújításra került a <a href="gasnet32.htm">GasNet Gázhálózat méretező program</a>.</p>
-            <p>Új program készült el, a <a href="legforgalom.htm">Légforgalom számító</a>. Az épületeken belüli légáramlás számítására alkalmas a program, a helyiségek kapcsolatai hurkolt hálózatot alkothatnak.</p>
+            <p>Megújításra került a <Link to="/public/GasNet32.html">GasNet Gázhálózat méretező program</Link>.</p>
+            <p>Új program készült el, a <Link to="/public/Legforgalom.html">Légforgalom számító</Link>. Az épületeken belüli légáramlás számítására alkalmas a program, a helyiségek kapcsolatai hurkolt hálózatot alkothatnak.</p>
             <p></p>
             
             <h3>2010</h3>
-            <p>A Trocellen cégcsoport (POLIFOAM Kft.) számára a szigetelés kiválasztó programnak új, 
-            <a target="_blank" href="http://insulation.trocellen.com/hu/use-trocellen-calculation-software-free/">webes alkalmazássá</a> alakított változatának elkészítése.</p>
+            <p>A Trocellen cégcsoport (POLIFOAM Kft.) számára a szigetelés kiválasztó programnak új, <a target="_blank" href="http://insulation.trocellen.com/hu/use-trocellen-calculation-software-free/">webes alkalmazássá</a> alakított változatának elkészítése.</p>
             
             <h3>2009</h3>
-            <p>Megjelent az <a href="isobau.htm">ISO-bau szigeteléskiválasztó program</a>, 
+            <p>Megjelent az <Link to="/public/IsoBau.html">ISO-bau szigeteléskiválasztó program</Link>, 
                 amivel csövek, légcsatornák, tartályok különböző szigetelési számításai végezhetők el.</p>
-            <p>Elkészült a <a href="ww32.htm">WinWatt</a> program új kiegészítése, az Optimum modul.</p>
+            <p>Elkészült a <Link to="/public/Ww32.html">WinWatt</Link> program új kiegészítése, az Optimum modul.</p>
             
             <h3>2008</h3>
-            <p>Speciális gyártói változat készült az AQUATHERM Kft. részére a <a href="ww32.htm">WinWatt</a> programból, felületfűtések-hűtések méretezéséhez.</p>
-            <p>A Vogel &amp; Noot radiátorok kiválasztására szolgáló ingyenes <a href="ww32.htm">WinWatt</a> változat is elkészült.</p>
+            <p>Speciális gyártói változat készült az AQUATHERM Kft. részére a <Link to="/public/ww32.html">WinWatt</Link> programból, felületfűtések-hűtések méretezéséhez.</p>
+            <p>A Vogel &amp; Noot radiátorok kiválasztására szolgáló ingyenes <Link to="/public/ww32.html">WinWatt</Link> változat is elkészült.</p>
             <p>A POLIFOAM Kft. számára készített szigetelés kiválasztó program különböző nyelvi változatainak elkészítése (angol, orosz, román, szlovák).</p>
             
             <h3>2007</h3>
-            <p>Megújításra került a <a href="hocsere.htm">Hőcserélő méretező</a> program, amivel a hőközpontokban 
+            <p>Megújításra került a <Link to="/public/Hocsere.html">Hőcserélő méretező</Link> program, amivel a hőközpontokban 
             alkalmazott FÉG-SPIREC, Építőelemes és SKR-X típusok kiválasztása lehetséges.</p>
-            <p>Élkészült a <a href="hurkolt.htm">Hurkolt hálózat méretező</a> program, ami jelenleg a távhő hálózatok
+            <p>Élkészült a <Link to="/public/Hurkolt.html">Hurkolt hálózat méretező</Link> program, ami jelenleg a távhő hálózatok
             hidraulikai és hőtechnikai számítását teszi lehetővé.</p>
-            <p>Energiahozam számításokkal egészült ki a <a href="SunArch.htm">SunArch</a> program, így meteorológiai
+            <p>Energiahozam számításokkal egészült ki a <Link to="/public/SunArch.html">SunArch</Link> program, így meteorológiai
             adatokon alapuló hozamszámítások és optimum keresések hajthatók végre benne,
             például a napkollektorok optimális elhelyezéséhez.</p>
             
             <h3>2006</h3>
-            <p>Elkészítettük a <a href="ww32.htm">WinWatt</a> programhoz kapcsolódó épületenergetikai modult,
+            <p>Elkészítettük a <Link to="/public/Ww32.html">WinWatt</Link> programhoz kapcsolódó épületenergetikai modult,
             aminek segítségével elvégezhető az új előírásoknak megfelelő, az engedélyezési eljárásnál 
             megkövetelt energetikai számítás. A jövőben bevezetésre kerülő
             épületenergetikai minőségtanúsításhoz is alkalmazható lesz ez a modul.</p>
             <p>Az épületenergetika témában résztvettünk egy segédlet kidolgozásában, 
             tanfolyamok lebonyolításában.</p>
-            <p>Új program jelent meg a választékban, a <a href="SunArch.htm">SunArch</a> nappálya szerkesztő program.
+            <p>Új program jelent meg a választékban, a <Link to="/public/SunArch.html">SunArch</Link> nappálya szerkesztő program.
             Segítségével meghatározhatók egyes kiválasztott pontokra, hogy az év során 
             hogyan alakul annak benapozottsága.</p>
 
             <h3>2005</h3>
-            <p>Elkészült a <a href="chm-bau32.htm">CHM-BAU
-            Kéményméretező program</a> 32 bites változata, ami már az MSZ EN
+            <p>Elkészült a <Link to="/public/chm-bau32.html">CHM-BAU
+            Kéményméretező program</Link> 32 bites változata, ami már az MSZ EN
             13384 alapján végzi a számításokat. A
-            <a href="ww32.htm">WinWatt</a> programnak elkészült egy speciális
+            <Link to="/public/ww32.html">WinWatt</Link> programnak elkészült egy speciális
             változata, a WinWatt ARCHLine.XP. A CADLine Kft.
             ArchLINE építész programjával
             együttműködve, az építész rajzról
@@ -79,15 +79,15 @@ class Tortenet extends Component {
             <p>Megváltozott a cégforma, BT-ből Kft-vé
             alakult társaságunk. A romániai piacon is,
             viszonteladók segítségével, elindult a
-            <a href="ww32.htm">WinWatt</a> román változatának értékesítése.</p>
+            <Link to="/public/ww32.html">WinWatt</Link> román változatának értékesítése.</p>
             
             <h3>2004</h3>
             <p>Ennek az évnek a két nagy projektje a
-            <a href="ww32.htm">WinWatt</a> programcsomag továbbfejlesztése és a
-            <a href="chm-bau32.htm">CHM-BAU
-            Kéményméretező program</a> újraírása
+            <Link to="/public/ww32.html">WinWatt</Link> programcsomag továbbfejlesztése és a
+            <Link to="/public/chm-bau32.html">CHM-BAU
+            Kéményméretező program</Link> újraírása
             volt. Ez utóbbi megjelenése 2005 első
-            hónapjaiban várható. A <a href="ww32.htm">WinWatt</a>
+            hónapjaiban várható. A <Link to="/public/ww32.html">WinWatt</Link>
             programcsomagnál az idegen nyelvű változatok
             kifejlesztésére is gondot fordítottunk.
             Egyrészt elkészült a román nyelvű változat,
@@ -97,24 +97,24 @@ class Tortenet extends Component {
             készítsék el, amennyiben a megfelelő
             fordítási munkát elvégezték. A PURMO
             Magyarországi Képviselete számára készült
-            speciális <a href="ww32.htm">WinWatt</a> változat a PURMO radiátorok
+            speciális <Link to="/public/ww32.html">WinWatt</Link> változat a PURMO radiátorok
             kiválasztását teszi lehetővé.</p>
             <p>A Danfoss Kft. számára készítettünk egy
             padlófűtés méretező programot, ami
             ingyenesen szerezhető be tőlük. </p>
 
             <h3>2003</h3>
-            <p>A <a href="ww32.htm">WinWatt</a> programcsomag folyamatos
+            <p>A <Link to="/public/ww32.html">WinWatt</Link> programcsomag folyamatos
             fejlesztése mellett elkészültek a program
             különböző céges változatai is. A Magyar
-            Rézpiaci Központ számára a <a href="ww32.htm">WinWatt</a> kócsag
+            Rézpiaci Központ számára a <Link to="/public/ww32.html">WinWatt</Link> kócsag
             szolgáltatásaival rendelkező változat nem
             csak magyar, hanem szlovák nyelven is
             elkészült. Hasonlón az UPONOR Kft. számára
             is született speciális változat, nem csak a
-            <a href="ww32.htm">WinWatt</a> kócsag, hanem a gólya változatból is,
-            illetve a <a href="waternet.htm">WaterNet Vízhálózat
-            méretező</a>ből.
+            <Link to="/public/Ww32.html">WinWatt</Link> kócsag, hanem a gólya változatból is,
+            illetve a <Link to="/public/WaterNet16.html">WaterNet Vízhálózat
+            méretező</Link>ből.
             Egy a falfűtés méretezésre alkalmas
             speciális ingyenes változat készült a
             MEDITHERM Kft számára.</p>
@@ -138,11 +138,11 @@ class Tortenet extends Component {
             megújított változattal szolgál az Austrotherm
             Kft., a Buderus Hungária Fűtéstechnika Kft., a
             D-ÉG RT. és a Rockwool Hungary Kft. is.</p>
-            <p>Ősszel megjelent a <a href="ww32.htm">WinWatt</a>
+            <p>Ősszel megjelent a <Link to="/public/ww32.html">WinWatt</Link>
             program két újabb, kócsag és gólya
             változata. Ezzel az 1995 óta munkában lévő
             KOMPLEX programunkat küldhettük nyugdíjba, az
-            új <a href="ww32.htm">WinWatt</a> változatok, a sok új szolgáltatás
+            új <Link to="/public/ww32.html">WinWatt</Link> változatok, a sok új szolgáltatás
             mellett, lefedik a korábbi programot. A Danfoss
             Kft. számára is elkészült a speciális
             DanWatt változat, funkciójában a kócsag
@@ -153,21 +153,21 @@ class Tortenet extends Component {
             <h3>2001</h3>
             <p>Tavasszal kiadtuk, a Rehau Kft-vel közösen,
             első CD-nket. Ezen jelent meg először a
-            megújult <a href="ww32.htm">WinWatt</a>
+            megújult <Link to="/public/ww32.html">WinWatt</Link>
             programunk. Az új változat már 32 bites
             Windows program, és az év folyamán háromféle
             kivitelben jelent meg (pinty, fecske, sirály).</p>
             <p>Újabb képviselővel bővült a velünk
             szorosabb kapcsolatot ápoló gyártók,
             forgalmazók köre. A Géniusz Kft.
-            megvásárolta a <a href="ww32.htm">WinWatt</a> pinty licencét, a
+            megvásárolta a <Link to="/public/ww32.html">WinWatt</Link> pinty licencét, a
             radiátor kiválasztás a KORAD lapradiátorokra
             történik. Régi partnerünk, a Buderus
             Hungária Fűtéstechnika Kft. új CD-vel jelent
             meg, amelyen ingyenes Hőszükséglet számító
             - radiátor kiválasztó programunk, illetve a
-            <a href="chm-bau.htm">CHM-BAU
-            Kéményméretező program</a> csökkentett
+            <Link to="/public/Chmbau32.html">CHM-BAU
+            Kéményméretező program</Link> csökkentett
             változata található meg.</p>
             <p>A korábbi kiállítások mellett, rendszeres
             alkalmat kínáltunk, a Rehau Kft. jóvoltából,
@@ -185,41 +185,39 @@ class Tortenet extends Component {
             Tavasszal a Magyar Rézpiaci Központ lepte meg
             az érdeklődőket egy CD-vel. A KOMPLEX fűtési
             rendszer hőtechnikai és hidraulikai méretező,
-            a <a href="waternet.htm">WaterNet Vízhálózat
-            méretező</a> és a <a href="gasnet.htm">GasNet
-            Gázhálózat méretező</a> programjaink,
+            a <Link to="/public/WaterNet16.html">WaterNet Vízhálózat
+            méretező</Link> és a <Link to="/public/GasNet16.html">GasNet
+            Gázhálózat méretező</Link> programjaink,
             rézcsövekhez igazított változatát kínálja,
             igen jutányos áron. Szintén a Magyar Rézpiaci
             Központ felkérésére készítettük el a
-            <a href="gasnet.htm">GasNet
-            Gázhálózat méretező</a> program cseh, és a KOMPLEX program
+            <Link to="/public/GasNet16.html">GasNet
+            Gázhálózat méretező</Link> program cseh, és a KOMPLEX program
             szlovák nyelvű változatát. Szintén tavaszi
             megjelenésű a Vaillant Hungária Kft.
             Tervezési segédlet című CD-je, ami a
             termékeik elektronikus katalógusa, és e
-            mellett helyet adott a <a href="chm-bau.htm">CHM-BAU
-            Kéményméretező program</a>unk Vaillant
+            mellett helyet adott a <Link to="/public/Chmbau32.html">CHM-BAU
+            Kéményméretező program</Link>unk Vaillant
             fogyasztókkal használható, korlátozott
-            változatának, valamint <a href="ww32.htm">WinWatt</a> programunk
+            változatának, valamint <Link to="/public/ww32.html">WinWatt</Link> programunk
             épületfizikai moduljának. </p>
             <p>Kialakítottunk egy új értékesítési
             formát, a bonrendszert.
             Reményeink szerint a következő új
             programunknál, a KOMPLEX és WinWatt programot
-            felváltó új 32 bites <a href="ww32.htm">WinWatt32</a>
+            felváltó új 32 bites <Link to="/public/ww32.html">WinWatt32</Link>
             programnál kerül majd előtérbe, de ez már a
             következő évezred történetéhez tarrtozik.</p>
 
             <h3>1999</h3>
             <p>A CHMC program fejlesztőivel együttműködve
-            elkészült a <a href="chm-bau.htm">CHM-BAU
-            Kéményméretező program</a>, a korábbi
+            elkészült a <Link to="/public/Chmbau32.html">CHM-BAU
+            Kéményméretező program</Link>, a korábbi
             program Windows alatt futó továbbfejlesztett
-            változata. A nyár elején megjelent a <a
-            href="waternet.htm">WaterNet Vízhálózat
-            méretező</a> program, a végére pedig
-            elkészült a <a href="gasnet.htm">GasNet
-            Gázhálózat méretező</a> program.</p>
+            változata. A nyár elején megjelent a <Link to="WaterNet16.html">WaterNet Vízhálózat méretező</Link> program, a végére pedig
+            elkészült a <Link to="/public/GasNet16.html">GasNet
+            Gázhálózat méretező</Link> program.</p>
 
             <h3>1998</h3>
             <p>Újabb gyártók csatlakoztak az egyedi
@@ -232,7 +230,7 @@ class Tortenet extends Component {
             <p>Az év elején elkészült a Windows alatt
             futó UTK program 1.0-ás változata, amit azóta
             ingyen tesznek partnereik számára
-            elérhetővé. Ősszel megjelent a <a href="ww32.htm">WinWatt</a>
+            elérhetővé. Ősszel megjelent a <Link to="/public/ww32.html">WinWatt</Link>
             program második modulja, ami a téli
             hőszükséglet illetve a nyári
             hőterhelés-számítást és az épület
@@ -255,7 +253,7 @@ class Tortenet extends Component {
             gyártófüggetlen, adatbázisát tekintve
             karbantartható, bővíthető. Szintén ebben az
             évben jelentünk meg egy új programmal, aminek
-            a <a href="ww32.htm">WinWatt</a> nevet adtuk. Több szempontból is új
+            a <Link to="/public/ww32.html">WinWatt</Link> nevet adtuk. Több szempontból is új
             színt jelentett ez a palettánkon. Egyrészt ez
             egy Windows alatt futó program, illetve
             programcsomag, másrészt az elsőként
@@ -265,7 +263,7 @@ class Tortenet extends Component {
             tarthat.</p>
 
             <h3>1993-94</h3>
-            <p>Egyre <a href="partner.htm">több gyártó</a>
+            <p>Egyre <Link to="/public/partnerek.html">több gyártó</Link>
             keresett meg minket azzal az igénnyel, hogy a
             magyar épületgépészek számára a
             termékeikre épülő magyar nyelvű szoftvereket

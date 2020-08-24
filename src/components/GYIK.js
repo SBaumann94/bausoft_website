@@ -179,7 +179,7 @@ class GYIK extends Component {
         return (
             <div className="GYIK pl3 pr4">
                 <Helmet><title>(GYIK) Gyakran ismételt kérdések </title></Helmet>
-                <h2 className="pb4">Gyakran ismételt kérdések (GYIK)</h2>
+                <h2>Gyakran ismételt kérdések (GYIK)</h2>
                 <p>Összegyűjtöttük és csoportosítottuk a leggyakrabban előforduló kérdéseket, és a hozzájuk tartozó válaszokat, abban a reményben, hogy az többeknek segít a programok minél hatékonyabb kezelésében.</p>
                 <h4><a href="#HW">Hardverkulcs kezelési problémák</a> (HW...)</h4>
                 <h4><a href="#WW">WinWatt32 program</a> (WW...)</h4>

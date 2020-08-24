@@ -80,7 +80,7 @@ class BirdList extends Component {
                 <Grid item xs={12} className="pb3">
                     <img className="w-40" src={WWlogo} alt="WinWatt logo" />
                 </Grid>
-                <Link className="no-underline black" to={() => { if (this.state.width > 800) { return "/public/ww32.html" } }}>
+                <Link className="link no-underline black" to={() => { if (this.state.width > 800) { return "/public/ww32.html" } }}>
                     <Grid container item xs={12} style={{ cursor: 'pointer' }}>
                         <Grid item xs={4} className="">
                             <Grid item xs={12} >

@@ -11,11 +11,11 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-import updateS from '../update/WinWatt-RO_S_Update.exe'
-import updateM from '../update/WinWatt-RO_M_Update.exe'
-import updateL from '../update/WinWatt-RO_L_Update.exe'
-import updateXL from '../update/WinWatt-RO_XL_Update.exe'
-import updateXXL from '../update/WinWatt-RO_XXL_Update.exe'
+import updateS from '../frissit/WinWatt-RO_S_Update.exe'
+import updateM from '../frissit/WinWatt-RO_M_Update.exe'
+import updateL from '../frissit/WinWatt-RO_L_Update.exe'
+import updateXL from '../frissit/WinWatt-RO_XL_Update.exe'
+import updateXXL from '../frissit/WinWatt-RO_XXL_Update.exe'
 
 
 class FrissitRO extends Component {

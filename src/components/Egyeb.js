@@ -26,8 +26,9 @@ class Egyeb extends Component {
         return (
             <div className="Egyeb pl3 pr4">
                 <Helmet><title>Egyéb információk</title></Helmet>
-                <h2 className="pb4">Egyéb információk</h2>
+                <h2>Egyéb információk</h2>
                 <p><Link to="/public/oktatas.html">Programjainkhoz kapcsolódó konzultációk, oktatások</Link></p>
+                <p><Link to="/public/videok.html">Oktató videók</Link></p>
                 <p><Link to="/public/magazin.html">Bausoft magazin</Link></p>
                 <p><Link to="/public/minialk.html">Egyszerű internetes kisalkalmazások</Link></p>
                 <p><Link to="/public/GYIK.html">Gyakran ismételt kérdések</Link></p>

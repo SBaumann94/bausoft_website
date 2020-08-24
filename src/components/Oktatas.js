@@ -83,7 +83,6 @@ const textHun = ["Épületenergetika rendelet változások 2019", "WinWatt hidra
 
 const files = [file0, file1, file2, file3, file4, file5, file6, file7, file8, file9, file10, file11, file12, file13, file14, file15, file16, file17, file18, file19, file20, file21, file22, file23, file24, file25, file26, file27, file28, file29, file30, file31, file32, file33, file34, file35, file36, file37, file38, file39, file40, file41, file42];
 const sizes = ["1.320.040", "1.537.819", "388.096", "885.642", "1.424.540", "3.123.601", "279.585", "1.245.635", "268.945", "153.030", "294.600","653.570","142.600", "124.384", "94.928", "462.994", "452.616", "142.255", "351.823", "278.067", "34.012", "2.299", "70.359", "1.181.410", "42.387", "593.132", "54.010", "510.406", "163.436", "1.098.524", "621.418", "325.702", "413.020", "1.395.869", "17.081", "257.203", "190.400", "1.324.467", "346.632", "148.143", "355.362", "573.146", "313.372"];
-/* const dates = ["2019.09.29.", "2018.02.13.", "2017.01.24."]; */
 const colors = [Gold, DarkB, "", RedW, "", "", Gold, Gold, RedW, Gold, Gold, Gold, RedW, RedW, RedW, RedW, Gold, RedW, Gold, RedW, RedW,
     DarkB, RedW, RedW, "", RedW, RedW, Gold, Gold, Gold, DarkG, DarkG, RedW, DarkG, DarkG, DarkG, DarkG, DarkG, DarkG,
     "", "", Gold, DarkB];
@@ -163,18 +162,12 @@ class Oktatas extends Component {
                 <p className="bg-red white">Épületenergetika haladó</p>,
             ),
         ];
-        /* this.seged = [this.createData4(<a href={files[0]} >{listHun[0]}</a>,
-            <p>{sizes[0]}</p>,
-            <p>{dates[0]}</p>,
-            <p className={colors[0]}>{textHun[0]}</p>,
-        ),] */
         this.seged = [];
         let name;
         for (let i = 0; i < textHun.length; i++) {
             name = files[i].toString().replace("/static/media/", "")
             this.seged.push(this.createData4(<a href={files[i]} >{name.substring(0, name.indexOf('.'))}</a>,
-                <p>{sizes[i]}</p>,/* 
-                <p>{dates[i]}</p>, */
+                <p>{sizes[i]}</p>,
                 <p className={colors[i].toString() + " f5"}>{textHun[i]}</p>),
             );
         }
@@ -183,15 +176,15 @@ class Oktatas extends Component {
     createData3(Date, Place, Theme) {
         return { Date, Place, Theme };
     }
-    createData4(File, Size, /* Date, */ Text) {
-        return { File, Size, /* Date, */ Text };
+    createData4(File, Size, Text) {
+        return { File, Size, Text };
     }
 
     render() {
         return (
             <div className="Oktatas pl3 pr4">
                 <Helmet><title>Oktatás</title></Helmet>
-                <h2 className="pb4">Oktatás</h2>
+                <h2>Oktatás</h2>
                 <p>Az EU épületenergetikai direktívája alapján hazánkban is megjelentek azok a rendeletek, amelyek a tervezési módszereket és a követelményeket szabályozzák (7/2006 TNM rendelet). A 176/2008 rendelet pedig az épületenergetikai minőségtanúsítási eljárást szabályozza.</p>
                 <p><Link to="/public/ww_epbd.html" className="i">Épületenergetika</Link> segédlet, korábbi címe Az új épületenergetikai szabályozás.</p>
                 <h3>Programjainkhoz kapcsolódó konzultációk 2020-ban</h3>
@@ -245,6 +238,7 @@ class Oktatas extends Component {
 
                 <h3>Ajánljuk még</h3>
                 <p>Az épületek hőtechnikai tanúsítása vizsgával kapcsolatos aktuális információk a <a href="www.mmk.hu">Magyar Mérnöki Kamara</a> és a <a href="www.mek.hu">Magyar Építész Kamara</a> honlapján találhatók.</p>
+                <p><Link to="/public/videok.html">Oktató videók</Link></p>
 
                 <h3>Letölthető "oktatási" anyagok.</h3>
                 <p>Színkódok: <span className={Gold}>Épületnergetika vizsga, elmélet</span> <span className={RedW}>WinWatt épületenergetika</span> <span className={DarkB}>WinWatt hidraulika</span> <span className={DarkG}>Kéményméretezés</span></p>
@@ -254,7 +248,6 @@ class Oktatas extends Component {
                             <TableRow >
                                 <TableCell align="center"><h4>Letölthető fájl</h4></TableCell>
                                 <TableCell align="center"><h4>Méret</h4></TableCell>
-                                {/* <TableCell align="center"><h4>Feltöltve</h4></TableCell> */}
                                 <TableCell align="center"><h4>Leírás</h4></TableCell>
                             </TableRow>
                         </TableHead>
@@ -263,7 +256,6 @@ class Oktatas extends Component {
                                 <TableRow key={index} className={`${(index % 2 === 0) ? "bg-light-gray" : ""}`}>
                                     <TableCell align="center" className="min150">{row.File}</TableCell>
                                     <TableCell align="center" className="min150">{row.Size}</TableCell>
-                                    {/* <TableCell align="center" className="min50">{row.Date}</TableCell> */}
                                     <TableCell align="center" >{row.Text}</TableCell>
                                 </TableRow>
                             ))}
