@@ -9,6 +9,17 @@ import isobau from '../programIcons/isobau.gif';
 import waternet from '../programIcons/waternet.gif';
 import legforg from '../programIcons/legforgalom.gif';
 import sunarch from '../programIcons/sunarch.jpg';
+import { Link } from 'react-router-dom'
+
+const links = ["/public/Chmbau32.html",
+    "/public/GasNet32.html",
+    "/public/WaterNet32.html",
+    "/public/Legforgalom.html",
+    "/public/Hurkolt.html",
+    "/public/IsoBau.html",
+    "/public/Sunarch.html",
+    "/public/Hocsere.html",
+]
 
 class Prog extends Component {
     render() {
@@ -24,11 +35,23 @@ class Prog extends Component {
                                     : (name === 'sunarch') ? sunarch
                                         : (name === 'hocsere') ? hocsere
                                             : null;
+        const num =
+            (name === 'chm') ? 0
+                : (name === 'gasnet') ? 1
+                    : (name === 'waternet') ? 2
+                        : (name === 'legforg') ? 3
+                            : (name === 'hurkolt') ? 4
+                                : (name === 'isobau') ? 5
+                                    : (name === 'sunarch') ? 6
+                                        : (name === 'hocsere') ? 7
+                                            : null;
         return (
-            <Grid item >
-                <img className={`${(grow) ? "grow br4 w-80" : "w4"}`}
-                    src={pic}
-                    alt={name} />
+            <Grid item className="justify-center">
+                <Link to={links[num]}>
+                    <img className={`${(grow) ? "dim br4 mw-40" : "w4"}`}
+                        src={pic}
+                        alt={name} />
+                </Link>
             </Grid>
         );
     }

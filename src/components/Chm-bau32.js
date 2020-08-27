@@ -14,6 +14,9 @@ class ChmBau32 extends Component {
         super(props);
         this.lang = props.lang;
     }
+    componentDidMount(){
+        document.getElementById("top").scrollTo(0,0);
+    }
     render() {
         if (this.lang === 'hun') {
             return (

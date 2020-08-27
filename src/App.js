@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'tachyons';
 
 import Sidebar from './containers/Sidebar';
-import HomePageEn from './containers/HomepageEn';
-import HomePage from './containers/Homepage';
+
+/* import HomePageEn from './containers/HomepageEn'; */
+/* import HomePage from './containers/Homepage'; */
 import Cegtortenet from './components/Cegtortenet';
 
 import Progism from './containers/Progism';
@@ -54,7 +55,8 @@ import WNet32Ver from './components/WNet32Ver';
 import Ww32Ver from './components/Ww32Ver';
 import Ww32Ver6 from './components/Ww32Ver6';
 import AddFunc from './components/AddFunc';
-import Kapcsolat from './components/Kapcsolat';
+import HomePageNew from './containers/HomepageNew';
+import HomePageEnNew from './containers/HomepageEnNew';
 
 
 let lang = document.documentElement.lang
@@ -63,8 +65,8 @@ class App extends Component {
     render() {
         return (
             <Router>
-                <Sidebar >
-                <Route exact={true} path="/" component={this.Home} />
+                <Sidebar>
+                    <Route exact={true} path="/" component={this.Home} />
                     <Route path='/public/cegtortenet.html' component={() => (<Cegtortenet lang={lang} />)} />
                     <Route exact={true} path='/public/Ww32.html' component={() => (<WW32 lang={lang} />)} />
                     <Route path='/public/arak.html' component={() => (<Arak lang={lang} />)} />
@@ -86,7 +88,6 @@ class App extends Component {
                     <Route path='/public/driver.html' component={() => (<Driver lang={lang} />)} />
                     <Route path='/public/dtutil.html' component={() => (<DT lang={lang} />)} />
                     <Route path='/public/partnerek.html' component={() => (<Partnerek lang={lang} />)} />
-                    <Route path='/public/Kapcsolat.html' component={() => (<Kapcsolat lang={lang} />)} />
 
                     <Route path='/public/ww_epfiz.html' component={() => (<WW32_sub sub="epfiz" lang={lang} />)} />
                     <Route path='/public/ww_teli.html' component={() => (<WW32_sub sub="teli" lang={lang} />)} />
@@ -139,7 +140,7 @@ class App extends Component {
     Home() {
         lang = document.documentElement.lang
         /* return (lang === 'hun') ? <HomePageNew /> : <HomePageEnNew />; */
-        return (lang === 'hun') ? <HomePage /> : <HomePageEn />;
+        return (lang === 'hun') ? <HomePageNew /> : <HomePageEnNew />;
     }
 
 }

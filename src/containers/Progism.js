@@ -35,6 +35,9 @@ class Progism extends Component {
         this.lang = props.lang;
         useText = (this.lang === 'hun') ? listHun : listEng;
     }
+    componentDidMount(){
+        document.getElementById("top").scrollTo(0,0);
+    }
     render() {
         return (
             <div className="Progism pl3 overflow-x-hidden">

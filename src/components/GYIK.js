@@ -23,6 +23,9 @@ class GYIK extends Component {
         this.lang = props.language
         this.initTable();
     }
+    componentDidMount(){
+        document.getElementById("top").scrollTo(0,0);
+    }
     initTable() {
         this.hw = [
             this.createData(<div className="tj">

@@ -10,6 +10,9 @@ class Videok extends Component {
         super(props);
         this.lang = props.language
     }
+    componentDidMount(){
+        document.getElementById("top").scrollTo(0,0);
+    }
     render() {
         return (
             <div className="Videok pl3 pr4">

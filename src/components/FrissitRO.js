@@ -25,6 +25,9 @@ class FrissitRO extends Component {
         this.lang = props.lang;
         this.initTable();
     }
+    componentDidMount(){
+        document.getElementById("top").scrollTo(0,0);
+    }
     initTable() {
 
         this.Ww = [

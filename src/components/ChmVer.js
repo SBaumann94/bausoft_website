@@ -9,6 +9,9 @@ class ChmVer extends Component {
         super(props);
         this.lang = props.lang;
     }
+    componentDidMount(){
+        document.getElementById("top").scrollTo(0,0);
+    }
     render() {
         return (
             <div className="ChmVer pl3 overflow-x-hidden ">

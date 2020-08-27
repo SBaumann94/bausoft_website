@@ -26,8 +26,8 @@ class Bird extends Component {
                                         : (name === 'golya') ? golya
                                             : null;
         return (
-            <Grid item className={`${(grow) ? "pb3 grow-large" : ""}`}>
-                <img className={`${(notRelWidth) ? "w6" : "br4 pb4 w-90"}`}
+            <Grid item className={`${(grow) ? "pb0 grow" : ""}`}>
+                <img className={`${(notRelWidth) ? "w6" : "br4 pb4 w-80"}`}
                     src={pic}
                     alt={name} />
             </Grid>

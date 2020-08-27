@@ -30,6 +30,9 @@ class Leirasok extends Component {
         super(props);
         this.lang = props.lang;
     }
+    componentDidMount(){
+        document.getElementById("top").scrollTo(0,0);
+    }
     render() {
         return (
             <div className="Epbd pl3 overflow-x-hidden ">

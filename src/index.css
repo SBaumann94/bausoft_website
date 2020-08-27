@@ -1,11 +1,14 @@
 body {
   margin: 0;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+html { height: 100%; overflow:auto; }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -86,4 +89,74 @@ code {
 .partner_order{
   display: flex;
   flex-direction: row;
+}
+
+.HomeHead {
+  padding : 2vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  font-family : 'Bebas Neue', cursive;
+  font-size: 5vh;
+  letter-spacing: 7px;
+}
+
+div{
+  scroll-behavior: smooth;
+}
+.HomeSection {
+  width: 100%;
+  height: 70vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;   
+}
+
+.HomeSection Grid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 8vw;
+}
+.Winwatt_family, .Programok, .Bemutat{
+  padding-bottom: 600px;
+}
+Grid{
+  padding: 0px;
+  margin: 0px
+}
+
+.MyButton {
+  display: inline-block;
+  margin: 10px;
+  padding: 0.75rem 1rem;
+	border: 0;
+	border-radius: 0.317rem;
+	background-color: #aaa;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1rem;
+  line-height: 1.5;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	cursor: pointer;
+	-webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  background-color: #1fa3ec;
+}
+.MyButton:focus {
+	outline: thin dotted #444;
+	outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  
+}
+.MyButton:hover {
+  opacity: 0.85;
+  background-color: lightgoldenrodyellow;
+  color:black
+}
+
+.MyButton:active{
+  box-shadow: inset 0 3px 4px hsla(0, 0%, 0%, 0.2);
+  
 }

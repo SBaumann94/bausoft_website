@@ -12,6 +12,9 @@ class GasNet16 extends Component {
         super(props);
         this.lang = props.lang;
     }
+    componentDidMount(){
+        document.getElementById("top").scrollTo(0,0);
+    }
     render() {
         return (
             <div className="GasNet16 pl3 overflow-x-hidden ">

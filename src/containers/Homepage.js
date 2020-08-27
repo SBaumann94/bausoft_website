@@ -9,8 +9,12 @@ import MMlogo from '../logos/mmsys.png'
 import Flcutlogo from '../logos/fluctuvent.png'
 import Etudlogo from '../logos/etudbt.png'
 import {Helmet} from 'react-helmet';
+import {Link} from 'react-router-dom'
 
 class HomePage extends Component {
+  componentDidMount(){
+    document.getElementById("top").scrollTo(0,0);
+}
   render() {
     return (
       <div className="pt2 pl3">
@@ -65,7 +69,7 @@ class HomePage extends Component {
             </Grid><Grid item xs={3} className="tl pb2 pl1">
               <img className="w-80 tl v-btm" src={Etudlogo} alt="Etudbt logo" />
             </Grid><Grid item xd={12}>
-              <p>Ha programjainkat tekintve naprakész szeretne lenni, jelentkezzen <a href="http://bausoft.hu/forum.htm">levelező listánkra</a>, ami <strong>röviden és rendszeresen</strong> tájékoztatást nyújt a változásokról.</p>
+              <p>Ha programjainkat tekintve naprakész szeretne lenni, jelentkezzen <Link to="/public/forum.html">levelező listánkra</Link>, ami <strong>röviden és rendszeresen</strong> tájékoztatást nyújt a változásokról.</p>
             </Grid>
           </Grid>
         </Grid>

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import 'tachyons';
 import Bird from './Bird';
-import WWlogo from '../logos/winwatt.gif'
 import { Link } from 'react-router-dom'
 
 const listHun = ['Épületfizika', 'Téli hőszükséglet', 'Nyári hőterhelés', 'Radiátor kiválasztás',
@@ -76,26 +75,23 @@ class BirdList extends Component {
 
     render() {
         return (
-            <Grid container item xs={12}>
-                <Grid item xs={12} className="pb3">
-                    <img className="w-40" src={WWlogo} alt="WinWatt logo" />
-                </Grid>
+            <Grid container item xs={12} spacing={0}>
                 <Link className="link no-underline black" to={() => { if (this.state.width > 800) { return "/public/ww32.html" } }}>
                     <Grid container item xs={12} style={{ cursor: 'pointer' }}>
-                        <Grid item xs={4} className="">
+                        <Grid item xs={6} md={4} className="">
                             <Grid item xs={12} >
-                                {<ul className="tl components pl3">
-                                    <li className={`${(this.state.activeComponents[0]) ? "active" : ""}`}>{useText[0]}</li>
-                                    <li className={`${(this.state.activeComponents[1]) ? "active" : ""}`}>{useText[1]}</li>
-                                    <li className={`${(this.state.activeComponents[2]) ? "active" : ""}`}>{useText[2]}</li>
-                                    <li className={`${(this.state.activeComponents[3]) ? "active" : ""}`}>{useText[3]}</li>
-                                    <li className={`${(this.state.activeComponents[4]) ? "active" : ""}`}>{useText[4]}</li>
-                                    <li className={`${(this.state.activeComponents[5]) ? "active" : ""}`}>{useText[5]}</li>
-                                    <li className={`${(this.state.activeComponents[6]) ? "active" : ""}`}>{useText[6]}</li>
+                                {<ul className="tl components pl4">
+                                    <li className={`${(this.state.activeComponents[0]) ? "f4 active" : "f4"}`}>{useText[0]}</li>
+                                    <li className={`${(this.state.activeComponents[1]) ? "f4 active" : "f4"}`}>{useText[1]}</li>
+                                    <li className={`${(this.state.activeComponents[2]) ? "f4 active" : "f4"}`}>{useText[2]}</li>
+                                    <li className={`${(this.state.activeComponents[3]) ? "f4 active" : "f4"}`}>{useText[3]}</li>
+                                    <li className={`${(this.state.activeComponents[4]) ? "f4 active" : "f4"}`}>{useText[4]}</li>
+                                    <li className={`${(this.state.activeComponents[5]) ? "f4 active" : "f4"}`}>{useText[5]}</li>
+                                    <li className={`${(this.state.activeComponents[6]) ? "f4 active" : "f4"}`}>{useText[6]}</li>
                                 </ul>}
                             </Grid>
                         </Grid>
-                        <Grid container item xs={8} className="pl3" alignItems="flex-start" justify="flex-end" direction="row">
+                        <Grid container item xs={6} className="pl3" alignItems="flex-start" justify="flex-end" direction="row">
                             <Grid item xs={5} sm={4} lg={3} id='cinege'
                                 onMouseEnter={this.handleBirdOn}
                                 onMouseLeave={this.handleBirdOff}>

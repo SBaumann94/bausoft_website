@@ -10,6 +10,9 @@ class DT extends Component {
         super(props);
         this.lang = props.language
     }
+    componentDidMount(){
+        document.getElementById("top").scrollTo(0,0);
+    }
     render() {
         return (
             <div className="DT pl3 pr4">

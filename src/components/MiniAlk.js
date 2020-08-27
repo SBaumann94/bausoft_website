@@ -14,6 +14,9 @@ class MiniAlk extends Component {
     RefRad() {
         window.location.reload(false);
     }
+    componentDidMount(){
+        document.getElementById("top").scrollTo(0,0);
+    }
     render() {
         return (
             <div className="MiniAlk pl3 pr4 overflow-visible-ns">

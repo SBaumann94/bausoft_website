@@ -94,6 +94,9 @@ class Oktatas extends Component {
         this.lang = props.language
         this.initTable();
     }
+    componentDidMount(){
+        document.getElementById("top").scrollTo(0,0);
+    }
     initTable() {
         this.okt = [
             this.createData3(

@@ -52,7 +52,7 @@ class WW32 extends Component {
   constructor(props) {
     super(props);
     this.lang = props.lang;
-    this.initTable();
+    
     if (this.lang === 'hun') {
       useList = listHun;
       useModul = moduleListHun;
@@ -62,8 +62,12 @@ class WW32 extends Component {
       useModul = moduleListEng;
       useText = textEng;
     }
+    this.initTable();
 
   }
+  componentDidMount(){
+    document.getElementById("top").scrollTo(0,0);
+}
   initTable() {
     this.rows = [
       this.createData(<Link to="/public/ww_epfiz.html" className="link black hover-bg-light-blue">{useList[0]}</Link>, '●', '●', '●', '●', '●', '●', '●', '●',),

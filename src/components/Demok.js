@@ -30,6 +30,9 @@ class Demos extends Component {
         this.lang = props.lang;
         this.initTable();
     }
+    componentDidMount(){
+        document.getElementById("top").scrollTo(0,0);
+    }
     initTable() {
         this.demos = [
             this.createData(<a href={Chm_BAU32_demo} >CHM-BAU32 demo telepítő</a>,

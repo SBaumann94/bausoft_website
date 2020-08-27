@@ -3,9 +3,12 @@ import Grid from '@material-ui/core/Grid';
 import 'tachyons';
 import BirdList from '../components/BirdList';
 import Prog from '../components/Prog';
-import {Helmet} from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 class HomePageEn extends Component {
+  componentDidMount() {
+    document.getElementById("top").scrollTo(0, 0);
+  }
   render() {
     return (
       <div className="pt2 pl3">

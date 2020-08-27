@@ -6,9 +6,12 @@ import { Helmet } from 'react-helmet';
 import {Link} from 'react-router-dom';
 
 class Tortenet extends Component {
+    componentDidMount(){
+        document.getElementById("top").scrollTo(0,0);
+    }
     render() {
         return(
-        <div className="Tortenet pt2 pl3 overflow-x-hidden">
+        <div className="Tortenet pt2 pl3 ">
             <Helmet><title>Bausoft cégtörténet</title></Helmet>
             <h2>Bausoft cégtörténet</h2>
             <h3>2018</h3>

@@ -53,6 +53,9 @@ class Frissitok extends Component {
         this.lang = props.lang;
         this.initTable();
     }
+    componentDidMount(){
+        document.getElementById("top").scrollTo(0,0);
+    }
     initTable() {
         this.progs = [
             this.createData4(<a href={Chm_BAU} >CHM-BAU32 frissítő</a>,
