@@ -11,56 +11,6 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-import Chm_BAU from '../install/CHM-BAU32_telepito.exe'
-import Chm_BAU_Mini from '../install/CHM-BAU32_egy_keszulekes_telepito.exe'
-import GasNet from '../install/GasNet32_telepito.exe'
-import Hocs from '../install/Hocserelo_telepito.exe'
-import Hurkolt from '../install/Hurkolt_halozat_telepito.exe'
-import IsoBau from '../install/ISO-bau_telepito.exe'
-import Legforg from '../install/Legforgalom_telepito.exe'
-import SunArch from '../install/SunArch_telepito.exe'
-import WaterNet from '../install/WaterNet32_telepito.exe'
-
-import Cinege from '../install/WinWatt_cinege_telepito.exe'
-import Pinty from '../install/WinWatt_pinty_telepito.exe'
-import Fecske from '../install/WinWatt_fecske_telepito.exe'
-import Rigo from '../install/WinWatt_rigo_telepito.exe'
-import Siraly from '../install/WinWatt_siraly_telepito.exe'
-import Hollo from '../install/WinWatt_hollo_telepito.exe'
-import Kocsag from '../install/WinWatt_kocsag_telepito.exe'
-import Golya from '../install/WinWatt_golya_telepito.exe'
-import ArchLine from '../install/WinWatt_ARCHLine.XP_telepito.exe'
-
-import Beka from '../install/BeKa_WinWatt_telepito.exe'
-import BekaPlus from '../install/BeKa_WinWattPlus_telepito.exe'
-import Buderus from '../install/Buderus_WinWatt_telepito.exe'
-import DanWatt from '../install/DanWatt_telepito.exe'
-import DanWattPlus from '../install/DanWattPlus_telepito.exe'
-import Meditherm from '../install/Meditherm_WinWatt_telepito.exe'
-import Purmo from '../install/PURMO_radiator_kivalaszto_telepito.exe'
-import RezpiacKocsag from '../install/Rezpiaci_WinWatt_kocsag_telepito.exe'
-import RezpiacGolya from '../install/Rezpiaci_WinWatt_golya_telepito.exe'
-import UponorKocsag from '../install/Uponor_WinWatt_kocsag_telepito.exe'
-import UponorGolya from '../install/Uponor_WinWatt_golya_telepito.exe'
-import Vogel from '../install/VogelNoot_WinWatt_telepito.exe'
-import Epfiz from '../install/WinWatt_epuletfizika_telepito.exe'
-
-import dbConverter from '../install/dbConvert_telepito.exe'
-import CreateXML from '../install/CreateXML_telepito.exe'
-import ssl from '../install/ssl.zip'
-import Diagram from '../install/Diagram_telepito.exe'
-
-import ChmOld from '../install/CHM-BAU_telepito.exe'
-import GasOld from '../install/GasNet_telepito.exe'
-import WaterOld from '../install/WaterNet_telepito.exe'
-
-import idapi from '../install/idapi.zip';
-import idapi32 from '../install/idapi32.zip'
-import idapi_tel from '../install/IDAPI16_telepito.exe'
-import idapi32_tel from '../install/IDAPI32_telepito.exe'
-
-
-
 class Telepitok extends Component {
 
     constructor(props) {
@@ -73,134 +23,134 @@ class Telepitok extends Component {
     }
     initTable() {
         this.progs = [
-            this.createData4(<a href={Chm_BAU} >CHM-BAU32 telepítő</a>,
+            this.createData4(<a href="http://www.bausoft.hu/install/CHM-BAU32_telepito.exe" >CHM-BAU32 telepítő</a>,
                 <p>6.3 MB</p>,
                 <p><Link to="/public/ChmVer.html" className="link hover-bg-light-blue">3.21</Link></p>,
                 <p><Link to="/public/Chmbau32.html" className="link hover-bg-light-blue">CHM-BAU32 Kéményméretező program</Link></p>),
-            this.createData4(<a href={Chm_BAU_Mini} >CHM-BAU32 MINI telepítő</a>,
+            this.createData4(<a href="http://www.bausoft.hu/install/CHM-BAU32_egy_keszulekes_telepito.exe" >CHM-BAU32 MINI telepítő</a>,
                 <p>3.6 MB</p>,
                 <p><Link to="/public/ChmVer.html" className="link hover-bg-light-blue">3.21</Link></p>,
                 <p><Link to="/public/Chmbau32.html" className="link hover-bg-light-blue">CHM-BAU32 Kéményméretező program (egy készülékes)</Link></p>),
-            this.createData4(<a href={GasNet} >GasNet32 telepítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/install/GasNet32_telepito.exe' >GasNet32 telepítő</a>,
                 <p>5.0 MB</p>,
                 <p><Link to="/public/GNet32Ver.html" className="link hover-bg-light-blue">2.42</Link></p>,
                 <p><Link to="/public/GasNet32.html" className="link hover-bg-light-blue">GasNet32 Gázhálózat méretező program</Link></p>),
-            this.createData4(<a href={Hocs} >Hőcserélő telepítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/install/Hocserelo_telepito.exe' >Hőcserélő telepítő</a>,
                 <p>3.5 MB</p>,
                 <p><Link to="/public/HocsVer.html" className="link hover-bg-light-blue">2.22</Link></p>,
                 <p><Link to="/public/ww_hocs.html" className="link hover-bg-light-blue">Hőcserélő méretező program</Link></p>),
-            this.createData4(<a href={Hurkolt} >Hurkolt hálózat telepítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/install/Hurkolt_halozat_telepito.exe' >Hurkolt hálózat telepítő</a>,
                 <p>4.2 MB</p>,
                 <p><Link to="/public/HurkVer.html" className="link hover-bg-light-blue">2.04</Link></p>,
                 <p><Link to="/public/Hurkolt.html" className="link hover-bg-light-blue">Hurkolt hálózat méretező program</Link></p>),
-            this.createData4(<a href={IsoBau} >ISO-bau szigetelés kiválasztó telepítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/install/ISO-bau_telepito.exe' >ISO-bau szigetelés kiválasztó telepítő</a>,
                 <p>3.9 MB</p>,
                 <p><Link to="/public/IsoVer.html" className="link hover-bg-light-blue">2.01</Link></p>,
                 <p><Link to="/public/IsoBau.html" className="link hover-bg-light-blue">ISO-bau szigetelés kiválasztó</Link></p>),
-            this.createData4(<a href={Legforg} >Légforgalom számító telepítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/install/Legforgalom_telepito.exe' >Légforgalom számító telepítő</a>,
                 <p>4.4 MB</p>,
                 <p><Link to="/public/LegfVer.html" className="link hover-bg-light-blue">2.04</Link></p>,
                 <p><Link to="/public/Legforgalom.html" className="link hover-bg-light-blue">Légforgalom számító</Link></p>),
-            this.createData4(<a href={SunArch} >SunArch telepítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/install/SunArch_telepito.exe' >SunArch telepítő</a>,
                 <p>5.0 MB</p>,
                 <p><Link to="/public/SunVer.html" className="link hover-bg-light-blue">2.00</Link></p>,
                 <p><Link to="/public/SunArch.html" className="link hover-bg-light-blue">SunArch nappálya szerkesztő program</Link></p>),
-            this.createData4(<a href={WaterNet} >WaterNet32 telepítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/install/WaterNet32_telepito.exe' >WaterNet32 telepítő</a>,
                 <p>8.2 MB</p>,
                 <p><Link to="/public/WNet32Ver.html" className="link hover-bg-light-blue">2.33</Link></p>,
                 <p><Link to="/public/WaterNet32.html" className="link hover-bg-light-blue">WaterNet32 Vízhálózat méretező program</Link></p>),
         ];
         this.Ww = [
-            this.createData2(<a href={Cinege} >Winwatt Cinege telepítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/install/WinWatt_cinege_telepito.exe' >Winwatt Cinege telepítő</a>,
                 <p>6.4 MB</p>),
-            this.createData2(<a href={Pinty} >Winwatt Pinty telepítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/install/WinWatt_pinty_telepito.exe' >Winwatt Pinty telepítő</a>,
                 <p>7.1 MB</p>),
-            this.createData2(<a href={Fecske} >Winwatt Fecske telepítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/install/WinWatt_fecske_telepito.exe' >Winwatt Fecske telepítő</a>,
                 <p>6.5 MB</p>),
-            this.createData2(<a href={Rigo} >Winwatt Rigó telepítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/install/WinWatt_rigo_telepito.exe' >Winwatt Rigó telepítő</a>,
                 <p>9.1 MB</p>),
-            this.createData2(<a href={Siraly} >Winwatt Sirály telepítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/install/WinWatt_siraly_telepito.exe' >Winwatt Sirály telepítő</a>,
                 <p>7.2 MB</p>),
-            this.createData2(<a href={Hollo} >Winwatt Holló telepítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/install/WinWatt_hollo_telepito.exe' >Winwatt Holló telepítő</a>,
                 <p>9.1 MB</p>),
-            this.createData2(<a href={Kocsag} >Winwatt Kócsag telepítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/install/WinWatt_kocsag_telepito.exe' >Winwatt Kócsag telepítő</a>,
                 <p>9.3 MB</p>),
-            this.createData2(<a href={Golya} >Winwatt Gólya telepítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/install/WinWatt_golya_telepito.exe' >Winwatt Gólya telepítő</a>,
                 <p>9.6 MB</p>),
-            this.createData2(<a href={ArchLine} >Winwatt ARCHLine XP telepítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/install/WinWatt_ARCHLine.XP_telepito.exe' >Winwatt ARCHLine XP telepítő</a>,
                 <p>6.9 MB</p>),
         ];
         this.Ww_ceg = [
-            this.createData3(<a href={Beka} >BeKa WinWatt telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/BeKa_WinWatt_telepito.exe' >BeKa WinWatt telepítő</a>,
                 <p>7.4 MB</p>,
                 <p>jelszavas</p>),
-            this.createData3(<a href={BekaPlus} >BeKa WinWattPlus telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/BeKa_WinWattPlus_telepito.exe' >BeKa WinWattPlus telepítő</a>,
                 <p>8.2 MB</p>,
                 <p>hardverkulcsos</p>),
-            this.createData3(<a href={Buderus} >Buderus WinWatt telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/Buderus_WinWatt_telepito.exe' >Buderus WinWatt telepítő</a>,
                 <p>6.0 MB</p>,
                 <p>szabad</p>),
-            this.createData3(<a href={DanWatt} >DanWatt telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/DanWatt_telepito.exe' >DanWatt telepítő</a>,
                 <p>8.5 MB</p>,
                 <p>hardverkulcsos</p>),
-            this.createData3(<a href={DanWattPlus} >DanWattPlus telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/DanWattPlus_telepito.exe' >DanWattPlus telepítő</a>,
                 <p>8.6 MB</p>,
                 <p>hardverkulcsos</p>),
-            this.createData3(<a href={Meditherm} >Meditherm WinWatt telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/Meditherm_WinWatt_telepito.exe' >Meditherm WinWatt telepítő</a>,
                 <p>7.7 MB</p>,
                 <p>szabad</p>),
-            this.createData3(<a href={Purmo} >PURMO radiátor kiválasztó telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/PURMO_radiator_kivalaszto_telepito.exe' >PURMO radiátor kiválasztó telepítő</a>,
                 <p>6.6 MB</p>,
                 <p>szabad</p>),
-            this.createData3(<a href={RezpiacKocsag} >Rézpiaci WinWatt kócsag telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/Rezpiaci_WinWatt_kocsag_telepito.exe' >Rézpiaci WinWatt kócsag telepítő</a>,
                 <p>8.0 MB</p>,
                 <p>hardverkulcsos</p>),
-            this.createData3(<a href={RezpiacGolya} >Rézpiaci WinWatt gólya telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/Rezpiaci_WinWatt_golya_telepito.exe' >Rézpiaci WinWatt gólya telepítő</a>,
                 <p>8.1 MB</p>,
                 <p>hardverkulcsos</p>),
-            this.createData3(<a href={UponorKocsag} >UPONOR WinWatt kócsag telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/Uponor_WinWatt_kocsag_telepito.exe' >UPONOR WinWatt kócsag telepítő</a>,
                 <p>7.4 MB</p>,
                 <p>hardverkulcsos</p>),
-            this.createData3(<a href={UponorGolya} >UPONOR WinWatt gólya telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/Uponor_WinWatt_golya_telepito.exe' >UPONOR WinWatt gólya telepítő</a>,
                 <p>7.5 MB</p>,
                 <p>hardverkulcsos</p>),
-            this.createData3(<a href={Vogel} >Vogel & Noot WinWatt telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/VogelNoot_WinWatt_telepito.exe' >Vogel & Noot WinWatt telepítő</a>,
                 <p>6.0 MB</p>,
                 <p>szabad</p>),
-            this.createData3(<a href={Epfiz} >WinWatt épületfizika telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/WinWatt_epuletfizika_telepito.exe' >WinWatt épületfizika telepítő</a>,
                 <p>6.2 MB</p>,
                 <p>szabad</p>),
         ];
         this.seged = [
-            this.createData3(<a href={dbConverter} >dbConverter telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/dbConvert_telepito.exe' >dbConverter telepítő</a>,
                 <p>1.4 MB</p>,
                 <p>A régebbi WinWatt projektek (DB, MB, PX) beolvasására szolgáló segédprogram. 32 bites IDAPI-t használ.</p>),
-            this.createData3(<a href={CreateXML} >CreateXML telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/CreateXML_telepito.exe' >CreateXML telepítő</a>,
                 <p>3.5 MB</p>,
                 <p>Adatbázis fájlok létrehozása excel táblázatok alapján.</p>),
-            this.createData3(<a href={ssl} >SSL Library DLL fájlok</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/ssl.zip' >SSL Library DLL fájlok</a>,
                 <p>0.7 MB</p>,
                 <p>A WinWatt Sun moduljához lehet szükséges, ha a gépen nincs még az SSL telepítve.
                 <br />A program könyvtárába kell kicsomagolni.</p>),
-            this.createData3(<a href={Diagram} >Diagram telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/Diagram_telepito.exe' >Diagram telepítő</a>,
                 <p>3.0 MB</p>,
                 <p>Diagramok feldolgozását segítő segédprogram.</p>),
         ];
         this.regi = [
-            this.createData3(<a href={ChmOld} >CHM-BAU telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/old/CHM-BAU_telepito.exe' >CHM-BAU telepítő</a>,
                 <p>0.8 MB</p>,
                 <p><Link to="/public/Chmbau32.html">CHM-BAU Kéményméretező program</Link></p>),
-            this.createData3(<a href={GasOld} >GasNet telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/old/GasNet_telepito.exe' >GasNet telepítő</a>,
                 <p>0.5 MB</p>,
                 <p><Link to="/public/GasNet32.html">GasNet Gázhálózat méretező program</Link></p>),
-            this.createData3(<a href={WaterOld} >WaterNet telepítő</a>,
+            this.createData3(<a href='http://www.bausoft.hu/install/old/WaterNet_telepito.exe' >WaterNet telepítő</a>,
                 <p>1.3 MB</p>,
                 <p><Link to="/public/WaterNet32.html">WaterNet Vízhálózat méretező program</Link></p>),
         ];
         this.db = [
-            this.createData2(<a href={idapi} >idapi.zip</a>,
+            this.createData2(<a href='http://www.bausoft.hu/install/idapi.zip' >idapi.zip</a>,
                 <p>IDAPI telepítőkészlet tömörítve (1.5 MB)</p>),
-            this.createData2(<a href={idapi32} >idapi32.zip</a>,
+            this.createData2(<a href='http://www.bausoft.hu/install/idapi32.zip' >idapi32.zip</a>,
                 <p>32 bites IDAPI telepítőkészlet tömörítve (4.3 MB)</p>),
         ];
     }
@@ -352,8 +302,8 @@ class Telepitok extends Component {
                             </TableBody>
                         </Table>
                     </TableContainer>
-                    <p>Amennyiben a 16 bites IDAPI telepítője nem hajlandó lefutni, próbálja meg a <a href={idapi_tel} >nem hivatalos telepítőprogram</a> segítségével a telepítést</p>
-                    <p>Amennyiben a 32 bites IDAPI telepítője nem hajlandó lefutni, próbálja meg a <a href={idapi32_tel} >nem hivatalos telepítőprogram</a> segítségével a telepítést</p>
+                    <p>Amennyiben a 16 bites IDAPI telepítője nem hajlandó lefutni, próbálja meg a <a href='http://www.bausoft.hu/install/idapi/Nem_hivatalos_telepito/IDAPI16_telepito.exe' >nem hivatalos telepítőprogram</a> segítségével a telepítést</p>
+                    <p>Amennyiben a 32 bites IDAPI telepítője nem hajlandó lefutni, próbálja meg a <a href='http://www.bausoft.hu/install/idapi/Nem_hivatalos_telepito/IDAPI32_telepito.exe' >nem hivatalos telepítőprogram</a> segítségével a telepítést</p>
                 </div>
                 <h4>3. Hardverkulcs kezelő meghajtóprogram telepítése</h4>
                 <div className="pl4 pr3">

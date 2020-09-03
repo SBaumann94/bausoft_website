@@ -35,7 +35,7 @@ class HomePageNew extends Component {
                 <div className="HomeSection">
                     <Grid container spacing={0} className="Bemutat"><a name="Bemutat" />
                         <p className="f4 pr5">Cégünk épületgépészeti tervező programokat készít és terjeszt, valamint nyújt ezzel kapcsolatos szolgáltatásokat. Amennyiben több információra van szüksége, kattintson a bal oldali menü megfelelő pontjára. <br />(Az oldal tetején a "☰ Menü" gomb)</p>
-                        <p className="f4 pr5">Ha programjainkat tekintve naprakész szeretne lenni, jelentkezzen <Link to="/public/forum.html">levelező listánkra</Link>, ami <strong>röviden és rendszeresen</strong> tájékoztatást nyújt a változásokról.</p>
+                        <p className="f4 pr5">Ha programjainkat tekintve naprakész szeretne lenni, jelentkezzen <Link className="link black underline"to="/public/forum.html">levelező listánkra</Link>, ami röviden és rendszeresen tájékoztatást nyújt a változásokról.</p>
                     </Grid>
                     <Grid container spacing={1} className="Programok"><a name="Prog" className="home_a" />
                         <Grid item xs={4} sm={3} lg={1}>

@@ -11,18 +11,6 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-import S_new from '../install/WinWatt-RO_S_Install.exe'
-import M_new from '../install/WinWatt-RO_M_Install.exe'
-import L_new from '../install/WinWatt-RO_L_Install.exe'
-import XL_new from '../install/WinWatt-RO_XL_Install.exe'
-import XXL_new from '../install/WinWatt-RO_XXL_Install.exe'
-
-import S_old from '../install/WinWatt-RO_S_old_Install.exe'
-import M_old from '../install/WinWatt-RO_M_old_Install.exe'
-import L_old from '../install/WinWatt-RO_L_old_Install.exe'
-import XL_old from '../install/WinWatt-RO_XL_old_Install.exe'
-import XXL_old from '../install/WinWatt-RO_XXL_old_Install.exe'
-
 class TelepRO extends Component {
 
     constructor(props) {
@@ -35,27 +23,27 @@ class TelepRO extends Component {
     }
     initTable() {
         this.install_new = [
-            this.createData(<a href={S_new} >WinWatt-RO S Install</a>,
+            this.createData(<a href='http://www.bausoft.hu/RO/WinWatt-RO_S_Install.exe' >WinWatt-RO S Install</a>,
                 <p>9.0 MB</p>),
-            this.createData(<a href={M_new} >WinWatt-RO M Install</a>,
+            this.createData(<a href='http://www.bausoft.hu/RO/WinWatt-RO_M_Install.exe' >WinWatt-RO M Install</a>,
                 <p>7.6 MB</p>),
-            this.createData(<a href={L_new} >WinWatt-RO L Install</a>,
+            this.createData(<a href='http://www.bausoft.hu/RO/WinWatt-RO_L_Install.exe' >WinWatt-RO L Install</a>,
                 <p>9.1 MB</p>),
-            this.createData(<a href={XL_new} >WinWatt-RO XL Install</a>,
+            this.createData(<a href='http://www.bausoft.hu/RO/WinWatt-RO_XL_Install.exe' >WinWatt-RO XL Install</a>,
                 <p>9.1 MB</p>),
-            this.createData(<a href={XXL_new} >WinWatt-RO XXL Install</a>,
+            this.createData(<a href='http://www.bausoft.hu/RO/WinWatt-RO_XXL_Install.exe' >WinWatt-RO XXL Install</a>,
                 <p>9.2 MB</p>),
         ];
         this.install_old = [
-            this.createData(<a href={S_old} >WinWatt-RO S Install</a>,
+            this.createData(<a href='http://www.bausoft.hu/RO/old/WinWatt-RO_S_Install.exe' >WinWatt-RO S Install</a>,
                 <p>6.6 MB</p>),
-            this.createData(<a href={M_old} >WinWatt-RO M Install</a>,
+            this.createData(<a href='http://www.bausoft.hu/RO/old/WinWatt-RO_M_Install.exe' >WinWatt-RO M Install</a>,
                 <p>3.1 MB</p>),
-            this.createData(<a href={L_old} >WinWatt-RO L Install</a>,
+            this.createData(<a href='http://www.bausoft.hu/RO/old/WinWatt-RO_L_Install.exe' >WinWatt-RO L Install</a>,
                 <p>6.7 MB</p>),
-            this.createData(<a href={XL_old} >WinWatt-RO XL Install</a>,
+            this.createData(<a href='http://www.bausoft.hu/RO/old/WinWatt-RO_XL_Install.exe' >WinWatt-RO XL Install</a>,
                 <p>9.9 MB</p>),
-            this.createData(<a href={XXL_old} >WinWatt-RO XXL Install</a>,
+            this.createData(<a href='http://www.bausoft.hu/RO/old/WinWatt-RO_XXL_Install.exe' >WinWatt-RO XXL Install</a>,
                 <p>7.3 MB</p>),
         ];
     }

@@ -11,18 +11,6 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-import Chm_BAU32_demo from '../install/CHM-BAU32_demo_telepito.exe'
-import Chm_BAU32_print from '../install/CHM-BAU32_printshow_telepito.exe'
-import DanFloor from '../install/DanFloor_padlofutes_telepito.exe'
-import GasNet from '../install/GasNet32_demo_telepito.exe'
-import Meditherm from '../install/Meditherm_WinWatt_telepito.exe'
-import SunArch from '../install/SunArch_demo_telepito.exe'
-import WaterNet from '../install/WaterNet32_demo_telepito.exe'
-import Golya from '../install/WinWatt_golya_demo_telepito.exe'
-import Ww_print from '../install/WinWatt_printshow_telepito.exe'
-
-
-
 class Demos extends Component {
 
     constructor(props) {
@@ -35,33 +23,33 @@ class Demos extends Component {
     }
     initTable() {
         this.demos = [
-            this.createData(<a href={Chm_BAU32_demo} >CHM-BAU32 demo telepítő</a>,
+            this.createData(<a href='http://www.bausoft.hu/install/CHM-BAU32_demo_telepito.exe' >CHM-BAU32 demo telepítő</a>,
                 <p>6.1 MB</p>,
                 <p><Link to="/public/Chmbau32.html" className="link hover-bg-light-blue">CHM-BAU32 Kéményméretező program</Link></p>),
-            this.createData(<a href={GasNet} >GasNet32 demo telepítő</a>,
+            this.createData(<a href='http://www.bausoft.hu/install/GasNet32_demo_telepito.exe' >GasNet32 demo telepítő</a>,
                 <p>4.8 MB</p>,
                 <p><Link to="/public/Gasnet32.html" className="link hover-bg-light-blue">GasNet32 Gázhálózat méretező program</Link></p>),
-            this.createData(<a href={SunArch} >SunArch demo telepítő</a>,
+            this.createData(<a href='http://www.bausoft.hu/install/SunArch_demo_telepito.exe' >SunArch demo telepítő</a>,
                 <p>4.0 MB</p>,
                 <p><Link to="/public/SunArch.html" className="link hover-bg-light-blue">SunArch nappálya szerkesztő program</Link></p>),
-            this.createData(<a href={WaterNet} >WaterNet32 demo telepítő</a>,
+            this.createData(<a href='http://www.bausoft.hu/install/WaterNet32_demo_telepito.exe' >WaterNet32 demo telepítő</a>,
                 <p>8.0 MB</p>,
                 <p><Link to="/public/WaterNet32.html" className="link hover-bg-light-blue">WaterNet32 Vízhálózat méretező program</Link></p>),
-            this.createData(<a href={Golya} >WinWatt golya demo telepítő</a>,
+            this.createData(<a href='http://www.bausoft.hu/install/WinWatt_golya_demo_telepito.exe' >WinWatt golya demo telepítő</a>,
                 <p>5.4 MB</p>,
                 <p><Link to="/public/Ww32.html" className="link hover-bg-light-blue">32 bites WinWatt fűtéstechnikai programcsomag</Link></p>),
         ];
         this.free = [
-            this.createData(<a href={Ww_print} >WinWatt printshow telepítő</a>,
+            this.createData(<a href='http://www.bausoft.hu/install/WinWatt_printshow_telepito.exe' >WinWatt printshow telepítő</a>,
                 <p>7.1 MB</p>,
                 <p><Link to="/public/Ww32.html" className="link hover-bg-light-blue">WinWatt printshow, projektek nyomtatásához</Link></p>),
-            this.createData(<a href={Chm_BAU32_print} >CHM-BAU32 printshow telepítő</a>,
+            this.createData(<a href='http://www.bausoft.hu/install/CHM-BAU32_printshow_telepito.exe' >CHM-BAU32 printshow telepítő</a>,
                 <p>6.1 MB</p>,
                 <p><Link to="/public/Chmbau32.html" className="link hover-bg-light-blue">CHM-BAU32 printshow, projektek nyomtatásához</Link></p>),
-            this.createData(<a href={Meditherm} >Meditherm WinWatt telepítő</a>,
+            this.createData(<a href='http://www.bausoft.hu/install/Meditherm_WinWatt_telepito.exe' >Meditherm WinWatt telepítő</a>,
                 <p>6.5 MB</p>,
                 <p><Link to="/public/Ww32.html" className="link hover-bg-light-blue">Meditherm WinWatt felületfűtés-hűtés méretező program</Link><br/>A korábbi épületfizikai program helyett is használható</p>),
-            this.createData(<a href={DanFloor} >DanFloor_padlofutes_telepito</a>,
+            this.createData(<a href='http://www.bausoft.hu/install/DanFloor_padlofutes_telepito.exe' >DanFloor_padlofutes_telepito</a>,
                 <p>1.5 MB</p>,
                 <p>DanFloor padlófűtés méretező program</p>),
         ];

@@ -6,17 +6,6 @@ import { Helmet } from 'react-helmet';
 import Grid from '@material-ui/core/Grid';
 import Iframe from 'react-iframe'
 
-import Kesz from '../database/KESZ.03.zip'
-import Kalaha from '../install/Kalaha_telepito.exe'
-import Csomag from '../install/Csomagolo_telepito.exe'
-import Halma from '../install/Halma_telepito.exe'
-import Kockas from '../install/Kockas_futam_telepito.exe'
-import Rejtveny from '../install/Rejtveny_keszito_telepito.exe'
-import SModell from '../install/SuperModells_telepito.exe'
-import Lorum from '../install/Lorum_telepito.exe'
-import Puzzle from '../install/Puzzle_telepito.exe'
-import Ki_nevet from '../install/Ki_nevet_a_vegen_telepito.exe'
-
 class Egyeb extends Component {
     constructor(props) {
         super(props);
@@ -37,19 +26,19 @@ class Egyeb extends Component {
                 <p><Link to="/public/GYIK.html">Gyakran ismételt kérdések</Link></p>
                 <p><Link to="/public/driver.html">Hardverkulcs meghajtóprogramok</Link></p>
                 <p><Link to="/public/dtutil.html">Adatbázis javító segédprogram</Link></p>
-                <p ><a href={Kesz} >KESZ Excel fájl a pályázatokhoz</a></p>
+                <p ><a href='http://www.bausoft.hu/KESZ.03.zip' >KESZ Excel fájl a pályázatokhoz</a></p>
                 
                 <p>Karácsonyi ajándék játékok:</p>
                 <ul >
-                    <li >2017 <a href={Kalaha} >Kalaha telepítő</a>, társasjáték</li>
-                    <li >2005 <a href={Csomag} >Csomagolo telepítő</a>, logikai játék</li>
-                    <li >2004 <a href={Halma} >Halma telepítő</a>, társasjáték</li>
-                    <li >2003 <a href={Kockas} >Kockás futam telepítő</a></li>
-                    <li >2002 <a href={Rejtveny} >Rejtvény készítő telepítő</a></li>
-                    <li >2001 <a href={SModell} >Super Modells telepítő</a>, társasjáték</li>
-                    <li >2000 <a href={Lorum} >Lórum telepítő</a>, kártyajáték</li>
-                    <li >1999 <a href={Puzzle} >Puzzle telepítő</a>, kirakó játék</li>
-                    <li >1998 <a href={Ki_nevet} >Ki nevet a végén telepítő</a>, társasjáték</li>
+                    <li >2017 <a href='http://www.bausoft.hu/install/Kalaha_telepito.exe' >Kalaha telepítő</a>, társasjáték</li>
+                    <li >2005 <a href='http://www.bausoft.hu/install/Csomagolo_telepito.exe' >Csomagolo telepítő</a>, logikai játék</li>
+                    <li >2004 <a href='http://www.bausoft.hu/install/Halma_telepito.exe' >Halma telepítő</a>, társasjáték</li>
+                    <li >2003 <a href='http://www.bausoft.hu/install/Kockas_futam_telepito.exe' >Kockás futam telepítő</a></li>
+                    <li >2002 <a href='http://www.bausoft.hu/install/Rejtveny_keszito_telepito.exe' >Rejtvény készítő telepítő</a></li>
+                    <li >2001 <a href='http://www.bausoft.hu/install/SuperModells_telepito.exe' >Super Modells telepítő</a>, társasjáték</li>
+                    <li >2000 <a href='http://www.bausoft.hu/install/Lorum_telepito.exe' >Lórum telepítő</a>, kártyajáték</li>
+                    <li >1999 <a href='http://www.bausoft.hu/install/Puzzle_telepito.exe' >Puzzle telepítő</a>, kirakó játék</li>
+                    <li >1998 <a href='http://www.bausoft.hu/install/Ki_nevet_a_vegen_telepito.exe' >Ki nevet a végén telepítő</a>, társasjáték</li>
                 </ul>
                 <h4>Térképek, ha fel kíván keresni minket:</h4>
                 <Grid container spacing={2} className="pa2 tc">

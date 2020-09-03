@@ -11,13 +11,6 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-import updateS from '../frissit/WinWatt-RO_S_Update.exe'
-import updateM from '../frissit/WinWatt-RO_M_Update.exe'
-import updateL from '../frissit/WinWatt-RO_L_Update.exe'
-import updateXL from '../frissit/WinWatt-RO_XL_Update.exe'
-import updateXXL from '../frissit/WinWatt-RO_XXL_Update.exe'
-
-
 class FrissitRO extends Component {
 
     constructor(props) {
@@ -31,15 +24,15 @@ class FrissitRO extends Component {
     initTable() {
 
         this.Ww = [
-            this.createData2(<a href={updateS} >WinWatt-RO S frissítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/RO/WinWatt-RO_S_Update.exe' >WinWatt-RO S frissítő</a>,
                 <p>4.3 MB</p>),
-            this.createData2(<a href={updateM} >WinWatt-RO M frissítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/RO/WinWatt-RO_M_Update.exe' >WinWatt-RO M frissítő</a>,
                 <p>4.3 MB</p>),
-            this.createData2(<a href={updateL} >WinWatt-RO L frissítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/RO/WinWatt-RO_L_Update.exe' >WinWatt-RO L frissítő</a>,
                 <p>4.4 MB</p>),
-            this.createData2(<a href={updateXL} >WinWatt-RO XL frissítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/RO/WinWatt-RO_XL_Update.exe' >WinWatt-RO XL frissítő</a>,
                 <p>5.0 MB</p>),
-            this.createData2(<a href={updateXXL} >WinWatt-RO XXL frissítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/RO/WinWatt-RO_XXL_Update.exe' >WinWatt-RO XXL frissítő</a>,
                 <p>5.1 MB</p>),
         ];
     }

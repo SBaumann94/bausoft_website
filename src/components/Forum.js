@@ -11,11 +11,6 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-import level1 from '../database/levlista2007-2012.zip'
-import level2 from '../database/levlista2013.zip'
-import level3 from '../database/levlista2014.zip'
-import level4 from '../database/levlista2015-2016.zip'
-
 class Forum extends Component {
     constructor(props) {
         super(props);
@@ -28,22 +23,22 @@ class Forum extends Component {
     initTable() {
         this.okt = [
             this.createData(
-                <p><a href={level1}>Levelező lista 2007-2012</a></p>,
+                <p><a href='http://www.bausoft.hu/database/levlista2007-2012.zip'>Levelező lista 2007-2012</a></p>,
                 <p>975.016</p>,
                 <p>2015. április 19.</p>,
             ),
             this.createData(
-                <p><a href={level2}>Levelező lista 2013</a></p>,
+                <p><a href='http://www.bausoft.hu/database/levlista2013.zip'>Levelező lista 2013</a></p>,
                 <p>2.365.465</p>,
                 <p>2015. április 19.</p>,
             ),
             this.createData(
-                <p><a href={level3}>Levelező lista 2014</a></p>,
+                <p><a href='http://www.bausoft.hu/database/levlista2014.zip'>Levelező lista 2014</a></p>,
                 <p>733.534</p>,
                 <p>2015. április 19.</p>,
             ),
             this.createData(
-                <p><a href={level4}>Levelező lista 2015-2016</a></p>,
+                <p><a href='http://www.bausoft.hu/database/levlista2015-2016.zip'>Levelező lista 2015-2016</a></p>,
                 <p>1.722.796</p>,
                 <p>2016. január 7.</p>,
             ),

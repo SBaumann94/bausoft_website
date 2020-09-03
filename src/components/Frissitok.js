@@ -11,41 +11,6 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-import Chm_BAU from '../frissit/CHM-BAU32_frissito.exe'
-import Chm_BAU_Mini from '../frissit/CHM-BAU32_frissito.exe'
-import GasNet from '../frissit/GasNet32_frissito.exe'
-import Hocs from '../frissit/Hocserelo_frissito.exe'
-import Hurkolt from '../frissit/Hurkolt_halozat_frissito.exe'
-import IsoBau from '../frissit/ISO-bau_frissito.exe'
-import Legforg from '../frissit/Legforgalom_frissito.exe'
-import SunArch from '../frissit/SunArch_frissito.exe'
-import WaterNet from '../frissit/WaterNet32_frissito.exe'
-
-import Cinege from '../frissit/WinWatt_cinege_frissito.exe'
-import Pinty from '../frissit/WinWatt_pinty_frissito.exe'
-import Fecske from '../frissit/WinWatt_fecske_frissito.exe'
-import Rigo from '../frissit/WinWatt_rigo_frissito.exe'
-import Siraly from '../frissit/WinWatt_siraly_frissito.exe'
-import Hollo from '../frissit/WinWatt_hollo_frissito.exe'
-import Kocsag from '../frissit/WinWatt_kocsag_frissito.exe'
-import Golya from '../frissit/WinWatt_golya_frissito.exe'
-import ArchLine from '../frissit/WinWatt_ARCHLine.XP_frissito.exe'
-
-import Beka from '../frissit/BeKa_WinWatt_frissito.exe'
-import BekaPlus from '../frissit/BeKa_WinWattPlus_frissito.exe'
-import Buderus from '../frissit/Buderus_WinWatt_frissito.exe'
-import DanWatt from '../frissit/DanWatt_frissito.exe'
-import DanWattPlus from '../frissit/DanWattPlus_frissito.exe'
-import Meditherm from '../frissit/Meditherm_WinWatt_frissito.exe'
-import Purmo from '../frissit/PURMO_radiator_kivalaszto_frissito.exe'
-import RezpiacKocsag from '../frissit/Rezpiaci_WinWatt_kocsag_frissito.exe'
-import RezpiacGolya from '../frissit/Rezpiaci_WinWatt_golya_frissito.exe'
-import UponorKocsag from '../frissit/Uponor_WinWatt_kocsag_frissito.exe'
-import UponorGolya from '../frissit/Uponor_WinWatt_golya_frissito.exe'
-import Vogel from '../frissit/VogelNoot_WinWatt_frissito.exe'
-import Epfiz from '../frissit/WinWatt_Epuletfizika_frissito.exe'
-
-
 class Frissitok extends Component {
 
     constructor(props) {
@@ -58,102 +23,102 @@ class Frissitok extends Component {
     }
     initTable() {
         this.progs = [
-            this.createData4(<a href={Chm_BAU} >CHM-BAU32 frissítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/frissit/CHM-BAU32_frissito.exe' >CHM-BAU32 frissítő</a>,
                 <p>3.1 MB</p>,
                 <p><Link to="/public/ChmVer.html" className="link hover-bg-light-blue">3.21</Link> 3.00 előtti verzióról újratelepítés szükséges</p>,
                 <p>2020. március 2.</p>),
-            this.createData4(<a href={Chm_BAU_Mini} >CHM-BAU32 MINI frissítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/frissit/CHM-BAU32_frissito.exe' >CHM-BAU32 MINI frissítő</a>,
                 <p>3.1 MB</p>,
                 <p><Link to="/public/ChmVer.html" className="link hover-bg-light-blue">3.21</Link> 3.00 előtti verzióról újratelepítés szükséges</p>,
                 <p>2020. február 10.</p>),
-            this.createData4(<a href={GasNet} >GasNet32 frissítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/frissit/GasNet32_frissito.exe' >GasNet32 frissítő</a>,
                 <p>3.2 MB</p>,
                 <p><Link to="/public/GNet32Ver.html" className="link hover-bg-light-blue">2.42</Link> 2.10 előtti verzióról újratelepítés szükséges</p>,
                 <p>2020. május 4.</p>),
-            this.createData4(<a href={Hocs} >Hőcserélő frissítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/frissit/Hocserelo_frissito.exe' >Hőcserélő frissítő</a>,
                 <p>2.5 MB</p>,
                 <p><Link to="/public/HocsVer.html" className="link hover-bg-light-blue">2.22</Link> 2.10 előtti verzióról újratelepítés szükséges</p>,
                 <p>2020. április 23.</p>),
-            this.createData4(<a href={Hurkolt} >Hurkolt hálózat frissítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/frissit/Hurkolt_halozat_frissito.exe' >Hurkolt hálózat frissítő</a>,
                 <p>3.0 MB</p>,
                 <p><Link to="/public/HurkVer.html" className="link hover-bg-light-blue">2.04</Link> 1.20 előtti verzióról újratelepítés szükséges</p>,
                 <p>2020. május 5.</p>),
-            this.createData4(<a href={IsoBau} >ISO-bau szigetelés kiválasztó frissítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/frissit/ISO-bau_frissito.exe' >ISO-bau szigetelés kiválasztó frissítő</a>,
                 <p>2.7 MB</p>,
                 <p><Link to="/public/IsoVer.html" className="link hover-bg-light-blue">2.01</Link> 1.10 előtti verzióról újratelepítés szükséges</p>,
                 <p>2020. április 23.</p>),
-            this.createData4(<a href={Legforg} >Légforgalom számító frissítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/frissit/Legforgalom_frissito.exe' >Légforgalom számító frissítő</a>,
                 <p>3.0 MB</p>,
                 <p><Link to="/public/LegfVer.html" className="link hover-bg-light-blue">2.04</Link> 1.20 előtti verzióról újratelepítés szükséges</p>,
                 <p>2020. március 2.</p>),
-            this.createData4(<a href={SunArch} >SunArch frissítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/frissit/SunArch_frissito.exe' >SunArch frissítő</a>,
                 <p>2.6 MB</p>,
                 <p><Link to="/public/SunVer.html" className="link hover-bg-light-blue">2.00</Link> 1.45 előtti verzióról újratelepítés szükséges</p>,
                 <p>2019. november 25.</p>),
-            this.createData4(<a href={WaterNet} >WaterNet32 frissítő</a>,
+            this.createData4(<a href='http://www.bausoft.hu/frissit/WaterNet32_frissito.exe' >WaterNet32 frissítő</a>,
                 <p>4.0 MB</p>,
                 <p><Link to="/public/WNet32Ver.html" className="link hover-bg-light-blue">2.33</Link></p>,
                 <p>2020. február 10.</p>),
         ];
         this.Ww = [
-            this.createData2(<a href={Cinege} >WinWatt Cinege frissítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/frissit/WinWatt_cinege_frissito.exe' >WinWatt Cinege frissítő</a>,
                 <p>4.3 MB</p>),
-            this.createData2(<a href={Pinty} >WinWatt Pinty frissítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/frissit/WinWatt_pinty_frissito.exe' >WinWatt Pinty frissítő</a>,
                 <p>4.3 MB</p>),
-            this.createData2(<a href={Fecske} >WinWatt Fecske frissítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/frissit/WinWatt_fecske_frissito.exe' >WinWatt Fecske frissítő</a>,
                 <p>4.3 MB</p>),
-            this.createData2(<a href={Rigo} >WinWatt Rigó frissítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/frissit/WinWatt_rigo_frissito.exe' >WinWatt Rigó frissítő</a>,
                 <p>4.3 MB</p>),
-            this.createData2(<a href={Siraly} >WinWatt Sirály frissítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/frissit/WinWatt_siraly_frissito.exe' >WinWatt Sirály frissítő</a>,
                 <p>4.3 MB</p>),
-            this.createData2(<a href={Hollo} >WinWatt Holló frissítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/frissit/WinWatt_hollo_frissito.exe' >WinWatt Holló frissítő</a>,
                 <p>4.3 MB</p>),
-            this.createData2(<a href={Kocsag} >WinWatt Kócsag frissítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/frissit/WinWatt_kocsag_frissito.exe' >WinWatt Kócsag frissítő</a>,
                 <p>4.3 MB</p>),
-            this.createData2(<a href={Golya} >WinWatt Gólya frissítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/frissit/WinWatt_golya_frissito.exe' >WinWatt Gólya frissítő</a>,
                 <p>4.3 MB</p>),
-            this.createData2(<a href={ArchLine} >WinWatt ARCHLine XP frissítő</a>,
+            this.createData2(<a href='http://www.bausoft.hu/frissit/WinWatt_ARCHLine.XP_frissito.exe' >WinWatt ARCHLine XP frissítő</a>,
                 <p>4.3 MB</p>),
         ];
         this.ceg = [
             this.createData3(<p>aquaterm Hungária Kft.</p>,
-                <a href={Beka} >BeKa WinWatt frissítő</a>,
+                <a href='http://www.bausoft.hu/frissit/BeKa_WinWatt_frissito.exe' >BeKa WinWatt frissítő</a>,
                 <p>4.0 MB</p>),
             this.createData3(<p>aquaterm Hungária Kft.</p>,
-                <a href={BekaPlus} >BeKa WinWattPlus frissítő</a>,
+                <a href='http://www.bausoft.hu/frissit/BeKa_WinWattPlus_frissito.exe' >BeKa WinWattPlus frissítő</a>,
                 <p>4.8 MB</p>),
             this.createData3(<p>Buderus Kft.</p>,
-                <a href={Buderus} >Buderus WinWatt frissítő</a>,
+                <a href='http://www.bausoft.hu/frissit/Buderus_WinWatt_frissito.exe' >Buderus WinWatt frissítő</a>,
                 <p>3.4 MB</p>),
             this.createData3(<p>Danfoss Kft.</p>,
-                <a href={DanWatt} >DanWatt frissítő</a>,
+                <a href='http://www.bausoft.hu/frissit/DanWatt_frissito.exe' >DanWatt frissítő</a>,
                 <p>5.1 MB</p>),
             this.createData3(<p>Danfoss Kft.</p>,
-                <a href={DanWattPlus} >DanWattPlus frissítő</a>,
+                <a href='http://www.bausoft.hu/frissit/DanWattPlus_frissito.exe' >DanWattPlus frissítő</a>,
                 <p>5.2 MB</p>),
             this.createData3(<p>PURMO Magyarország</p>,
-                <a href={Purmo} >PURMO radiátor kiválasztó frissítő</a>,
+                <a href='http://www.bausoft.hu/frissit/Meditherm_WinWatt_frissito.exe' >PURMO radiátor kiválasztó frissítő</a>,
                 <p>3.5 MB</p>),
             this.createData3(<p>Magyar Rézpiaci Központ</p>,
-                <a href={RezpiacKocsag} >Rézpiaci WinWatt Kócsag frissítő</a>,
+                <a href='http://www.bausoft.hu/frissit/PURMO_radiator_kivalaszto_frissito.exe' >Rézpiaci WinWatt Kócsag frissítő</a>,
                 <p>5.1 MB</p>),
             this.createData3(<p>Magyar Rézpiaci Központ</p>,
-                <a href={RezpiacGolya} >Rézpiaci WinWatt Gólya frissítő</a>,
+                <a href='http://www.bausoft.hu/frissit/Rezpiaci_WinWatt_kocsag_frissito.exe' >Rézpiaci WinWatt Gólya frissítő</a>,
                 <p>5.2 MB</p>),
             this.createData3(<p>Uponor Kft.</p>,
-                <a href={UponorKocsag} >Uponor WinWatt Kócsag frissítő</a>,
+                <a href='http://www.bausoft.hu/frissit/Rezpiaci_WinWatt_golya_frissito.exe' >Uponor WinWatt Kócsag frissítő</a>,
                 <p>5.2 MB</p>),
             this.createData3(<p>Uponor Kft.</p>,
-                <a href={UponorGolya} >Uponor WinWatt Gólya frissítő</a>,
+                <a href='http://www.bausoft.hu/frissit/Uponor_WinWatt_kocsag_frissito.exe' >Uponor WinWatt Gólya frissítő</a>,
                 <p>5.2 MB</p>),
             this.createData3(<p>Szikra Kft.</p>,
-                <a href={Meditherm} >Meditherm WinWatt frissítő</a>,
+                <a href='http://www.bausoft.hu/frissit/Uponor_WinWatt_golya_frissito.exe' >Meditherm WinWatt frissítő</a>,
                 <p>3.9 MB</p>),
             this.createData3(<p>Rettig Hungary Kft.</p>,
-                <a href={Vogel} >VogelNoot WinWatt frissítő</a>,
+                <a href='http://www.bausoft.hu/frissit/VogelNoot_WinWatt_frissito.exe' >VogelNoot WinWatt frissítő</a>,
                 <p>3.4 MB</p>),
             this.createData3(<p>AUSTROTHERM Kft., Baumit Kft, YTONG Kft</p>,
-                <a href={Epfiz} >WinWatt Épületfizika frissítő</a>,
+                <a href='http://www.bausoft.hu/frissit/WinWatt_Epuletfizika_frissito.exe' >WinWatt Épületfizika frissítő</a>,
                 <p>3.5 MB</p>),
         ];
 

@@ -11,20 +11,6 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-import Epito from '../database/WinWatt_epitoanyagok.zip'
-import Vegyes from '../database/WinWatt_vegyes.zip'
-import Radiator from '../database/Radiator.zip'
-import Szerkezet from '../database/WinWatt_szerkezetek.zip'
-
-import Chm from '../database/chmbau32.zip'
-import Iso from '../database/isobau.zip'
-import Gas32 from '../database/GasNet32.zip'
-import Gas from '../database/GasNet.zip'
-import Legforg from '../database/legforgalom.zip'
-import Water32 from '../database/WaterNet32.zip'
-import Water from '../database/WaterNet.zip'
-import Baukap from '../database/baukap.zip'
-
 import Chm_leir from '../leiras/CHM-BAU_XML_adatfajlok.pdf'
 import Hurkolt_leir from '../leiras/Hurkolt_XML_adatfajlok.pdf'
 
@@ -41,53 +27,53 @@ class AdatBank extends Component {
     }
     initTable() {
         this.db = [
-            this.createData4(<a href={Epito} >WinWatt építőanyagok</a>,
+            this.createData4(<a href='http://www.bausoft.hu/database/WinWatt_epitoanyagok.zip' >WinWatt építőanyagok</a>,
                 <p>41.145</p>,
                 <p>Építőanyag adatok</p>,
                 <p>2020. június 15.</p>),
-            this.createData4(<a href={Vegyes} >WinWatt vegyes</a>,
+            this.createData4(<a href='http://www.bausoft.hu/database/WinWatt_vegyes.zip' >WinWatt vegyes</a>,
                 <p>1.296.311</p>,
                 <p>Radiátorok és építőanyagok kivételével minden. <span className="red b">Legalább 8.10-es verzió szükséges</span></p>,
                 <p>2020. július 29.</p>),
-            this.createData4(<a href={Radiator} >Radiátorok</a>,
+            this.createData4(<a href='http://www.bausoft.hu/database/Radiator.zip' >Radiátorok</a>,
                 <p>736.899</p>,
                 <p>Minden gyártó radiátora. <span className="red b">Legalább 6.21-es verzió szükséges</span></p>,
                 <p>2020. április 2.</p>),
-            this.createData4(<a href={Szerkezet} >WinWatt szerkezetek</a>,
+            this.createData4(<a href='http://www.bausoft.hu/database/WinWatt_szerkezetek.zip' >WinWatt szerkezetek</a>,
                 <p>904</p>,
                 <p>Szerkezetek</p>,
                 <p>2019. augusztus 21.</p>),
         ];
         this.others = [
-            this.createData4(<a href={Chm} >Chmbau32</a>,
+            this.createData4(<a href='http://www.bausoft.hu/database/chmbau32.zip' >Chmbau32</a>,
                 <p>583.739</p>,
                 <p><Link to="/public/Chmbau32.html">CHM-BAU32</Link> aktuális adatbázisa</p>,
                 <p>2020. június 11.</p>),
-            this.createData4(<a href={Iso} >ISOBau</a>,
+            this.createData4(<a href='http://www.bausoft.hu/database/isobau.zip' >ISOBau</a>,
                 <p>30.016</p>,
                 <p><Link to="/public/IsoBau.html">ISOBau</Link> aktuális adatbázisa</p>,
                 <p>2010. március 22.</p>),
-            this.createData4(<a href={Gas32} >GasNet32</a>,
+            this.createData4(<a href='http://www.bausoft.hu/database/GasNet32.zip' >GasNet32</a>,
                 <p>37.277</p>,
                 <p><Link to="/public/GasNet32.html">GasNet32 Gázhálózat méretező program (32 bites)</Link> adatfájlok</p>,
                 <p>2019. december 12.</p>),
-            this.createData4(<a href={Gas} >GasNet</a>,
+            this.createData4(<a href='http://www.bausoft.hu/database/GasNet.zip' >GasNet</a>,
                 <p>113.319</p>,
                 <p><Link to="/public/GasNet16.html">GasNet Gázhálózat méretező program (16 bites)</Link> adatfájlok</p>,
                 <p>2010. március 14.</p>),
-            this.createData4(<a href={Legforg} >Légforgalom</a>,
+            this.createData4(<a href='http://www.bausoft.hu/database/legforgalom.zip' >Légforgalom</a>,
                 <p>12.339</p>,
                 <p><Link to="/public/Legforgalom.html">Légforgalom számító program</Link> adatfájlok</p>,
                 <p>2017. július 21.</p>),
-            this.createData4(<a href={Water32} >WaterNet32</a>,
+            this.createData4(<a href='http://www.bausoft.hu/database/WaterNet32.zip' >WaterNet32</a>,
                 <p>40.177</p>,
                 <p><Link to="/public/WaterNet32.html">WaterNet32 Vízhálózat méretező program (32 bites)</Link> adatfájlok</p>,
                 <p>2018. július 17.</p>),
-            this.createData4(<a href={Water} >WaterNet</a>,
+            this.createData4(<a href='http://www.bausoft.hu/database/WaterNet.zip' >WaterNet</a>,
                 <p>334.798</p>,
                 <p><Link to="/public/WaterNet16.html">WaterNet Vízhálózat méretező program (16 bites)</Link> adatfájlok</p>,
                 <p>2008. március 8.</p>),
-            this.createData4(<a href={Baukap} >Baukap</a>,
+            this.createData4(<a href='http://www.bausoft.hu/database/baukap.zip' >Baukap</a>,
                 <p>46.202</p>,
                 <p>Kapcsolófájl a <a href="www.mmsys.hu">KönyvCalc</a> program felé</p>,
                 <p>2001. április 1.</p>),
