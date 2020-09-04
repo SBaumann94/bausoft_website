@@ -12,53 +12,9 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-import file0 from '../database/Energetika_rendelet_valtozasok_2019.pdf'
-import file1 from '../database/WinWatt_hidraulika_peldak.zip'
-import file2 from '../database/WinWatt_hoterheles_napsugarzasi_adatok.xls'
-import file3 from '../database/Energetika_halado.pdf'
-import file4 from '../database/Rehau_rendszerek_2016.pdf'
-import file5 from '../database/Legtomorseg-szellozes.pdf'
-import file6 from '../database/EPBD_vizsgafeladatok_megoldasa_2014.pdf'
-import file7 from '../database/EPBD_vizsga_peldasor_2014.pptx'
-import file8 from '../database/EPBD_oktatas_halado.zip'
-import file9 from '../database/EPBD_vizsgafeladatok_megoldasa_2013.pdf'
-import file10 from '../database/EPBD_vizsgafeladatok_megoldasa_2012.pdf'
-import file11 from '../database/EPBD_vizsga_peldasor_2012.pptx'
-import file12 from '../database/Energetika_ertelmezesi_problemak.pdf'
-import file13 from '../database/Energetika_A_per_V_viszony_ertelmezese.pdf'
-import file14 from '../database/Energetika_ertelmezesi_problemak_3.pdf'
-import file15 from '../database/A_tanusitas_specialis_kerdesei.pdf'
-import file16 from '../database/Hazai_eloirasok_tervezett_valtoztatasai.pdf'
-import file17 from '../database/Napkollektor_szamitas_HMV.zip'
-import file18 from '../database/Energetika_roviditett.zip'
-import file19 from '../database/EPBD_oktatas.zip'
-import file20 from '../database/tanusitas_projektek.zip'
-import file21 from '../database/Legcsatorna.zip'
-import file22 from '../database/hohidak.pdf'
-import file23 from '../database/Optimum_modul.pdf'
-import file24 from '../database/213_2006_5_melleklet.pdf'
-import file25 from '../database/Energetika_gepeszeti_rendszerek.pdf'
-import file26 from '../database/winwatt_2009_02_01_level.zip'
-import file27 from '../database/EPBD_vizsga_peldasor.ppt'
-import file28 from '../database/EPBD_vizsga_peldasor.pdf'
-import file29 from '../database/Epuletenergetika.pdf'
-import file30 from '../database/Szilardtuz.pdf'
-import file31 from '../database/kazanok.pdf'
-import file32 from '../database/Energetika_peldak.zip'
-import file33 from '../database/KEMENY_oktatas.pdf'
-import file34 from '../database/Kemeny_peldak.zip'
-import file35 from '../database/Turbo.pdf'
-import file36 from '../database/Tomegaramfugges.pdf'
-import file37 from '../database/Legellatas.pdf'
-import file38 from '../database/Atmoszferikus.pdf'
-import file39 from '../database/Tarsas.zip'
-import file40 from '../database/Purmoea.zip'
-import file41 from '../database/Energetika.pdf'
-import file42 from '../database/Minta.zip'
-
-
-const DarkB = "bg-light-blue";
-const DarkG = "bg-light-green";
+const LightB = "bg-light-blue";
+const DarkB = "bg-dark-blue white";
+const LightG = "bg-light-green";
 const RedW = "bg-light-red";
 const Gold = "bg-gold";
 const Biatorbágy = "REHAU Kft., 2051 Biatorbágy, Rozália park 9.";
@@ -81,11 +37,55 @@ const textHun = ["Épületenergetika rendelet változások 2019", "WinWatt hidra
     "A BUDERUS AKADÉMIA - Tervezői szemináriumán, Balatonfüreden elhangzott előadás az épületenergetikai szabályozással kapcsolatosan","WinWatthoz néhány egyszerű hidraulikai számítást tartalmazó projekt, WMF ábrákkal"
 ];
 
-const files = [file0, file1, file2, file3, file4, file5, file6, file7, file8, file9, file10, file11, file12, file13, file14, file15, file16, file17, file18, file19, file20, file21, file22, file23, file24, file25, file26, file27, file28, file29, file30, file31, file32, file33, file34, file35, file36, file37, file38, file39, file40, file41, file42];
+const files = [
+    "http://www.bausoft.hu/database/Energetika_rendelet_valtozasok_2019.pdf",
+"http://www.bausoft.hu/database/WinWatt_hidraulika_peldak.zip",
+"http://www.bausoft.hu/database/WinWatt_hoterheles_napsugarzasi_adatok.xls",
+"http://www.bausoft.hu/database/Energetika_halado.pdf",
+"http://www.bausoft.hu/database/Rehau_rendszerek_2016.pdf",
+"http://www.bausoft.hu/database/Legtomorseg-szellozes.pdf",
+"http://www.bausoft.hu/database/EPBD_vizsgafeladatok_megoldasa_2014.pdf",
+"http://www.bausoft.hu/database/EPBD_vizsga_peldasor_2014.pptx",
+"http://www.bausoft.hu/database/EPBD_oktatas_halado.zip",
+"http://www.bausoft.hu/database/EPBD_vizsgafeladatok_megoldasa_2013.pdf",
+"http://www.bausoft.hu/database/EPBD_vizsgafeladatok_megoldasa_2012.pdf",
+"http://www.bausoft.hu/database/EPBD_vizsga_peldasor_2012.pptx",
+"http://www.bausoft.hu/database/Energetika_ertelmezesi_problemak.pdf",
+"http://www.bausoft.hu/database/Energetika_A_per_V_viszony_ertelmezese.pdf",
+"http://www.bausoft.hu/database/Energetika_ertelmezesi_problemak_3.pdf",
+"http://www.bausoft.hu/database/A_tanusitas_specialis_kerdesei.pdf",
+"http://www.bausoft.hu/database/Hazai_eloirasok_tervezett_valtoztatasai.pdf",
+"http://www.bausoft.hu/database/Napkollektor_szamitas_HMV.zip",
+"http://www.bausoft.hu/database/Energetika_roviditett.zip",
+"http://www.bausoft.hu/database/EPBD_oktatas.zip",
+"http://www.bausoft.hu/database/tanusitas_projektek.zip",
+"http://www.bausoft.hu/database/Legcsatorna.zip",
+"http://www.bausoft.hu/database/hohidak.pdf",
+"http://www.bausoft.hu/database/Optimum_modul.pdf",
+"http://www.bausoft.hu/database/213_2006_5_melleklet.pdf",
+"http://www.bausoft.hu/database/Energetika_gepeszeti_rendszerek.pdf",
+"http://www.bausoft.hu/database/winwatt_2009_02_01_level.zip",
+"http://www.bausoft.hu/database/EPBD_vizsga_peldasor.ppt",
+"http://www.bausoft.hu/database/EPBD_vizsga_peldasor.pdf",
+"http://www.bausoft.hu/database/Epuletenergetika.pdf",
+"http://www.bausoft.hu/database/Szilardtuz.pdf",
+"http://www.bausoft.hu/database/kazanok.pdf",
+"http://www.bausoft.hu/database/Energetika_peldak.zip",
+"http://www.bausoft.hu/database/KEMENY_oktatas.pdf",
+"http://www.bausoft.hu/database/Kemeny_peldak.zip",
+"http://www.bausoft.hu/database/Turbo.pdf",
+"http://www.bausoft.hu/database/Tomegaramfugges.pdf",
+"http://www.bausoft.hu/database/Legellatas.pdf",
+"http://www.bausoft.hu/database/Atmoszferikus.pdf",
+"http://www.bausoft.hu/database/Tarsas.zip",
+"http://www.bausoft.hu/database/Purmoea.zip",
+"http://www.bausoft.hu/database/Energetika.pdf",
+"http://www.bausoft.hu/database/Minta.zip",
+]
 const sizes = ["1.320.040", "1.537.819", "388.096", "885.642", "1.424.540", "3.123.601", "279.585", "1.245.635", "268.945", "153.030", "294.600","653.570","142.600", "124.384", "94.928", "462.994", "452.616", "142.255", "351.823", "278.067", "34.012", "2.299", "70.359", "1.181.410", "42.387", "593.132", "54.010", "510.406", "163.436", "1.098.524", "621.418", "325.702", "413.020", "1.395.869", "17.081", "257.203", "190.400", "1.324.467", "346.632", "148.143", "355.362", "573.146", "313.372"];
-const colors = [Gold, DarkB, "", RedW, "", "", Gold, Gold, RedW, Gold, Gold, Gold, RedW, RedW, RedW, RedW, Gold, RedW, Gold, RedW, RedW,
-    DarkB, RedW, RedW, "", RedW, RedW, Gold, Gold, Gold, DarkG, DarkG, RedW, DarkG, DarkG, DarkG, DarkG, DarkG, DarkG,
-    "", "", Gold, DarkB];
+const colors = [Gold, LightB, "", RedW, "", "", Gold, Gold, RedW, Gold, Gold, Gold, RedW, RedW, RedW, RedW, Gold, RedW, Gold, RedW, RedW,
+    LightB, RedW, RedW, "", RedW, RedW, Gold, Gold, Gold, LightG, LightG, RedW, LightG, LightG, LightG, LightG, LightG, LightG,
+    "", "", Gold, LightB];
 
 
 class Oktatas extends Component {
@@ -102,74 +102,74 @@ class Oktatas extends Component {
             this.createData3(
                 <p>2020. január 28. (kedd) 10-15 óra</p>,
                 <p>{Biatorbágy}</p>,
-                <p className="bg-gold">Épületenergetika alapfok</p>,
+                <p className={Gold}>Épületenergetika alapfok</p>,
             ),
             this.createData3(
                 <p>2020. február 6. (csütörtök) 10-15 óra</p>,
                 <p>{Biatorbágy}</p>,
-                <p className="bg-red white">Épületenergetika haladó</p>,
+                <p className={RedW}>Épületenergetika haladó</p>,
             ),
             this.createData3(
                 <p className="strike b">2020. március 12. (csütörtök) 10-15 óra</p>,
                 <p>{Biatorbágy}</p>,
-                <p className="bg-dark-gray white">Kéményméretezés</p>,
+                <p className={LightG}>Kéményméretezés</p>,
             ),
             this.createData3(
                 <p className="strike b">2020. április 2. (csütörtök) 10-15 óra</p>,
                 <p>{Biatorbágy}</p>,
-                <p className="bg-dark-blue white">Hidraulika, felületfűtések tervezése</p>,
+                <p className={DarkB}>Hidraulika, felületfűtések tervezése</p>,
             ),
             this.createData3(
                 <p className="strike b">2020. április 9. (csütörtök) 10-15 óra</p>,
                 <p>{Biatorbágy}</p>,
-                <p className="bg-red white">Épületenergetika haladó</p>,
+                <p className={RedW}>Épületenergetika haladó</p>,
             ),
             this.createData3(
                 <p className="strike b">2020. május 14. (csütörtök) 10-15 óra</p>,
                 <p>{Biatorbágy}</p>,
-                <p className="bg-light-blue">Vízhálózat méretezés</p>,
+                <p className={LightB}>Vízhálózat méretezés</p>,
             ),
             this.createData3(
                 <p className="strike b">2020. május 28. (csütörtök) 10-15 óra</p>,
                 <p>{Biatorbágy}</p>,
-                <p className="bg-red white">Épületenergetika haladó</p>,
+                <p className={RedW}>Épületenergetika haladó</p>,
             ),
             this.createData3(
                 <p>2020. augusztus 26. (szerda) 10-15 óra</p>,
                 <p>{Biatorbágy}</p>,
-                <p className="bg-gold">Épületenergetika alapfok</p>,
+                <p className={Gold}>Épületenergetika alapfok</p>,
             ),
             this.createData3(
                 <p>2020. szeptember 3. (csütörtök) 10-15 óra</p>,
                 <p>{Biatorbágy}</p>,
-                <p className="bg-red white">Épületenergetika haladó</p>,
+                <p className={RedW}>Épületenergetika haladó</p>,
             ),
             this.createData3(
                 <p>2020. szeptember 24. (csütörtök) 10-15 óra</p>,
                 <p>{Biatorbágy}</p>,
-                <p className="bg-dark-blue white">Hidraulika, felületfűtések tervezése</p>,
+                <p className={DarkB}>Hidraulika, felületfűtések tervezése</p>,
             ),
             this.createData3(
                 <p>2020. október 15. (csütörtök) 10-15 óra</p>,
                 <p>{Biatorbágy}</p>,
-                <p className="bg-dark-gray white">Kéményméretezés</p>,
+                <p className={LightG}>Kéményméretezés</p>,
             ),
             this.createData3(
                 <p>2020. november 12. (csütörtök) 10-15 óra</p>,
                 <p>{Biatorbágy}</p>,
-                <p className="bg-light-blue">Vízhálózat méretezés</p>,
+                <p className={LightB}>Vízhálózat méretezés</p>,
             ),
             this.createData3(
                 <p>2020. december 3. (csütörtök) 10-15 óra</p>,
                 <p>{Biatorbágy}</p>,
-                <p className="bg-red white">Épületenergetika haladó</p>,
+                <p className={RedW}>Épületenergetika haladó</p>,
             ),
         ];
         this.seged = [];
         let name;
         for (let i = 0; i < textHun.length; i++) {
-            name = files[i].toString().replace("/static/media/", "")
-            this.seged.push(this.createData4(<a href={files[i]} >{name.substring(0, name.indexOf('.'))}</a>,
+            name = files[i].toString().replace("http://www.bausoft.hu/database/", "")
+            this.seged.push(this.createData4(<a href={files[i]} >{name}</a>,
                 <p>{sizes[i]}</p>,
                 <p className={colors[i].toString() + " f5"}>{textHun[i]}</p>),
             );
@@ -244,7 +244,7 @@ class Oktatas extends Component {
                 <p><Link to="/public/videok.html">Oktató videók</Link></p>
 
                 <h3>Letölthető "oktatási" anyagok.</h3>
-                <p>Színkódok: <span className={Gold}>Épületnergetika vizsga, elmélet</span> <span className={RedW}>WinWatt épületenergetika</span> <span className={DarkB}>WinWatt hidraulika</span> <span className={DarkG}>Kéményméretezés</span></p>
+                <p>Színkódok: <span className={Gold}>Épületnergetika vizsga, elmélet</span> <span className={RedW}>WinWatt épületenergetika</span> <span className={LightB}>WinWatt hidraulika</span> <span className={LightG}>Kéményméretezés</span></p>
                 <TableContainer component={Paper} className="min600">
                     <Table className="bg-light-yellow " size="small" padding="none">
                         <TableHead >

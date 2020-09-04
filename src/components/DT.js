@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import 'tachyons';
 import { Helmet } from 'react-helmet';
 
-import dt from '../drivers/dtutil32.zip'
-
 class DT extends Component {
     constructor(props) {
         super(props);
@@ -18,7 +16,7 @@ class DT extends Component {
             <div className="DT pl3 pr4">
                 <Helmet><title>Adatbázis javító segédprogram</title></Helmet>
                 <h2>Adatbázis javító segédprogram</h2>
-                <p >Programjaink Borland Paradox adatbázisokat használnak a projektek tárolására. Hibás programleállás előidézheti az éppen nyitott adatbázis sérülését, ezt követően részben, vagy teljesen használhatatlanná válhat a projekt. A sérült projekt kijavításához alkalmazható a Borland által készített segédprogram, amit a mellékelt <a className="b" href={dt} >dtutil32.zip</a> fájl tartalmaz. Sérült adatbázis javításához a következő lépéseket kell elvégeznünk.</p>
+                <p >Programjaink Borland Paradox adatbázisokat használnak a projektek tárolására. Hibás programleállás előidézheti az éppen nyitott adatbázis sérülését, ezt követően részben, vagy teljesen használhatatlanná válhat a projekt. A sérült projekt kijavításához alkalmazható a Borland által készített segédprogram, amit a mellékelt <a className="b" href='http://www.bausoft.hu/dtutil32.zip' >dtutil32.zip</a> fájl tartalmaz. Sérült adatbázis javításához a következő lépéseket kell elvégeznünk.</p>
                 <ol>
                     <li>Csomagoljuk ki a segédprogramot.</li>
                     <li>Másoljuk a sérült projekt három fájlját (DB, MB és PX kiterjesztésűek) abba a könyvtárba, ahová kicsomagoltuk a segédprogramot.</li>

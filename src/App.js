@@ -57,6 +57,7 @@ import Ww32Ver6 from './components/Ww32Ver6';
 import AddFunc from './components/AddFunc';
 import HomePageNew from './containers/HomepageNew';
 import HomePageEnNew from './containers/HomepageEnNew';
+import Ww32Project from './components/Ww32Project';
 
 
 let lang = document.documentElement.lang
@@ -76,6 +77,7 @@ class App extends Component {
                     <Route path='/public/frissitRO.html' component={() => (<FrissitRO lang={lang} />)} />
                     <Route path='/public/adatbank.html' component={() => (<AdatBank lang={lang} />)} />
                     <Route path='/public/leirasok.html' component={() => (<Leirasok lang={lang} />)} />
+                    <Route path='/public/Ww32Project.html' component={() => (<Ww32Project lang={lang} />)} />
                     <Route path='/public/demok.html' component={() => (<Demok lang={lang} />)} />
                     <Route path='/public/egyeb.html' component={() => (<Egyeb lang={lang} />)} />
 

@@ -11,10 +11,6 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-import Chm_leir from '../leiras/CHM-BAU_XML_adatfajlok.pdf'
-import Hurkolt_leir from '../leiras/Hurkolt_XML_adatfajlok.pdf'
-
-
 class AdatBank extends Component {
 
     constructor(props) {
@@ -322,9 +318,9 @@ class AdatBank extends Component {
                 </TableContainer>
                 <h3>Rövid útmutató az adatokfájlok egyéni elkészítéséhez</h3>
                 <ul>
-                    <li><a href={Chm_leir} >CHM-BAU XML adatfájlok</a></li>
+                    <li><a href='http://www.bausoft.hu/leiras/CHM-BAU_XML_adatfajlok.pdf' >CHM-BAU XML adatfájlok</a></li>
                     <li><Link to="/public/WinWatt_Xml.html" >WinWatt, GasNet és WaterNet XML adatfájlok</Link></li>
-                    <li><a href={Hurkolt_leir} >Hurkolt hálózat méretező program XML adatfájlok</a></li>
+                    <li><a href='http://www.bausoft.hu/leiras/Hurkolt_XML_adatfajlok.pdf' >Hurkolt hálózat méretező program XML adatfájlok</a></li>
                 </ul>
             </div >
         );
