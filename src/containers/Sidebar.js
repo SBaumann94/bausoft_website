@@ -53,19 +53,19 @@ class MySidebar extends Component {
       <Sidebar
         sidebar={
           <div className="ma3">
-            <div><Link to='/' className="link underline-hover black">
+            <div><Link to="/bausoft_website/" className="link underline-hover black">
               <h2 className="ttu tc pa1 ma2 mb1">Bausoft</h2>
               <h3 className="pa1 ma0 mb1"> Pécsvárad Kft.</h3>
             </Link></div>
             <p className="tc">
-              <Link to='/' onClick={() => (this.setLangHun())}>
+              <Link to="/bausoft_website/" onClick={() => (this.setLangHun())}>
                 <img className="pa1 grow-large"
                   src={flagHun}
                   width="40"
                   height="25"
                   alt="Hun" />
               </Link>
-              <Link to='/' onClick={() => (this.setLangEng())}>
+              <Link to="/bausoft_website/" onClick={() => (this.setLangEng())}>
                 <img className="pa1 grow-large"
                   src={flagUK}
                   width="40"
