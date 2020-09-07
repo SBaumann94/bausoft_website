@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bausoft_website/static/css/main.e032d619.chunk.css",
-    "main.js": "/bausoft_website/static/js/main.146f4e38.chunk.js",
-    "main.js.map": "/bausoft_website/static/js/main.146f4e38.chunk.js.map",
+    "main.js": "/bausoft_website/static/js/main.f6778ff3.chunk.js",
+    "main.js.map": "/bausoft_website/static/js/main.f6778ff3.chunk.js.map",
     "runtime-main.js": "/bausoft_website/static/js/runtime-main.dee9e1c3.js",
     "runtime-main.js.map": "/bausoft_website/static/js/runtime-main.dee9e1c3.js.map",
     "static/css/2.3c03f26f.chunk.css": "/bausoft_website/static/css/2.3c03f26f.chunk.css",
     "static/js/2.70009289.chunk.js": "/bausoft_website/static/js/2.70009289.chunk.js",
     "static/js/2.70009289.chunk.js.map": "/bausoft_website/static/js/2.70009289.chunk.js.map",
     "index.html": "/bausoft_website/index.html",
-    "precache-manifest.8ee770d73cf1893a5f912a07d8e6a1c5.js": "/bausoft_website/precache-manifest.8ee770d73cf1893a5f912a07d8e6a1c5.js",
+    "precache-manifest.5b1b3dc567643c90f2e83d3edbc9e3ca.js": "/bausoft_website/precache-manifest.5b1b3dc567643c90f2e83d3edbc9e3ca.js",
     "service-worker.js": "/bausoft_website/service-worker.js",
     "static/css/2.3c03f26f.chunk.css.map": "/bausoft_website/static/css/2.3c03f26f.chunk.css.map",
     "static/css/main.e032d619.chunk.css.map": "/bausoft_website/static/css/main.e032d619.chunk.css.map",
@@ -102,6 +102,6 @@
     "static/css/2.3c03f26f.chunk.css",
     "static/js/2.70009289.chunk.js",
     "static/css/main.e032d619.chunk.css",
-    "static/js/main.146f4e38.chunk.js"
+    "static/js/main.f6778ff3.chunk.js"
   ]
 }
