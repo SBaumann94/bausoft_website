@@ -59,7 +59,6 @@ import HomePageNew from './containers/HomepageNew';
 import HomePageEnNew from './containers/HomepageEnNew';
 import Ww32Project from './components/Ww32Project';
 
-
 let lang = document.documentElement.lang
 
 class App extends Component {

@@ -115,7 +115,7 @@ class WW32 extends Component {
           <Table className="bg-light-yellow min900" size="small" >
             <TableHead>
               <TableRow>
-                <TableCell align="center" padding="none">{useText[2]}</TableCell>
+                <TableCell align="left" >{useText[2]}</TableCell>
                 <TableCell align="center" padding="none"><Bird name='cinege' notRelative={true} /></TableCell>
                 <TableCell align="center" padding="none"><Bird name='pinty' notRelative={true} /></TableCell>
                 <TableCell align="center" padding="none"><Bird name='fecske' notRelative={true} /></TableCell>

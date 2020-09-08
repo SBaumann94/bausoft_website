@@ -76,7 +76,6 @@ class BirdList extends Component {
     render() {
         const touch = matchMedia('(hover: none)').matches;
         const path=(touch)?"":"/public/ww32.html";
-        console.log(path)
         return (
             <Grid container item xs={12} spacing={0}>
                 <Link className="link no-underline black" to={path}>

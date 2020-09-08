@@ -196,7 +196,7 @@ class Oktatas extends Component {
                     <Table className="bg-light-yellow " size="small" padding="none">
                         <TableHead >
                             <TableRow >
-                                <TableCell align="center"><h4>Időpont</h4></TableCell>
+                                <TableCell align="left" padding="default"><h4>Időpont</h4></TableCell>
                                 <TableCell align="center"><h4>Helyszín</h4></TableCell>
                                 <TableCell align="center"><h4>Téma</h4></TableCell>
                             </TableRow>
@@ -204,7 +204,7 @@ class Oktatas extends Component {
                         <TableBody>
                             {this.okt.map((row, index) => (
                                 <TableRow key={index} className={`${(index % 2 === 0) ? "bg-light-gray" : ""}`}>
-                                    <TableCell align="center" >{row.Date}</TableCell>
+                                    <TableCell align="left" padding="default">{row.Date}</TableCell>
                                     <TableCell align="center" >{row.Place}</TableCell>
                                     <TableCell align="center" >{row.Theme}</TableCell>
 
@@ -246,20 +246,20 @@ class Oktatas extends Component {
                 <h3>Letölthető "oktatási" anyagok.</h3>
                 <p>Színkódok: <span className={Gold}>Épületnergetika vizsga, elmélet</span> <span className={RedW}>WinWatt épületenergetika</span> <span className={LightB}>WinWatt hidraulika</span> <span className={LightG}>Kéményméretezés</span></p>
                 <TableContainer component={Paper} className="min600">
-                    <Table className="bg-light-yellow " size="small" padding="none">
+                    <Table className="bg-light-yellow " size="small">
                         <TableHead >
                             <TableRow >
-                                <TableCell align="center"><h4>Letölthető fájl</h4></TableCell>
-                                <TableCell align="center"><h4>Méret</h4></TableCell>
-                                <TableCell align="center"><h4>Leírás</h4></TableCell>
+                                <TableCell align="left"><h4>Letölthető fájl</h4></TableCell>
+                                <TableCell align="center" padding="none"><h4>Méret</h4></TableCell>
+                                <TableCell align="center" padding="none"><h4>Leírás</h4></TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
                             {this.seged.map((row, index) => (
                                 <TableRow key={index} className={`${(index % 2 === 0) ? "bg-light-gray" : ""}`}>
-                                    <TableCell align="center" className="min150">{row.File}</TableCell>
-                                    <TableCell align="center" className="min150">{row.Size}</TableCell>
-                                    <TableCell align="center" >{row.Text}</TableCell>
+                                    <TableCell align="left" className="min50 max300 pl2">{row.File}</TableCell>
+                                    <TableCell align="right" className="min150">{row.Size}</TableCell>
+                                    <TableCell align="center"  padding="none">{row.Text}</TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>
