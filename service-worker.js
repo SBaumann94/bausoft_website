@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bausoft_website/precache-manifest.2e1e196c97275d726a0140d49e663acc.js"
+  "/bausoft_website/precache-manifest.6282619877bb1ad2836e0020486e31e3.js"
 );
 
 self.addEventListener('message', (event) => {
