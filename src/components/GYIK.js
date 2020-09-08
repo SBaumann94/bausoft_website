@@ -16,6 +16,8 @@ import Paper from '@material-ui/core/Paper';
 import pw1 from '../screenshots/password.gif';
 import pw2 from '../screenshots/password2.gif';
 import { Link } from 'react-router-dom';
+import { Link as SLink, Element } from 'react-scroll';
+import Grid from '@material-ui/core/Grid';
 
 class GYIK extends Component {
     constructor(props) {
@@ -23,8 +25,8 @@ class GYIK extends Component {
         this.lang = props.language
         this.initTable();
     }
-    componentDidMount(){
-        document.getElementById("top").scrollTo(0,0);
+    componentDidMount() {
+        document.getElementById("top").scrollTo(0, 0);
     }
     initTable() {
         this.hw = [
@@ -66,7 +68,7 @@ class GYIK extends Component {
             this.createData(<div className="tj">
                 <h4 ><a name="WW3" />WW3: A réteges szerkezet páradiffúziós számításánál a program a feltöltési időre negatív értéket ad, és e miatt rossznak értékeli a szerkezetet. Hogyan lehet negatív a feltöltési idő?</h4>
                 <p>Negatív feltöltési idő valóban nem létezik, a szabványban megadott és a programban alkalmazott közelítő módszer elhanyagolásaiból adódik ez a furcsa jelenség. A feltöltési idő számításánál sok elhanyagolást alkalmazunk, a bonyolult probléma kezelhetővé tétele céljából. Durván megfogalmazva az alkalmazott algoritmus azt vizsgálja, hogy az egyensúlyi állapotban a szerkezetben lévő nedvesség mennyiségéből kivonva a szerkezetben kiinduláskor meglévő nedvességtartalmat kapunk egy vízmennyiséget, amit a falba beáramló gőzáram fog a feltöltési idő alatt a szerkezetbe bevinni. Ezért a feltöltési idő számítása úgy történik, hogy a vízmennyiséget elosztjuk a gőzáram értékével. Ez akkor adódik negatív értékre, ha a szerkezetben eleve nagyobb volt a vízmennyiség, mint amennyi az egyensúlyi állapothoz tartozik. (A kezdeti nedvességtartalomra a szabvány azt mondja, hogy az minden rétegnél legyen a 60%-os relatív páratartalomhoz tartozó nedvességtartalommal egyenlő.) A valóságban persze ahhoz is bizonyos időre van szükség, hogy a nedvességtartalom az egyensúlyi állapothoz tartozó lefutás szerintire rendeződjön át, de ezt az algoritmus nem kezeli. Írhatna a program ilyen esetben mondjuk nullát is az időre, hogy kevésbé legyen a jelenség zavaró, de úgy gondoltuk, hogy az érték nagysága esetleg hordoz információt, ezért maradtunk a negatív érték kijelzése mellett.</p>
-                <p>Ebben az esetben is van lehetőségünk <a href="#WW2">áttérni egyszerűsített páradiffúziós számításra.</a></p>
+                <p>Ebben az esetben is van lehetőségünk <b>áttérni egyszerűsített páradiffúziós számításra.</b> (Előző válaszban kifejtett módon)</p>
             </div>),
             this.createData(<div className="tj">
                 <h4 ><a name="WW4" />WW4: Az adatbázisban szereplő elemekkel, amikben ő vagy ű betű szerepel, problémák vannak. Hogy lehet e hibát megszüntetni?</h4>
@@ -177,151 +179,172 @@ class GYIK extends Component {
     createData(Text) {
         return { Text };
     }
-
     render() {
         return (
             <div className="GYIK pl3 pr4">
                 <Helmet><title>(GYIK) Gyakran ismételt kérdések </title></Helmet>
                 <h2>Gyakran ismételt kérdések (GYIK)</h2>
                 <p>Összegyűjtöttük és csoportosítottuk a leggyakrabban előforduló kérdéseket, és a hozzájuk tartozó válaszokat, abban a reményben, hogy az többeknek segít a programok minél hatékonyabb kezelésében.</p>
-                <h4><a href="#HW">Hardverkulcs kezelési problémák</a> (HW...)</h4>
-                <h4><a href="#WW">WinWatt32 program</a> (WW...)</h4>
-                <ul>
-                    <li><a href="#WW1">Az épület adatok tájolás rovatának értelmezése gondot okoz. Mire alkalmazható ez a rovat?</a></li>
-                    <li><a href="#WW2">A réteges szerkezet páradiffúziós számításánál a program hiányolja egyes rétegek szorpciós izotermáját, és bár nincs páralecsapódás, mégsem ad megfelelő minősítést a program a szerkezetről.</a></li>
-                    <li><a href="#WW3">A réteges szerkezet páradiffúziós számításánál a program a feltöltési időre negatív értéket ad, és e miatt rossznak értékeli a szerkezetet. Hogyan lehet negatív a feltöltési idő?</a></li>
-                    <li><a href="#WW4">Az adatbázisban szereplő elemekkel, amikben ő vagy ű betű szerepel, problémák vannak. Hogy lehet e hibát megszüntetni?</a></li>
-                    <li><a href="#WW5">A Program Files könyvtárban tárolt projektjeim eltüntek. Megtalálható valahol?</a></li>
-                    <li><a href="#WW6">A program indításkor az adatbázis megnyitásra vonatkozó hibaüzenettel leáll. Hogyan javítható a hiba?</a></li>
-                    <li><a href="#WW7">A Sun modul nem tud a szerverhez kapcsolódni.</a></li>
-                    <li><a href="#WW8">A táblázatok görög betűi nem jelennek meg.</a></li>
-                </ul>
-                <h4><a href="#TA">Tanusítással kapcsolatos problémák</a> (TA...)</h4>
-                <ul>
-                    <li><a href="#TA1">[H2043] Fajlagos hőveszteségtényező követelményértéke (qm) [W/m3k] - Hibás érték!</a></li>
-                    <li><a href="#TA2">[H2029] Az energetikai minőség szerinti besorolás...</a></li>
-                    <li><a href="#TA3">BB besorolás feltételei</a></li>
-                    <li><a href="#TA4">AA besorolás feltételei</a></li>
-                </ul>
-                <h3>Régi verziókkal (elavult) kapcsolatos kérdések.</h3>
-                <h4><a href="#ID">IDAPI és projekt megnyitási hibák </a> (ID...)</h4>
-                <ul>
-                    <li><a href="#ID1">Table is busy! figyelmeztetést kapok, ha meg akarom nyitni a projektet.</a></li>
-                    <li><a href="#ID2">Lemásoltam egy projektet a fájlkezelővel, hogy egy másik gépen dolgozzak rajta tovább, itt viszont Index is out of date! üzenetet kapok, s nem tudom a projektet megnyitni.</a></li>
-                    <li><a href="#ID3">Nem található a Borland Database Engine (IDAPI) kérem telepítse! üzenetet kapok, mikor a programot elindítom, pedig telepítve van a gépemen. Újra telepítve sem változik a helyzet.</a></li>
-                    <li><a href="#ID4">Egy korábbi projektet szeretnék megnyitni, de a megnyitás dialógusban azt kiválasztva "Nem létező projektnév!" üzenetet kapok, és nem tudom megnyitni.</a></li>
-                </ul>
-                <h4><a href="#ID32">32 bites IDAPI hibák </a> (ID32...)</h4>
-                <ul>
-                    <li><a href="#ID321">Rendszergazdai módban gond nélkül fut a program, de normál felhasználóként futtatva hibaüzenettel leáll az indítás után.</a></li>
-                </ul>
-                <h4><a href="#KO">KOMPLEX és korábbi DOS programok </a> (KO...)</h4>
-                <ul>
-                    <li><a href="#KO1">Nyomtatáskor miért nem jelennek meg az ékezetes karakterek, hullámzanak a táblázatok oszlopai?</a></li>
-                </ul>
-                <TableContainer component={Paper} className="min600 mb4"><a name="HW" />
-                    <Table className="bg-light-yellow " size="small">
-                        <TableHead >
-                            <TableRow >
-                                <TableCell className="bg-light-gray" align="center" padding="none"><h4>Hardverkulcs kezelési problémák</h4></TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {this.hw.map((row, index) => (
-                                <TableRow key={index} >
-                                    <TableCell align="center" >{row.Text}</TableCell>
+                <Grid container spacing={0} className="pl1">
+                    <Grid item xs={6} md={3}><SLink to="HW" containerId="containerElement" className="MyButton">Hardverkulcs kezelési problémák</SLink></Grid>
+                    <Grid item xs={6} md={3}><SLink to="WW" containerId="containerElement" className="MyButton">WinWatt32 program</SLink></Grid>
+                    <Grid item xs={12} md={6}><SLink to="TA" containerId="containerElement" className="MyButton">Tanusítással kapcsolatos problémák</SLink></Grid>
+                    <Grid item xs={6} md={3}><SLink to="ID16" containerId="containerElement" className="MyButton">IDAPI és projekt megnyitási hibák</SLink></Grid>
+                    <Grid item xs={6} md={3}><SLink to="ID32" containerId="containerElement" className="MyButton">32 bites IDAPI hibák</SLink></Grid>
+                    <Grid item xs={8} md={4}><SLink to="KO" containerId="containerElement" className="MyButton">KOMPLEX és korábbi DOS programok</SLink></Grid>
+                    <Grid item xs={4} md={2}><SLink to="KE" containerId="containerElement" className="MyButton">Összes kérdés</SLink></Grid>
+                </Grid>
+                <div id="containerElement" className="GyikSection">
+                    <Element name="KE">
+                        <h4>Hardverkulcs kezelési problémák</h4>
+                        <ul>
+                            <li>A program nem hajlandó elindulni, pedig a kulcs rá van dugva a gépre.</li>
+                        </ul>
+                        <h4>WinWatt32 program</h4>
+                        <ul>
+                            <li>Az épület adatok tájolás rovatának értelmezése gondot okoz. Mire alkalmazható ez a rovat?</li>
+                            <li>A réteges szerkezet páradiffúziós számításánál a program hiányolja egyes rétegek szorpciós izotermáját, és bár nincs páralecsapódás, mégsem ad megfelelő minősítést a program a szerkezetről.</li>
+                            <li>A réteges szerkezet páradiffúziós számításánál a program a feltöltési időre negatív értéket ad, és e miatt rossznak értékeli a szerkezetet. Hogyan lehet negatív a feltöltési idő?</li>
+                            <li>Az adatbázisban szereplő elemekkel, amikben ő vagy ű betű szerepel, problémák vannak. Hogy lehet e hibát megszüntetni?</li>
+                            <li>A Program Files könyvtárban tárolt projektjeim eltüntek. Megtalálható valahol?</li>
+                            <li>A program indításkor az adatbázis megnyitásra vonatkozó hibaüzenettel leáll. Hogyan javítható a hiba?</li>
+                            <li>A Sun modul nem tud a szerverhez kapcsolódni.</li>
+                            <li>A táblázatok görög betűi nem jelennek meg.</li>
+                        </ul>
+                        <h4>Tanusítással kapcsolatos problémák (TA...)</h4>
+                        <ul>
+                            <li>[H2043] Fajlagos hőveszteségtényező követelményértéke (qm) [W/m3k] - Hibás érték!</li>
+                            <li>[H2029] Az energetikai minőség szerinti besorolás...</li>
+                            <li>BB besorolás feltételei</li>
+                            <li>AA besorolás feltételei</li>
+                        </ul>
+                        <h3>Régi verziókkal (elavult) kapcsolatos kérdések.</h3>
+                        <h4>IDAPI és projekt megnyitási hibák  (ID...)</h4>
+                        <ul>
+                            <li>Table is busy! figyelmeztetést kapok, ha meg akarom nyitni a projektet.</li>
+                            <li>Lemásoltam egy projektet a fájlkezelővel, hogy egy másik gépen dolgozzak rajta tovább, itt viszont Index is out of date! üzenetet kapok, s nem tudom a projektet megnyitni.</li>
+                            <li>Nem található a Borland Database Engine (IDAPI) kérem telepítse! üzenetet kapok, mikor a programot elindítom, pedig telepítve van a gépemen. Újra telepítve sem változik a helyzet.</li>
+                            <li>Egy korábbi projektet szeretnék megnyitni, de a megnyitás dialógusban azt kiválasztva "Nem létező projektnév!" üzenetet kapok, és nem tudom megnyitni.</li>
+                        </ul>
+                        <h4>32 bites IDAPI hibák  (ID32...)</h4>
+                        <ul>
+                            <li>Rendszergazdai módban gond nélkül fut a program, de normál felhasználóként futtatva hibaüzenettel leáll az indítás után.</li>
+                        </ul>
+                        <h4>KOMPLEX és korábbi DOS programok  (KO...)</h4>
+                        <ul>
+                            <li>Nyomtatáskor miért nem jelennek meg az ékezetes karakterek, hullámzanak a táblázatok oszlopai?</li>
+                        </ul>
+                    </Element><Element name="HW">
+                        <TableContainer component={Paper} className="min600 mb4"><a name="HW" />
+                            <Table className="bg-light-yellow " size="small">
+                                <TableHead >
+                                    <TableRow >
+                                        <TableCell className="bg-light-gray" align="center" padding="none"><h4>Hardverkulcs kezelési problémák</h4></TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {this.hw.map((row, index) => (
+                                        <TableRow key={index} >
+                                            <TableCell align="center" >{row.Text}</TableCell>
 
-                                </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-                <TableContainer component={Paper} className="min600 mb4"><a name="WW" />
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
+                    </Element><Element name="WW">
+                        <TableContainer component={Paper} className="min600 mb4"><a name="WW" />
 
-                    <Table className="bg-light-yellow " size="small">
-                        <TableHead >
-                            <TableRow >
-                                <TableCell className="bg-light-gray" align="center" padding="none"><h4>WinWatt32 program</h4></TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {this.ww.map((row, index) => (
-                                <TableRow key={index} >
-                                    <TableCell align="center" >{row.Text}</TableCell>
+                            <Table className="bg-light-yellow " size="small">
+                                <TableHead >
+                                    <TableRow >
+                                        <TableCell className="bg-light-gray" align="center" padding="none"><h4>WinWatt32 program</h4></TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {this.ww.map((row, index) => (
+                                        <TableRow key={index} >
+                                            <TableCell align="center" >{row.Text}</TableCell>
 
-                                </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-                <TableContainer component={Paper} className="min600 mb4"><a name="TA" />
-                    <Table className="bg-light-yellow " size="small">
-                        <TableHead >
-                            <TableRow >
-                                <TableCell className="bg-light-gray" align="center" padding="none"><h4>Tanusítással kapcsolatos problémák</h4></TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {this.ta.map((row, index) => (
-                                <TableRow key={index} >
-                                    <TableCell align="center" >{row.Text}</TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
+                    </Element><Element name="TA">
+                        <TableContainer component={Paper} className="min600 mb4"><a name="TA" />
+                            <Table className="bg-light-yellow " size="small">
+                                <TableHead >
+                                    <TableRow >
+                                        <TableCell className="bg-light-gray" align="center" padding="none"><h4>Tanusítással kapcsolatos problémák</h4></TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {this.ta.map((row, index) => (
+                                        <TableRow key={index} >
+                                            <TableCell align="center" >{row.Text}</TableCell>
 
-                                </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-                <TableContainer component={Paper} className="min600 mb4"><a name="ID" />
-                    <Table className="bg-light-yellow " size="small">
-                        <TableHead >
-                            <TableRow >
-                                <TableCell className="bg-light-gray" align="center" padding="none"><h4>IDAPI és projekt megnyitási hibák</h4></TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {this.idapi.map((row, index) => (
-                                <TableRow key={index} >
-                                    <TableCell align="center" >{row.Text}</TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
+                    </Element><Element name="ID16">
+                        <TableContainer component={Paper} className="min600 mb4"><a name="ID" />
+                            <Table className="bg-light-yellow " size="small">
+                                <TableHead >
+                                    <TableRow >
+                                        <TableCell className="bg-light-gray" align="center" padding="none"><h4>IDAPI és projekt megnyitási hibák</h4></TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {this.idapi.map((row, index) => (
+                                        <TableRow key={index} >
+                                            <TableCell align="center" >{row.Text}</TableCell>
 
-                                </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-                <TableContainer component={Paper} className="min600 mb4"><a name="ID32" />
-                    <Table className="bg-light-yellow " size="small">
-                        <TableHead >
-                            <TableRow >
-                                <TableCell className="bg-light-gray" align="center" padding="none"><h4>32 bites IDAPI hibák</h4></TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {this.idapi32.map((row, index) => (
-                                <TableRow key={index} >
-                                    <TableCell align="center" >{row.Text}</TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
+                    </Element><Element name="ID32">
+                        <TableContainer component={Paper} className="min600 mb4"><a name="ID32" />
+                            <Table className="bg-light-yellow " size="small">
+                                <TableHead >
+                                    <TableRow >
+                                        <TableCell className="bg-light-gray" align="center" padding="none"><h4>32 bites IDAPI hibák</h4></TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {this.idapi32.map((row, index) => (
+                                        <TableRow key={index} >
+                                            <TableCell align="center" >{row.Text}</TableCell>
 
-                                </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-                <TableContainer component={Paper} className="min600 mb4"><a name="KO" />
-                    <Table className="bg-light-yellow " size="small">
-                        <TableHead >
-                            <TableRow >
-                                <TableCell className="bg-light-gray" align="center" padding="none"><h4>KOMPLEX és korábbi DOS programok</h4></TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {this.ko.map((row, index) => (
-                                <TableRow key={index} >
-                                    <TableCell align="center" >{row.Text}</TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
+                    </Element><Element name="KO">
+                        <TableContainer component={Paper} className="min600 mb6"><a name="KO" />
+                            <Table className="bg-light-yellow " size="small">
+                                <TableHead >
+                                    <TableRow >
+                                        <TableCell className="bg-light-gray" align="center" padding="none"><h4>KOMPLEX és korábbi DOS programok</h4></TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {this.ko.map((row, index) => (
+                                        <TableRow key={index} >
+                                            <TableCell align="center" >{row.Text}</TableCell>
 
-                                </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
+                    </Element>
+                </div>
             </div >
         );
     }

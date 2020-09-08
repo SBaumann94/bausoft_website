@@ -1,6 +1,6 @@
 {
   "name": "bausoft",
-  "homepage":"https://sbaumann94.github.io/bausoft_website",
+  "homepage": "https://sbaumann94.github.io/bausoft_website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

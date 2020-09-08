@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-pascal-case */
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch, useRouteMatch} from 'react-router-dom';
+import { HashRouter as Router, Route, Switch} from 'react-router-dom';
 import 'tachyons';
 
 import Sidebar from './containers/Sidebar';
