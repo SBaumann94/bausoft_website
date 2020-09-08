@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4bb03b6b71a82f472ae7a680983d1abf",
+    "revision": "e9c821760debe62622cb9165a77a03bb",
     "url": "/bausoft_website/index.html"
   },
   {
-    "revision": "00f2c9d1fcedf64d2d36",
+    "revision": "a5eba659405a46a54bf6",
     "url": "/bausoft_website/static/css/2.3c03f26f.chunk.css"
   },
   {
-    "revision": "41a8ae2e2283724d81a3",
-    "url": "/bausoft_website/static/css/main.e032d619.chunk.css"
+    "revision": "78a8da6815356f6bfa04",
+    "url": "/bausoft_website/static/css/main.b7ecaf28.chunk.css"
   },
   {
-    "revision": "00f2c9d1fcedf64d2d36",
-    "url": "/bausoft_website/static/js/2.bd087033.chunk.js"
+    "revision": "a5eba659405a46a54bf6",
+    "url": "/bausoft_website/static/js/2.1ac3ed82.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/bausoft_website/static/js/2.bd087033.chunk.js.LICENSE.txt"
+    "url": "/bausoft_website/static/js/2.1ac3ed82.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "41a8ae2e2283724d81a3",
-    "url": "/bausoft_website/static/js/main.f01127da.chunk.js"
+    "revision": "78a8da6815356f6bfa04",
+    "url": "/bausoft_website/static/js/main.ba127f8d.chunk.js"
   },
   {
     "revision": "7b471122d30d46a64da5",

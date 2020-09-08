@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/bausoft_website/static/css/main.e032d619.chunk.css",
-    "main.js": "/bausoft_website/static/js/main.f01127da.chunk.js",
-    "main.js.map": "/bausoft_website/static/js/main.f01127da.chunk.js.map",
+    "main.css": "/bausoft_website/static/css/main.b7ecaf28.chunk.css",
+    "main.js": "/bausoft_website/static/js/main.ba127f8d.chunk.js",
+    "main.js.map": "/bausoft_website/static/js/main.ba127f8d.chunk.js.map",
     "runtime-main.js": "/bausoft_website/static/js/runtime-main.dee9e1c3.js",
     "runtime-main.js.map": "/bausoft_website/static/js/runtime-main.dee9e1c3.js.map",
     "static/css/2.3c03f26f.chunk.css": "/bausoft_website/static/css/2.3c03f26f.chunk.css",
-    "static/js/2.bd087033.chunk.js": "/bausoft_website/static/js/2.bd087033.chunk.js",
-    "static/js/2.bd087033.chunk.js.map": "/bausoft_website/static/js/2.bd087033.chunk.js.map",
+    "static/js/2.1ac3ed82.chunk.js": "/bausoft_website/static/js/2.1ac3ed82.chunk.js",
+    "static/js/2.1ac3ed82.chunk.js.map": "/bausoft_website/static/js/2.1ac3ed82.chunk.js.map",
     "index.html": "/bausoft_website/index.html",
-    "precache-manifest.e5d6381304c6b7fad8d8d4513cfce38f.js": "/bausoft_website/precache-manifest.e5d6381304c6b7fad8d8d4513cfce38f.js",
+    "precache-manifest.1d1e3168197e43dbe633635f8780ae6d.js": "/bausoft_website/precache-manifest.1d1e3168197e43dbe633635f8780ae6d.js",
     "service-worker.js": "/bausoft_website/service-worker.js",
     "static/css/2.3c03f26f.chunk.css.map": "/bausoft_website/static/css/2.3c03f26f.chunk.css.map",
-    "static/css/main.e032d619.chunk.css.map": "/bausoft_website/static/css/main.e032d619.chunk.css.map",
-    "static/js/2.bd087033.chunk.js.LICENSE.txt": "/bausoft_website/static/js/2.bd087033.chunk.js.LICENSE.txt",
+    "static/css/main.b7ecaf28.chunk.css.map": "/bausoft_website/static/css/main.b7ecaf28.chunk.css.map",
+    "static/js/2.1ac3ed82.chunk.js.LICENSE.txt": "/bausoft_website/static/js/2.1ac3ed82.chunk.js.LICENSE.txt",
     "static/media/chm-bau2.gif": "/bausoft_website/static/media/chm-bau2.071a5e28.gif",
     "static/media/chm-bau3.gif": "/bausoft_website/static/media/chm-bau3.a3d7b504.gif",
     "static/media/chm-bau32_1.gif": "/bausoft_website/static/media/chm-bau32_1.d3aa8614.gif",
@@ -100,8 +100,8 @@
   "entrypoints": [
     "static/js/runtime-main.dee9e1c3.js",
     "static/css/2.3c03f26f.chunk.css",
-    "static/js/2.bd087033.chunk.js",
-    "static/css/main.e032d619.chunk.css",
-    "static/js/main.f01127da.chunk.js"
+    "static/js/2.1ac3ed82.chunk.js",
+    "static/css/main.b7ecaf28.chunk.css",
+    "static/js/main.ba127f8d.chunk.js"
   ]
 }
