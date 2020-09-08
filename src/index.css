@@ -110,7 +110,7 @@ div{
   scroll-behavior: smooth;   
 }
 .HomeSection{
-  height: 70vh;
+  height: 90vh;
   overflow-y: hidden;
 }
 .GyikSection{
@@ -124,7 +124,7 @@ div{
   height: 100%;
   font-size: 8vw;
 }
-.Winwatt_family, .Programok, .Bemutat{
+.Winwatt_family, .Programok, .Bemutat, .Ajánljuk{
   padding-bottom: 600px;
 }
 Grid{

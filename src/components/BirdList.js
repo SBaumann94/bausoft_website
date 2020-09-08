@@ -21,7 +21,7 @@ class BirdList extends Component {
             activeBird: '',
             activeComponents: [false, false, false, false, false, false, false],
         };
-        useText =  (this.lang === 'hun') ? listHun : listEng;
+        useText = (this.lang === 'hun') ? listHun : listEng;
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
@@ -74,9 +74,12 @@ class BirdList extends Component {
     handleBirdOff = () => this.setState({ activeBird: '', activeComponents: [] });
 
     render() {
+        const touch = matchMedia('(hover: none)').matches;
+        const path=(touch)?"":"/public/ww32.html";
+        console.log(path)
         return (
             <Grid container item xs={12} spacing={0}>
-                <Link className="link no-underline black" to={() => { if (this.state.width > 800) { return "/public/ww32.html" } }}>
+                <Link className="link no-underline black" to={path}>
                     <Grid container item xs={12} style={{ cursor: 'pointer' }}>
                         <Grid item xs={6} md={4} className="">
                             <Grid item xs={12} >

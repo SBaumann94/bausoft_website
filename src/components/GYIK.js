@@ -185,12 +185,12 @@ class GYIK extends Component {
                 <Helmet><title>(GYIK) Gyakran ismételt kérdések </title></Helmet>
                 <h2>Gyakran ismételt kérdések (GYIK)</h2>
                 <p>Összegyűjtöttük és csoportosítottuk a leggyakrabban előforduló kérdéseket, és a hozzájuk tartozó válaszokat, abban a reményben, hogy az többeknek segít a programok minél hatékonyabb kezelésében.</p>
-                <Grid container spacing={0} className="pl1">
-                    <Grid item xs={6} md={3}><SLink to="HW" containerId="containerElement" className="MyButton">Hardverkulcs kezelési problémák</SLink></Grid>
-                    <Grid item xs={6} md={3}><SLink to="WW" containerId="containerElement" className="MyButton">WinWatt32 program</SLink></Grid>
+                <Grid container spacing={0}>
+                    <Grid item xs={7} md={3}><SLink to="HW" containerId="containerElement" className="MyButton">Hardverkulcs kezelési problémák</SLink></Grid>
+                    <Grid item xs={5} md={3}><SLink to="WW" containerId="containerElement" className="MyButton">WinWatt32 program</SLink></Grid>
                     <Grid item xs={12} md={6}><SLink to="TA" containerId="containerElement" className="MyButton">Tanusítással kapcsolatos problémák</SLink></Grid>
-                    <Grid item xs={6} md={3}><SLink to="ID16" containerId="containerElement" className="MyButton">IDAPI és projekt megnyitási hibák</SLink></Grid>
-                    <Grid item xs={6} md={3}><SLink to="ID32" containerId="containerElement" className="MyButton">32 bites IDAPI hibák</SLink></Grid>
+                    <Grid item xs={7} md={3}><SLink to="ID16" containerId="containerElement" className="MyButton">IDAPI és projekt megnyitási hibák</SLink></Grid>
+                    <Grid item xs={5} md={3}><SLink to="ID32" containerId="containerElement" className="MyButton">32 bites IDAPI hibák</SLink></Grid>
                     <Grid item xs={8} md={4}><SLink to="KO" containerId="containerElement" className="MyButton">KOMPLEX és korábbi DOS programok</SLink></Grid>
                     <Grid item xs={4} md={2}><SLink to="KE" containerId="containerElement" className="MyButton">Összes kérdés</SLink></Grid>
                 </Grid>
@@ -235,7 +235,7 @@ class GYIK extends Component {
                             <li>Nyomtatáskor miért nem jelennek meg az ékezetes karakterek, hullámzanak a táblázatok oszlopai?</li>
                         </ul>
                     </Element><Element name="HW">
-                        <TableContainer component={Paper} className="min600 mb4"><a name="HW" />
+                        <TableContainer component={Paper} className="min400 mb4"><a name="HW" />
                             <Table className="bg-light-yellow " size="small">
                                 <TableHead >
                                     <TableRow >
@@ -253,7 +253,7 @@ class GYIK extends Component {
                             </Table>
                         </TableContainer>
                     </Element><Element name="WW">
-                        <TableContainer component={Paper} className="min600 mb4"><a name="WW" />
+                        <TableContainer component={Paper} className="min400 mb4"><a name="WW" />
 
                             <Table className="bg-light-yellow " size="small">
                                 <TableHead >
@@ -272,7 +272,7 @@ class GYIK extends Component {
                             </Table>
                         </TableContainer>
                     </Element><Element name="TA">
-                        <TableContainer component={Paper} className="min600 mb4"><a name="TA" />
+                        <TableContainer component={Paper} className="min400 mb4"><a name="TA" />
                             <Table className="bg-light-yellow " size="small">
                                 <TableHead >
                                     <TableRow >
@@ -290,7 +290,7 @@ class GYIK extends Component {
                             </Table>
                         </TableContainer>
                     </Element><Element name="ID16">
-                        <TableContainer component={Paper} className="min600 mb4"><a name="ID" />
+                        <TableContainer component={Paper} className="min400 mb4"><a name="ID" />
                             <Table className="bg-light-yellow " size="small">
                                 <TableHead >
                                     <TableRow >
@@ -308,7 +308,7 @@ class GYIK extends Component {
                             </Table>
                         </TableContainer>
                     </Element><Element name="ID32">
-                        <TableContainer component={Paper} className="min600 mb4"><a name="ID32" />
+                        <TableContainer component={Paper} className="min400 mb4"><a name="ID32" />
                             <Table className="bg-light-yellow " size="small">
                                 <TableHead >
                                     <TableRow >
@@ -326,7 +326,7 @@ class GYIK extends Component {
                             </Table>
                         </TableContainer>
                     </Element><Element name="KO">
-                        <TableContainer component={Paper} className="min600 mb6"><a name="KO" />
+                        <TableContainer component={Paper} className="min400 mb6"><a name="KO" />
                             <Table className="bg-light-yellow " size="small">
                                 <TableHead >
                                     <TableRow >

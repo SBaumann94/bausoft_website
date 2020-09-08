@@ -68,7 +68,7 @@ class HomePageNew extends Component {
                             <BirdList lang='hun' />
                         </Grid>
                     </Element><Element name="Recommend">
-                        <Grid container spacing={1} className="Ajánljuk justify-left pb4">
+                        <Grid container spacing={1} className="Ajánljuk">
                             <Grid item xs={3} className="tr pb2">
                                 <img className="w-80 tl v-mid" src={Rozlogo} alt="Rozmaring logo" />
                             </Grid><Grid item xs={2} className="tl pb2 pl1">
