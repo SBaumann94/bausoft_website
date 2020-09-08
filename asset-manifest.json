@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/bausoft_website/static/css/main.25a2773a.chunk.css",
-    "main.js": "/bausoft_website/static/js/main.fbef9d8d.chunk.js",
-    "main.js.map": "/bausoft_website/static/js/main.fbef9d8d.chunk.js.map",
+    "main.css": "/bausoft_website/static/css/main.6a8832b6.chunk.css",
+    "main.js": "/bausoft_website/static/js/main.27ce84d6.chunk.js",
+    "main.js.map": "/bausoft_website/static/js/main.27ce84d6.chunk.js.map",
     "runtime-main.js": "/bausoft_website/static/js/runtime-main.dee9e1c3.js",
     "runtime-main.js.map": "/bausoft_website/static/js/runtime-main.dee9e1c3.js.map",
     "static/css/2.3c03f26f.chunk.css": "/bausoft_website/static/css/2.3c03f26f.chunk.css",
     "static/js/2.1ac3ed82.chunk.js": "/bausoft_website/static/js/2.1ac3ed82.chunk.js",
     "static/js/2.1ac3ed82.chunk.js.map": "/bausoft_website/static/js/2.1ac3ed82.chunk.js.map",
     "index.html": "/bausoft_website/index.html",
-    "precache-manifest.b7caf3e2666e5c121c681243cee2a355.js": "/bausoft_website/precache-manifest.b7caf3e2666e5c121c681243cee2a355.js",
+    "precache-manifest.9ccd050483357e476a82a6ef85a28e78.js": "/bausoft_website/precache-manifest.9ccd050483357e476a82a6ef85a28e78.js",
     "service-worker.js": "/bausoft_website/service-worker.js",
     "static/css/2.3c03f26f.chunk.css.map": "/bausoft_website/static/css/2.3c03f26f.chunk.css.map",
-    "static/css/main.25a2773a.chunk.css.map": "/bausoft_website/static/css/main.25a2773a.chunk.css.map",
+    "static/css/main.6a8832b6.chunk.css.map": "/bausoft_website/static/css/main.6a8832b6.chunk.css.map",
     "static/js/2.1ac3ed82.chunk.js.LICENSE.txt": "/bausoft_website/static/js/2.1ac3ed82.chunk.js.LICENSE.txt",
     "static/media/chm-bau2.gif": "/bausoft_website/static/media/chm-bau2.071a5e28.gif",
     "static/media/chm-bau3.gif": "/bausoft_website/static/media/chm-bau3.a3d7b504.gif",
@@ -101,7 +101,7 @@
     "static/js/runtime-main.dee9e1c3.js",
     "static/css/2.3c03f26f.chunk.css",
     "static/js/2.1ac3ed82.chunk.js",
-    "static/css/main.25a2773a.chunk.css",
-    "static/js/main.fbef9d8d.chunk.js"
+    "static/css/main.6a8832b6.chunk.css",
+    "static/js/main.27ce84d6.chunk.js"
   ]
 }
