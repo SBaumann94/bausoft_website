@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React, { Component } from 'react';
 import 'tachyons';
-import { Link } from 'react-router-dom';
 
 import { Helmet } from 'react-helmet'
 
