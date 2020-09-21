@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, { Component } from 'react';
 import 'tachyons';
 import { Link } from 'react-router-dom';
@@ -32,8 +33,8 @@ class Leirasok extends Component {
                     <li><a href='http://www.bausoft.hu/leiras/WinWatt_Optimum_modul.pdf' >WinWatt optimum modulról</a></li>
                     <li><a href='http://www.bausoft.hu/leiras/WinWatt_HidroPlan.pdf' >WinWatt HidroPlan modulról</a></li>
                     <li><a href='http://www.bausoft.hu/leiras/WinWatt_SunModul.pdf' >WinWatt Sun modulról</a></li>
-                    <li><Link to="#">WinWatt, GasNet és WaterNet XML adatfájlok leírása</Link></li>
-                    <li className="pb3"><Link to="/public/Ww32Project.html">WinWatt ÉMI export XML adatfájl leírása</Link></li>
+                    <li><a target="_blank" href="http://bausoft.hu/leiras/WinWatt_XML_adatfajlok.htm">WinWatt, GasNet és WaterNet XML adatfájlok leírása</a></li>
+                    <li className="pb3"><a target="_blank" href="http://bausoft.hu/neer/WinWatt32Project.html">WinWatt ÉMI export XML adatfájl leírása</a></li>
                     <li><a href='http://www.bausoft.hu/leiras/SUNARCH_elmelet_es_alkalmazas.pdf' >SunArch elmélet és alkalmazás</a></li>
                     <li><a href='http://www.bausoft.hu/leiras/SUNARCH_elmelet_es_alkalmazas_2.pdf' >SunArch elmélet és alkalmazás 2. rész</a></li>
                     <li><a href='http://www.bausoft.hu/leiras/Napepiteszet.pdf' >Napépítészet, elmélet és alkalmazás</a>, szerző: Dr. Kuba Gellért</li>

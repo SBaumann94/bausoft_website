@@ -5,6 +5,7 @@ import flagUK from '../logos/flagUK.png'
 import Sidebar from "react-sidebar";
 import { Link } from 'react-router-dom';
 import SideComponents from '../components/SideComponents';
+import ErrorBoundary from '../containers/ErrorBoundary';
 
 const mql = window.matchMedia(`(min-width: 800px)`);
 
@@ -48,7 +49,7 @@ class MySidebar extends Component {
   }
 
   render() {
-    
+
     return (
       <Sidebar
         sidebar={
@@ -93,8 +94,10 @@ class MySidebar extends Component {
         styles={{ sidebar: { background: "#EEEEEE" }, content: { backgroundImage: 'linear-gradient(to right, #EEEEEE, #DCFEFF)' } }}
         contentId="top"
       >
-        <button className="ma3 mb0" onClick={() => this.onSetSidebarOpen(true)} hidden={this.state.sidebarDocked}>☰ Menü</button>
-            {this.props.children}
+        <ErrorBoundary lang={this.state.lang}>
+          <button className="ma3 mb0" onClick={() => this.onSetSidebarOpen(true)} hidden={this.state.sidebarDocked}>☰ Menü</button>
+          {this.props.children}
+        </ErrorBoundary>
       </Sidebar>
     );
   }
